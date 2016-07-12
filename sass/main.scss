@@ -1,0 +1,121 @@
+// @import "compass/reset";
+@import "breakpoint";
+@import "variables";
+@import "bootstrap/bootstrap.scss";
+@import "fontawesome/scss/font-awesome.scss";
+@import "compass/css3";
+
+
+
+/*
+ Global styles
+*/
+
+body {
+    background: $white;
+    color: $black;
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: "Heebo", Helvetica, Arial, sans-serif;
+}
+
+a {
+    @include transition(all, 0.3s, ease);
+    &:focus, &:hover { text-decoration: none; }
+}
+
+h1, h2, h3 {
+    font-family: "Lora", "Times New Roman", serif;
+}
+h1 {
+    font-size: 2.75rem;
+    line-height: 1;
+}
+h2 {
+    font-size: 1.5rem;
+    
+}
+
+
+
+*:last-child { margin-bottom: 0; }
+
+
+
+/*
+ Layout
+*/
+
+header {
+    margin: 2rem 0;
+    padding: 2rem 0 1.5rem;
+    background: $purple;
+    color: $white;
+    .profiles {
+        @include align-self(center);
+    }
+    h1 {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $yellow;
+    }
+    p {
+        // margin-bottom: 0;
+    }
+    ul {
+        margin-top: 1rem;
+        @include breakpoint($md) { margin-top: 0; }
+    }
+    li {
+        a {
+            display: inline-block;
+            color: $yellow;
+            &:hover {
+                color: lighten($yellow,15%);
+            }
+        }
+    }
+}
+
+
+
+section {
+    margin: 2rem 0;
+    h2 {
+        border-bottom: 3px solid $orange;
+    }
+}
+
+
+
+aside {
+    margin: 2rem 0;
+    padding: 2rem 0 1.5rem;
+    background: $blue;
+    color: $white;
+    a {
+        color: $cream;
+        &:hover {
+            color: darken($cream, 15%);
+        }
+    }
+}
+
+
+
+/*
+ Reset styles or override Bootstrap
+*/
+
+
+
+/*
+ media specific styles
+*/
+
+@media screen {
+/* Screen styles */
+}
+
+@media print {
+/* Print styles */
+}
