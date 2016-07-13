@@ -1,8 +1,7 @@
 // @import "compass/reset";
 @import "breakpoint";
 @import "variables";
-@import "bootstrap/bootstrap.scss";
-@import "fontawesome/scss/font-awesome.scss";
+@import "../bootstrap/bootstrap.scss";
 @import "compass/css3";
 
 
@@ -12,7 +11,8 @@
 */
 
 body {
-    margin: 0 0 2rem;
+    margin: 0;
+    padding: 0 0 2rem;
     background: $white;
     color: $black;
     font-size: 16px;
@@ -40,6 +40,10 @@ h2 {
 
 
 *:last-child { margin-bottom: 0; }
+
+
+
+.floatfix { overflow: auto; }
 
 
 
@@ -90,7 +94,7 @@ section {
 
 aside {
     margin: 2rem 0;
-    padding: 2rem 0 1.5rem;
+    padding: 1rem 0;
     background: $blue;
     color: $white;
     a {
