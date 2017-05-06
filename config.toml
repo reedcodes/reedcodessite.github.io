@@ -3,7 +3,7 @@ publishDir      	= "docs"
 
 # baseURL       	= "http://reedcodes.com/"
 # baseURL         	= "https://reedcodes-reedcodes.c9users.io/docs/"
-baseURL				= "/docs/"
+baseURL				= "/"
 title           	= "Reed Piernock: front-end web developer"
 
 languageCode    	= "en-us"
