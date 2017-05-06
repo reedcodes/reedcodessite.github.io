@@ -1,0 +1,13 @@
+<div class="code-example">
+    
+    <h2>Code example of {{ .Get 0 }}</h2>
+    
+    <ul class="code-select inline">
+        <li><a href="#code-screenshot">Screenshot</a></li>
+        <li><a href="#code-{{ lower (.Get 1) }}">{{ .Get 1 }}</a></li>
+        <li><a href="#code-{{ lower (.Get 2) }}">{{ .Get 2 }}</a></li>
+    </ul>
+    
+    {{ .Inner }}
+    
+</div>

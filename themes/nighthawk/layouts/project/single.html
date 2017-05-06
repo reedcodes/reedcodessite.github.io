@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+
+<section id="project">
+    <div class="container project-wrap">
+
+        <h1>{{ .Title }}</h1>
+    
+        <div class="project-img">
+            <a href="{{ .Site.BaseURL }}assets/artifacts/{{ .Params.screen }}.png"><img src="{{ .Site.BaseURL }}assets/artifacts/{{ .Params.screen }}.png" alt="Overview image of {{ .Title }}" /></a>
+        </div>
+        
+        <div class="project-info">
+            
+            <ul class="block">
+                <li><b>Portfolio piece:</b> #{{ .Weight }}</li>
+                <li><b>Published:</b> {{ .Params.year }}</li>
+                <li><b>Created for:</b> {{ .Params.org }} ({{ .Params.suborg }})</li>
+                <li><b>Capabilities:</b> {{ .Params.capabilities }}</li>
+            </ul>
+            
+            <p>{{ if eq .Params.availability "online" }}This project is available online at <a href="{{ .Params.exturl }}">{{ .Params.exturl }}</a>.
+                    {{ else if eq .Params.availability "download" }}This project is available <a href="{{ .Site.BaseURL }}assets/files/{{ .Params.download }}.pdf">for download as a PDF</a>.
+                    {{ else if eq .Params.availability "private" }}Please <a href="{{ .Site.BaseURL }}contact/">contact me</a> if you would like access to the full project.
+                    {{ else if eq .Params.availability "archive" }}This project is archived at <a href="{{ .Params.exturl }}">the Wayback Machine</a>.
+                    {{ else }}This project is not currently available.
+                    {{ end }}</p>
+            
+            {{ .Content }}
+            
+        </div>
+
+    </div>
+</section>
+
+{{ partial "footer.html" . }}

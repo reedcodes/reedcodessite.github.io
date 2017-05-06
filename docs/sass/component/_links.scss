@@ -1,0 +1,38 @@
+nav a {
+    display: inline-block;
+    &:hover, &:focus {
+        border-bottom: 0.25rem solid $green;
+    }
+    &.active {
+        border-bottom: 0.25rem solid $blue;
+        color: $blue;
+    }
+}
+
+
+
+section a {
+    display: inline-block;
+    border-bottom: 0.125rem solid $blue;
+    line-height: 0.875;
+    &:hover, &:focus {
+        border-bottom-color: $green;
+    }
+}
+
+
+
+footer a {
+    display: inline-block;
+    border-bottom: 0.125rem solid $cream;
+    line-height: 0.875;
+    &:hover, &:focus {
+        border-bottom-color: $cream;
+    }
+}
+
+
+
+.icon {
+    border: none;
+}

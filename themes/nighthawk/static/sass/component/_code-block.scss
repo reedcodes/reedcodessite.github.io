@@ -1,0 +1,36 @@
+.code-example {
+    h2 {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        background: $blue;
+        color: $white;
+    }
+}
+
+
+
+.code-select {
+    margin: 0;
+    background: $cream;
+    text-align: right;
+    li {
+        margin: 0;
+        &.active {
+            a {
+                background: $grey;
+                color: $white;
+            }
+        }
+    }
+    a {
+        padding: 0.5rem 1rem;
+        border: none;
+    }
+}
+
+
+
+.code-block {
+    position: relative;
+    margin-bottom: 1rem;
+}

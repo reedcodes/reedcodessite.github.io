@@ -1,0 +1,34 @@
+theme           	= "nighthawk"
+publishDir      	= "docs"
+
+# baseURL       	= "http://reedcodes.com/"
+# baseURL         	= "https://reedcodes-reedcodes.c9users.io/docs/"
+baseURL				= "/docs/"
+title           	= "Reed Piernock: front-end web developer"
+
+languageCode    	= "en-us"
+
+[params]
+    
+    name        	= "Reed Piernock"
+    tagline     	= "Creative presentation-layer developer committed to beautifully crafted front-end code"
+    
+    summary			= "My name is Reed, and I am a web developer in Washington DC. I've been specializing in front-end code since the turn of the century, working with small businesses, government agencies, digital marketing firms, and institutes of higher education. Mobile first, responsive design, and progressive enhancement are just a few of my favorite strategies."
+    goals			= "I am keenly interested in clean code, especially as it relates to usability and accessibility, but I don't let that frighten me off learning the latest technologies."
+    
+    resume			= "Piernock.Resume.pdf"
+	
+	email       	= "contact@reedcodes.com"
+	twitter     	= "https://twitter.com/reedcodes"
+	linkedin    	= "https://www.linkedin.com/in/reedcodes"
+	github      	= "https://github.com/reedcodes"
+	codepen      	= "https://codepen.io/reedcodes"
+	drupal			= "https://www.drupal.org/u/reedcodes"
+	freecodecamp	= "https://www.freecodecamp.com/reedcodes"
+	codecadamy		= "https://www.codecademy.com/reedcodes"
+
+[[menu.main]]
+	name			= "Projects"
+	identifier		= "project"
+	weight			= -1
+	url				= "/project/"

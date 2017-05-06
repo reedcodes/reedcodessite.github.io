@@ -1,0 +1,39 @@
+.btn {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid;
+    @include border-radius(0.25rem);
+    line-height: inherit;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+
+.btn-dark {
+    border-color: $black;
+    background: $blue;
+    color: $white;
+    &:hover, &:focus {
+        border-color: $black;
+        background: darken($blue, 10%);
+        color: $cream;
+    }
+}
+.btn-light {
+    border-color: $black;
+    background: $yellow;
+    color: $blue;
+    &:hover, &:focus {
+        border-color: $black;
+        color: $black;
+        background: darken($yellow, 10%);
+    }
+}
+
+.btn-small { font-size: 0.9rem; }
+.btn-large { font-size: 1.5rem; }
+
+.btn span {
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
+}

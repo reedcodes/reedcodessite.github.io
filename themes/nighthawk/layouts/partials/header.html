@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{{ if .IsHome }} {{ .Title }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo|Inconsolata|Lora" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" media="screen" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/print.css" media="print" />
+    
+    <script src="{{ .Site.BaseURL }}js/scripts.min.js"></script>
+    <script src="https://use.fontawesome.com/a4103867e2.js"></script>
+</head>
+
+<body class="{{ if .IsHome }}home{{ else }} page{{ end }}">
+
+<nav>
+    <div class="container">
+        <a class="home{{ if .IsHome }} active{{ end }}" href="{{ .Site.BaseURL }}">reedcodes.com</a>
+        <ul class="nav">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            <li><a {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}class="active" {{end}}href="{{.URL}}">{{ .Name }}</a></li>
+        {{ end }}
+        </ul>
+    </div>
+</nav>
+
+<header>
+    <div class="container">
+        <h1 class="title"><a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.BaseURL}}img/reed-piernock.png" alt="{{ .Site.Params.name }}" /></a></h1>
+        {{ if .IsHome }}
+        <p class="subtitle">{{ .Site.Params.tagline }}</p>
+        <a class="btn btn-large btn-dark" href="{{ .Site.BaseURL }}project">View my projects</a>
+        {{ end }}
+    </div>
+</header>
+
+<main{{ if or ( eq .Title "About" ) ( eq .Title "Contact" ) }} class="aside container"{{ end}}>

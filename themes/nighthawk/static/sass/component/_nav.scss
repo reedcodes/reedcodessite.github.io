@@ -1,0 +1,26 @@
+nav {
+    overflow: auto;
+    width: 100%;
+    background: $white;
+    .nav {
+        margin: 1rem 0 0;
+        padding: 0;
+        letter-spacing: -4px;
+        li {
+            display: inline;
+            margin-left: 1rem;
+            letter-spacing: 0;
+            &:first-child { margin: 0; }
+        }
+    }
+    
+    @include breakpoint($sm) {
+        .home {
+            float: left;
+        }
+        .nav {
+            float: right;
+            margin-top: 0;
+        }
+    }
+}

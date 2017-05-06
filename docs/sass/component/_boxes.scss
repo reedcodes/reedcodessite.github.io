@@ -1,0 +1,79 @@
+.boxes {
+    position: relative;
+    margin-top: 1rem;
+    @include breakpoint($md) {
+        @include display-flex;
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+    }
+}
+
+.box {
+    display: block;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    line-height: inherit;
+    
+    img {
+        margin-bottom: 1rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+        &.icon {
+            margin-bottom: 2rem;
+            color: $purple;
+        }
+    }
+    .capabilities {
+        font-size: 0.9rem;
+    }
+    
+    @include breakpoint($sm) {
+        display: inline-block;
+        @include flex(0 1 48%);
+    }
+    
+    @include breakpoint($lg) {
+        @include flex(0 1 31%);
+    }
+    
+}
+
+@include breakpoint($md) {
+    .box-two {
+        @include flex(0 1 65%);
+    }
+}
+
+
+
+.project {
+    margin-bottom: 2.5rem;
+    border-radius: 0.25rem;
+    background: darken($green, 10%);
+    color: $white;
+    img {
+        @include backface-visibility(hidden);
+        @include opacity(0.75);
+        border-radius: 0.25rem 0.25rem 0 0;
+    }
+    .title, .capabilities {
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .title {
+        margin: 0 0 0.5rem;
+    }
+    &:hover, &:focus {
+        @include transition(all, 0.3s, ease);
+        background: darken($green, 15%);
+        color: $cream;
+        text-decoration: none;
+        img {
+            @include transition(all, 0.3s, ease);
+            @include opacity(1);
+        }
+    }
+}

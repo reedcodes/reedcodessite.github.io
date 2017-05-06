@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Reed Piernock: front-end web developer</title>
+    <link>/docs/project/</link>
+    <description>Recent content in Projects on Reed Piernock: front-end web developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/docs/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>McCourt School of Public Policy</title>
+      <link>/docs/project/mccourt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/project/mccourt/</guid>
+      <description>&lt;p&gt;The core codebase for nearly all Georgetown University websites is maintained by the Web Services team, and consists of a Drupal multisite environment.&lt;/p&gt;
+
+&lt;p&gt;When end users and content editors requested greater flexibility for layouts and components on their websites, Web Services determined that additional themes were needed. The McCourt School of Public Policy, one of several major schools under Georgetown University, volunteered as the first group to use the new theme, and worked closely with Web Services on conceptualizing new features, styles, layouts, and functionality.&lt;/p&gt;
+
+&lt;p&gt;The project kicked off in early 2016, just after the return from winter break. As the senior web front-end developer on the project, I collaborated first with our product manager on the basic framework for the new theme. The website launched with the new Whitehaven School theme in July 2016.&lt;/p&gt;
+
+&lt;p&gt;The organization for this theme&amp;rsquo;s assets adopts the SMACSS methodology. While Bootstrap creates the base framework for the theme, the Sass files also rely on Compass mixins and functionality to extend the styles native to Bootstrap, creating additional components with original and creative styles.&lt;/p&gt;
+
+&lt;p&gt;For example, McCourt staff liked the look of &lt;a href=&#34;https://v4-alpha.getbootstrap.com/components/card/#image-overlays&#34;&gt;Bootstrap Image Overlay Cards&lt;/a&gt; but wanted the ability to change the position of the text inside the cards. In order to accomplish this, I added further styles to our base code so content editors could easily update their HTML snippets to select the position of the content inside the block.&lt;/p&gt;
+
+&lt;div class=&#34;code-example&#34;&gt;
+    
+    &lt;h2&gt;Code example of image overlay cards&lt;/h2&gt;
+    
+    &lt;ul class=&#34;code-select inline&#34;&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-screenshot&#34;&gt;Screenshot&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-scss&#34;&gt;SCSS&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-html&#34;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    
+
+    &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
+    
+    
+        &lt;img class=&#34;img-example&#34; src=&#34;/docs/docs/assets/examples/mccourt-about.png&#34; alt=&#34;Screenshot of image overlay cards on McCourt&amp;#39;s website&#34; /&gt;
+    
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-scss&#34; aria-label=&#34;SCSS&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;.card-img-overlay.position {
+  @include display-flex;
+
+  .pos {
+    width: 100%;
+
+    &amp;amp;.pos-left, &amp;amp;.pos-left .btn { text-align: left; }
+    &amp;amp;.pos-center, &amp;amp;.pos-center .btn { text-align: center; }
+    &amp;amp;.pos-right, &amp;amp;.pos-right .btn { text-align: right; }
+
+    &amp;amp;.pos-top    { @include align-self(flex-start); }
+    &amp;amp;.pos-middle { @include align-self(center); }
+    &amp;amp;.pos-bottom { @include align-self(flex-end); }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-html&#34; aria-label=&#34;HTML&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;
+  &amp;lt;img class=&amp;quot;card-img&amp;quot; alt=&amp;quot;[ALT]&amp;quot; src=&amp;quot;[SRC]&amp;quot; /&amp;gt;
+  &amp;lt;div class=&amp;quot;card-img-overlay position&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;pos pos-top pos-left&amp;quot;&amp;gt;
+      &amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;[TEXT]&amp;lt;/p&amp;gt;
+      &amp;lt;a class=&amp;quot;btn btn-primary&amp;quot; href=&amp;quot;[URL]&amp;quot;&amp;gt;[TEXT]&amp;lt;/a&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+
+
+    
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Georgetown University</title>
+      <link>/docs/project/georgetown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/project/georgetown/</guid>
+      <description>&lt;p&gt;The core codebase for nearly all Georgetown University websites is maintained by the Web Services team, and consists of a Drupal multisite environment. Alternatively, the main university website, referred to as its Top Tier, lives in a separate repository, although it shares a similar codebase and base theme as other university websites. In late 2014, the Office of Communications decided to reskin the Top Tier, keeping the existing Drupal codebase.&lt;/p&gt;
+
+&lt;p&gt;The project kicked off in early 2015, just after the return from winter break. As the senior web front-end developer on the project, I collaborated mainly with the digital strategist on the basic redesign for the new theme. The updated website launched in July 2015.&lt;/p&gt;
+
+&lt;p&gt;Since the codebase would not be updated or rearchitectured, we were limited in what we could do for development on the new theme. One constraint was the site&amp;rsquo;s navigation; the specifications stated one instance of the full menu output through Drupal, and inclusion of it in full or in parts elsewhere on the site through JavaScript. Another requirement was access to the full navigation through a &amp;ldquo;hamburger&amp;rdquo; menu button in the global header.&lt;/p&gt;
+
+&lt;p&gt;I used JavaScript, mostly jQuery, to add functionality that &amp;ndash; if JavaScript is enabled on the client-side &amp;ndash; hides the full menu but displays it as an overlay when the menu button in the header is clicked. The full menu needed to be docked to the top of the window, beneath the global header, no matter where the user scrolled on the page. The full menu also needed to be compact, i.e. only show the top level items unless the arrow is clicked to expand that section; however, if the user was already on a page deeper in the site&amp;rsquo;s structure, that level would be visually represented in the full menu.&lt;/p&gt;
+
+&lt;div class=&#34;code-example&#34;&gt;
+    
+    &lt;h2&gt;Code example of full navigation menu&lt;/h2&gt;
+    
+    &lt;ul class=&#34;code-select inline&#34;&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-screenshot&#34;&gt;Screenshot&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-javascript&#34;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-html&#34;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    
+
+    &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
+    
+    
+        &lt;img class=&#34;img-example&#34; src=&#34;/docs/docs/assets/examples/georgetown-menu.png&#34; alt=&#34;Screenshot of full navigation menu on Georgetown University&amp;#39;s website&#34; /&gt;
+    
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-javascript&#34; aria-label=&#34;JavaScript&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// hide/show the full menu
+$(&#39;#button-menu&#39;).click(function() {
+  if( !$(&#39;body&#39;).hasClass(&#39;menu-open&#39;) ) {
+    var offsetTop = $(window).scrollTop();
+    $(&#39;body&#39;).css(&#39;top&#39;, &#39;-&#39;+offsetTop+&#39;px&#39;);
+  } else {
+    var offsetTop = -1 * parseInt( $(&#39;body&#39;).css(&#39;top&#39;) );
+    $(&#39;body&#39;).removeAttr(&#39;style&#39;);
+    $(&#39;html, body&#39;)
+      .delay( 0.000001 )
+      .animate(
+        { scrollTop: offsetTop }, 0.000001, &#39;linear&#39;
+      );
+  }
+  $(&#39;body&#39;).toggleClass(&#39;menu-open&#39;);
+  return false;
+});
+// expandable subnavs
+var fullnavMain = &#39;#menu-full li.expanded&#39;;
+$(fullnavMain).find(&#39;&amp;gt; a&#39;).append(&#39;&amp;lt;span&amp;gt;&amp;amp;#9658;&amp;lt;/span&amp;gt;&#39;);
+$(fullnavMain).find(&#39;&amp;gt; a.active-trail span&#39;).addClass(&#39;open&#39;);
+$(fullnavMain).find(&#39;&amp;gt; a span&#39;).live(&#39;click&#39;, function() {
+  $(this).toggleClass(&#39;open&#39;).parent(&#39;a&#39;).next(&#39;ul.menu&#39;).slideToggle();
+  return false;
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-html&#34; aria-label=&#34;HTML&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div id=&amp;quot;menu-full&amp;quot;&amp;gt;
+  &amp;lt;nav id=&amp;quot;block-menu&amp;quot; class=&amp;quot;block-menu-block block-region-menu-full&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;menu-block-wrapper&amp;quot;&amp;gt;
+      &amp;lt;ul class=&amp;quot;menu&amp;quot;&amp;gt;
+        &amp;lt;li class=&amp;quot;expanded menu-depth-1 menu-mlid-[ID]&amp;quot;&amp;gt;
+          &amp;lt;a href=&amp;quot;[URL]&amp;quot;&amp;gt;[MENU ITEM]&amp;lt;/a&amp;gt;
+          &amp;lt;ul class=&amp;quot;menu&amp;quot;&amp;gt;
+            &amp;lt;li class=&amp;quot;expanded menu-depth-1 menu-mlid-[ID]&amp;quot;&amp;gt;
+              &amp;lt;a href=&amp;quot;[URL]&amp;quot;&amp;gt;[MENU ITEM]&amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+          &amp;lt;/ul&amp;gt;
+        &amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/nav&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+
+
+    
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Facing Bipolar</title>
+      <link>/docs/project/facing-bipolar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/project/facing-bipolar/</guid>
+      <description>&lt;p&gt;FacingBipolar was an unbranded website for AstraZeneca, aimed at providing extensive and reliable information to patients diagnosed with bipolar disorder. The project kicked off in summer 2008 with a diverse team, encompassing account, marketing, creative, and technology departments. As the lead front-end developer on the project, I collaborated with our technology lead on the basic front-end assets and code standards for the website, and with our senior back-end developer on the template framework. The website launched in early spring 2009.&lt;/p&gt;
+
+&lt;p&gt;FacingBipolar won an award in 2009 for &lt;a href=&#34;http://advertisingcompetition.org/winner.asp?eid=13594&#34;&gt;outstanding achievement in web development&lt;/a&gt; under the Pharmaceuticals category.&lt;/p&gt;
+
+&lt;p&gt;Development was done in Visual Studio using ASP.net. The back-end developer built the template framework, and I broke out our components into reusable blocks, such as header, footer, and callouts. The MooTools library imported minimal JavaScript functionality, and &lt;a href=&#34;https://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement&#34;&gt;sIFR&lt;/a&gt; provided custom fonts for page headlines.&lt;/p&gt;
+
+&lt;p&gt;One feature of the website was the inclusion of images designed to look like sticky notes and photos scattered across a desk. To accomplish this effect, the images were saved as high-quality PNG files that could support alpha-channel transparency, while HTMl and CSS was written to allow the pullquotes to be read in the regular flow of content while also appearing slightly disorganized.&lt;/p&gt;
+
+&lt;div class=&#34;code-example&#34;&gt;
+    
+    &lt;h2&gt;Code example of pullquote photos&lt;/h2&gt;
+    
+    &lt;ul class=&#34;code-select inline&#34;&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-screenshot&#34;&gt;Screenshot&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-html&#34;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-css&#34;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    
+
+    &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
+    
+    
+        &lt;img class=&#34;img-example&#34; src=&#34;/docs/docs/assets/examples/facingbipolar-pullquote.png&#34; alt=&#34;Screenshot of pullquotes on FacingBipolar&amp;#39;s website&#34; /&gt;
+    
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-html&#34; aria-label=&#34;HTML&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;photos&amp;quot;&amp;gt;
+  &amp;lt;img src=&amp;quot;[SRC]&amp;quot; width=&amp;quot;305&amp;quot; height=&amp;quot;220&amp;quot; alt=&amp;quot;Photo of: Girl at a computer desk&amp;quot;&amp;gt;
+  &amp;lt;img src=&amp;quot;[SRC]&amp;quot; width=&amp;quot;180&amp;quot; height=&amp;quot;170&amp;quot; alt=&amp;quot;Sometimes, I don&#39;t leave my apartment, answer the phone, or check my e-mail for days.&amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-css&#34; aria-label=&#34;CSS&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;div#content div.photos {
+  position: relative; }
+div#content div.photos img {
+  display: inline;
+  position: relative;
+  float: right;
+  margin: 1em -125px 0 1em; }
+div#content div.photos img + img {
+  clear: right;
+  margin: -97px -111px 0 1em; }
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+
+
+    
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Cheap Collegiate</title>
+      <link>/docs/project/cheap-collegiate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/project/cheap-collegiate/</guid>
+      <description>&lt;p&gt;This website proposal was the penultimate project for a JavaScript course I took in Fall 2015.&lt;/p&gt;
+
+&lt;p&gt;The goal was to create a proposal for a fictional website that would then be developed as the final project. The main objective was to demonstrate good project planning skills, and the proposal needed to include a website title, project description, content development, design considerations, and a detailed project plan. Additionally, the proposal also required a storyboard or wireframe that would illustrate a sketch for each page of the website and identify the site&amp;rsquo;s architecture and structure. Other website elements needed to be analyzed, such as color scheme, graphics, typeface, video or audio, and interactivity.&lt;/p&gt;
+
+&lt;p&gt;I created a fictional bookstore near a college campus, called The Cheap Collegiate. In the proposal, I detailed the bookstore&amp;rsquo;s specifications, including audience analysis and content strategy. Using &lt;a href=&#34;https://moqups.com&#34;&gt;Moqups&lt;/a&gt;, I built wireframes for the website and incorporated them in the proposal. The deadline for the final project was December 13, 2015 so I adopted that as the project deadline, setting milestones for content, structure, functionality, and quality assurance. I then concluded the proposal by justifying my coding standards with solid research on the best practices for front-end development.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Facebook&#39;s Real Name Policy and Its Ethical Implications</title>
+      <link>/docs/project/facebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/project/facebook/</guid>
+      <description>&lt;p&gt;This project was a two-part case study for an ethics course I took in Fall 2016.&lt;/p&gt;
+
+&lt;p&gt;The first segment instructed students to consider a key IT-related ethical issue regarding privacy and to complete a matrix map for three normative ethics principles. The second segment directed students to use the information of the first paper to write a policy that would mitigate the ethical dilemma; the policy needed to address the purpose, scope, policy points, and policy enforcement.&lt;/p&gt;
+
+&lt;p&gt;I selected Facebook&amp;rsquo;s &amp;ldquo;real name&amp;rdquo; policy as the focus for my ethics analysis. While Facebook professes its name policy is fair and that users are permitted to represent themselves with an authentic name that may not match their legal name exactly, the policy introduces an ethical dilemma in its implementation, especially with regard to confidentiality, non-maleficence, and understanding. I then wrote an example policy for names on Facebook that addressed the real-world issues cited in my matrix map and analysis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wizards, Muggles, and the Internet</title>
+      <link>/docs/project/wizards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/project/wizards/</guid>
+      <description>&lt;p&gt;This project was the final thesis paper for a course in media and culture I took in Spring 2013.&lt;/p&gt;
+
+&lt;p&gt;The course focused on the effect of emerging digital media technologies on both individuals and society, with a concentration on social media, participatory media, and local and global culture. The goal of the final thesis paper was to demonstrate a thorough understanding of society&amp;rsquo;s consumption of digital media by researching, analyzing, and presenting a comprehensive commentary on any topic related to social issues with digital media.&lt;/p&gt;
+
+&lt;p&gt;As a former organizer of a &lt;a href=&#34;https://www.meetup.com/Potterdelphia/&#34;&gt;Harry Potter community&lt;/a&gt; and a speaker at an &lt;a href=&#34;http://softconference.com/hpef/sessionDetail.asp?SID=102045&#34;&gt;international conference in 2007&lt;/a&gt;, I selected Harry Potter fandom as the topic for my thesis. From the paper&amp;rsquo;s abstract:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Harry Potter&lt;/em&gt; fandom had taken the world by storm, and continues to grow even today, nearly six years after the release of seventh and final book, in part due to the influence of the internet and digital media. In the modern convergence culture, fans expect certain rights and permissions when interacting with the Harry Potter universe, but the original creators often have different expectations. Fan fiction and wizard rock are two forms of fan-made derivative works that have used the accessible nature of the internet to grow fandom, but are also not without their own issues.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The paper illustrated the rise of fandom based on the &lt;em&gt;Harry Potter&lt;/em&gt; book series, analyzed user-generated content in relation to the fandom, discussed wizard rock and fan fiction, and presented ethical issues regarding intellectual property and adult content in fan-made materials.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Oppression of Gender Non-conformity in Arguments Against Singular They</title>
+      <link>/docs/project/singular-they/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/project/singular-they/</guid>
+      <description>&lt;p&gt;This project was the final thesis paper for a course in the history of the English language I took in Summer 2016.&lt;/p&gt;
+
+&lt;p&gt;The course focused on the linguistic heritage of English. From its Proto-Indo-European roots through today, the language is ever evolving as seen in changes to expressions and structure due to influences from contemporary issues of all concerns, social, local, global, and political.&lt;/p&gt;
+
+&lt;p&gt;The instructions for the final thesis paper directed students to choose a topic briefly covered in class and to comment on that topic through detailed research and analysis. One such topic was gender bias and gender neutrality; my paper then focused on the current contention over the use of singular &lt;em&gt;they&lt;/em&gt; in formal and casual language, and the greater issues of pronoun usage (he/she/they) and gender in cultural language norms.&lt;/p&gt;
+
+&lt;p&gt;My intended audience included my peers in HEL, who may not be aware of gender issues in language as a feminist issue, but also opponents of changes to the English language based on emerging concerns and issues in the feminist and transgender communities, who may not be aware of the underlying bigotry in their insistence on androcentric language and in their resistance to language change.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

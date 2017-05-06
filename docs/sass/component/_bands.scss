@@ -1,0 +1,17 @@
+.band-dark {
+    padding: 1rem 0;
+    background: $purple;
+    color: $white;
+    a {
+        color: $cream;
+        &:hover, &:focus {
+            color: $white;
+        }
+    }
+}
+
+.band-light {
+    padding: 2rem 0;
+    background: $cream;
+    color: $black;
+}
