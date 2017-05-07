@@ -15,7 +15,7 @@
       <pubDate>Mon, 24 Apr 2017 23:54:42 +0000</pubDate>
       
       <guid>/contact/</guid>
-      <description>&lt;p&gt;Wanna get in touch? Great! You can fill out the contact form with a comprehensive message, or you can find me online at one of many social and professional networking sites.&lt;/p&gt;
+      <description>&lt;p&gt;You can fill out the contact form with a comprehensive message, or you can find me online at one of many social and professional networking sites.&lt;/p&gt;
 </description>
     </item>
     
@@ -222,7 +222,7 @@ $(fullnavMain).find(&#39;&amp;gt; a span&#39;).live(&#39;click&#39;, function() 
       <guid>/project/facing-bipolar/</guid>
       <description>&lt;p&gt;FacingBipolar was an unbranded website for AstraZeneca, aimed at providing extensive and reliable information to patients diagnosed with bipolar disorder. The project kicked off in summer 2008 with a diverse team, encompassing account, marketing, creative, and technology departments. As the lead front-end developer on the project, I collaborated with our technology lead on the basic front-end assets and code standards for the website, and with our senior back-end developer on the template framework. The website launched in early spring 2009.&lt;/p&gt;
 
-&lt;p&gt;FacingBipolar won an award in 2009 for &lt;a href=&#34;http://advertisingcompetition.org/winner.asp?eid=13594&#34;&gt;outstanding achievement in web development&lt;/a&gt; under the Pharmaceuticals category.&lt;/p&gt;
+&lt;p&gt;FacingBipolar won &lt;a href=&#34;http://advertisingcompetition.org/winner.asp?eid=13594&#34;&gt;an award&lt;/a&gt; in 2009 for outstanding achievement in web development under the Pharmaceuticals category.&lt;/p&gt;
 
 &lt;p&gt;Development was done in Visual Studio using ASP.net. The back-end developer built the template framework, and I broke out our components into reusable blocks, such as header, footer, and callouts. The MooTools library imported minimal JavaScript functionality, and &lt;a href=&#34;https://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement&#34;&gt;sIFR&lt;/a&gt; provided custom fonts for page headlines.&lt;/p&gt;
 
@@ -292,7 +292,7 @@ div#content div.photos img + img {
 
 &lt;p&gt;The goal was to create a proposal for a fictional website that would then be developed as the final project. The main objective was to demonstrate good project planning skills, and the proposal needed to include a website title, project description, content development, design considerations, and a detailed project plan. Additionally, the proposal also required a storyboard or wireframe that would illustrate a sketch for each page of the website and identify the site&amp;rsquo;s architecture and structure. Other website elements needed to be analyzed, such as color scheme, graphics, typeface, video or audio, and interactivity.&lt;/p&gt;
 
-&lt;p&gt;I created a fictional bookstore near a college campus, called The Cheap Collegiate. In the proposal, I detailed the bookstore&amp;rsquo;s specifications, including audience analysis and content strategy. Using &lt;a href=&#34;https://moqups.com&#34;&gt;Moqups&lt;/a&gt;, I built wireframes for the website and incorporated them in the proposal. The deadline for the final project was December 13, 2015 so I adopted that as the project deadline, setting milestones for content, structure, functionality, and quality assurance. I then concluded the proposal by justifying my coding standards with solid research on the best practices for front-end development.&lt;/p&gt;
+&lt;p&gt;I created a fictional bookstore near a college campus, called The Cheap Collegiate. In the proposal, I detailed the bookstore&amp;rsquo;s specifications, including audience analysis and content strategy. Using &lt;a href=&#34;https://moqups.com&#34;&gt;Moqups&lt;/a&gt;, I built wireframes for the website and incorporated them in the proposal. I adopted the milestones for content, structure, functionality, and quality assurance based on the final project deadline. I concluded the proposal by justifying my coding standards with solid research on the best practices for front-end development.&lt;/p&gt;
 </description>
     </item>
     
@@ -306,7 +306,7 @@ div#content div.photos img + img {
 
 &lt;p&gt;The first segment instructed students to consider a key IT-related ethical issue regarding privacy and to complete a matrix map for three normative ethics principles. The second segment directed students to use the information of the first paper to write a policy that would mitigate the ethical dilemma; the policy needed to address the purpose, scope, policy points, and policy enforcement.&lt;/p&gt;
 
-&lt;p&gt;I selected Facebook&amp;rsquo;s &amp;ldquo;real name&amp;rdquo; policy as the focus for my ethics analysis. While Facebook professes its name policy is fair and that users are permitted to represent themselves with an authentic name that may not match their legal name exactly, the policy introduces an ethical dilemma in its implementation, especially with regard to confidentiality, non-maleficence, and understanding. I then wrote an example policy for names on Facebook that addressed the real-world issues cited in my matrix map and analysis.&lt;/p&gt;
+&lt;p&gt;I selected Facebook&amp;rsquo;s &amp;ldquo;real name&amp;rdquo; policy as the focus for my ethics analysis. While Facebook professes its name policy is fair and that users are permitted to represent themselves with an authentic name that may not match their legal name exactly, the policy introduces an ethical dilemma in its implementation, especially with regard to confidentiality, non-maleficence, and understanding. I followed-up by writing an example policy for names on Facebook that addressed the real-world issues cited in my matrix map and analysis.&lt;/p&gt;
 </description>
     </item>
     
@@ -340,7 +340,7 @@ div#content div.photos img + img {
 
 &lt;p&gt;The course focused on the linguistic heritage of English. From its Proto-Indo-European roots through today, the language is ever evolving as seen in changes to expressions and structure due to influences from contemporary issues of all concerns, social, local, global, and political.&lt;/p&gt;
 
-&lt;p&gt;The instructions for the final thesis paper directed students to choose a topic briefly covered in class and to comment on that topic through detailed research and analysis. One such topic was gender bias and gender neutrality; my paper then focused on the current contention over the use of singular &lt;em&gt;they&lt;/em&gt; in formal and casual language, and the greater issues of pronoun usage (he/she/they) and gender in cultural language norms.&lt;/p&gt;
+&lt;p&gt;The instructions for the final thesis paper directed students to choose a topic briefly covered in class and to comment on that topic through detailed research and analysis. One such topic was gender bias and gender neutrality; my resulting paper focused on the current contention over the use of singular &lt;em&gt;they&lt;/em&gt; in formal and casual language, and the greater issues of pronoun usage (he/she/they) and gender in cultural language norms.&lt;/p&gt;
 
 &lt;p&gt;My intended audience included my peers in HEL, who may not be aware of gender issues in language as a feminist issue, but also opponents of changes to the English language based on emerging concerns and issues in the feminist and transgender communities, who may not be aware of the underlying bigotry in their insistence on androcentric language and in their resistance to language change.&lt;/p&gt;
 </description>

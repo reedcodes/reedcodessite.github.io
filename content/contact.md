@@ -4,4 +4,4 @@ title = "Contact"
 menu = "main"
 +++
 
-Wanna get in touch? Great! You can fill out the contact form with a comprehensive message, or you can find me online at one of many social and professional networking sites.
+You can fill out the contact form with a comprehensive message, or you can find me online at one of many social and professional networking sites.

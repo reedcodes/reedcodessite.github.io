@@ -16,7 +16,7 @@ screenalt = "Facing Bipolar content page"
 
 FacingBipolar was an unbranded website for AstraZeneca, aimed at providing extensive and reliable information to patients diagnosed with bipolar disorder. The project kicked off in summer 2008 with a diverse team, encompassing account, marketing, creative, and technology departments. As the lead front-end developer on the project, I collaborated with our technology lead on the basic front-end assets and code standards for the website, and with our senior back-end developer on the template framework. The website launched in early spring 2009.
 
-FacingBipolar won an award in 2009 for [outstanding achievement in web development](http://advertisingcompetition.org/winner.asp?eid=13594) under the Pharmaceuticals category.
+FacingBipolar won [an award](http://advertisingcompetition.org/winner.asp?eid=13594) in 2009 for outstanding achievement in web development under the Pharmaceuticals category.
 
 Development was done in Visual Studio using ASP.net. The back-end developer built the template framework, and I broke out our components into reusable blocks, such as header, footer, and callouts. The MooTools library imported minimal JavaScript functionality, and [sIFR](https://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement) provided custom fonts for page headlines.
 
