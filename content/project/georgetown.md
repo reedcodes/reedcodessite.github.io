@@ -12,6 +12,10 @@ exturl = "https://www.georgetown.edu/"
 
 screen = "georgetown"
 screenalt = "Georgetown University content page"
+
+[menu]
+[menu.main]
+parent = "project"
 +++
 
 The core codebase for nearly all Georgetown University websites is maintained by the Web Services team, and consists of a Drupal multisite environment. Alternatively, the main university website, referred to as its Top Tier, lives in a separate repository, although it shares a similar codebase and base theme as other university websites. In late 2014, the Office of Communications decided to reskin the Top Tier, keeping the existing Drupal codebase.

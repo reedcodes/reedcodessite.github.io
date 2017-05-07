@@ -12,6 +12,10 @@ download = "engl386.they"
 
 screen = "singular-they"
 screenalt = "tweet from Merriam-Webster defending its use of singular they"
+
+[menu]
+[menu.main]
+parent = "project"
 +++
 
 This project was the final thesis paper for a course in the history of the English language I took in Summer 2016.

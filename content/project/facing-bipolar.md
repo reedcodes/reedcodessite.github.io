@@ -12,6 +12,10 @@ exturl = "https://web-beta.archive.org/web/20090308030155/http://www.facingbipol
 
 screen = "facing-bipolar"
 screenalt = "Facing Bipolar content page"
+
+[menu]
+[menu.main]
+parent = "project"
 +++
 
 FacingBipolar was an unbranded website for AstraZeneca, aimed at providing extensive and reliable information to patients diagnosed with bipolar disorder. The project kicked off in summer 2008 with a diverse team, encompassing account, marketing, creative, and technology departments. As the lead front-end developer on the project, I collaborated with our technology lead on the basic front-end assets and code standards for the website, and with our senior back-end developer on the template framework. The website launched in early spring 2009.

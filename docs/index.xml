@@ -6,23 +6,12 @@
     <description>Recent content on Reed Piernock: front-end web developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2017 23:54:42 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Contact</title>
-      <link>/contact/</link>
-      <pubDate>Mon, 24 Apr 2017 23:54:42 +0000</pubDate>
-      
-      <guid>/contact/</guid>
-      <description>&lt;p&gt;You can fill out the contact form with a comprehensive message, or you can find me online at one of many social and professional networking sites.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>About</title>
       <link>/about/</link>
-      <pubDate>Wed, 19 Apr 2017 23:46:41 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
       <description>&lt;p&gt;My name is Reed, and I am a front-end web developer in Washington DC.&lt;/p&gt;
@@ -36,6 +25,16 @@
 &lt;p&gt;Although responsive and accessible HTML and CSS is my main code focus, I also work with JavaScript libraries and frameworks, such as jQuery and Bootstrap. My upcoming objectives revolve around Drupal 8 features, such as Backbone.js and the Twig template engine.&lt;/p&gt;
 
 &lt;p&gt;I hope upon all that is good in this world that we never go back to table-based layouts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>&lt;p&gt;You can fill out the contact form with a comprehensive message, or you can find me online at one of many social and professional networking sites.&lt;/p&gt;
 </description>
     </item>
     

@@ -12,6 +12,10 @@ download = "cmst388.proposal"
 
 screen = "cheap-collegiate"
 screenalt = "The Cheap Collegiate wireframes"
+
+[menu]
+[menu.main]
+parent = "project"
 +++
 
 This website proposal was the penultimate project for a JavaScript course I took in Fall 2015.

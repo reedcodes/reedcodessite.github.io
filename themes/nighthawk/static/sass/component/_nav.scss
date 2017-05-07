@@ -2,8 +2,19 @@ nav {
     overflow: auto;
     width: 100%;
     background: $white;
+    
+    .fa {
+        font-size: 2rem;
+    }
+    
+    .home {
+        float: lelft;
+        .text { display: none; }
+    }
+    
     .nav {
-        margin: 1rem 0 0;
+        float: right;
+        margin: 0;
         padding: 0;
         letter-spacing: -4px;
         li {
@@ -12,15 +23,44 @@ nav {
             letter-spacing: 0;
             &:first-child { margin: 0; }
         }
+        .fa { display: none; }
     }
     
+    
+    
     @include breakpoint($sm) {
-        .home {
-            float: left;
+        .fa {
+            margin-right: 0.5rem;
+            font-size: 1rem;
         }
+        .home .text { display: inline; }
         .nav {
-            float: right;
-            margin-top: 0;
+            .fa { display: inline; }
+            li { margin-left: 2rem; }
         }
     }
+    
+    
+    
+    // .nav {
+    //     margin: 1rem 0 0;
+    //     padding: 0;
+    //     letter-spacing: -4px;
+    //     li {
+    //         display: inline;
+    //         margin-left: 1.5rem;
+    //         letter-spacing: 0;
+    //         &:first-child { margin: 0; }
+    //     }
+    // }
+    
+    // @include breakpoint($sm) {
+    //     .home {
+    //         float: left;
+    //     }
+    //     .nav {
+    //         float: right;
+    //         margin-top: 0;
+    //     }
+    // }
 }

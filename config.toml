@@ -27,7 +27,8 @@ languageCode    	= "en-us"
 	codecadamy		= "https://www.codecademy.com/reedcodes"
 
 [[menu.main]]
-	name			= "Projects"
-	identifier		= "project"
-	weight			= -1
-	url				= "/project/"
+	name		= "Projects"
+	identifier	= "project"
+	pre			= "file-text"
+	weight		= -1
+	url			= "/project/"

@@ -12,6 +12,10 @@ download = "cmst301.wizards"
 
 screen = "wizards"
 screenalt = "three Harry Potter fans in costumes"
+
+[menu]
+[menu.main]
+parent = "project"
 +++
 
 This project was the final thesis paper for a course in media and culture I took in Spring 2013.

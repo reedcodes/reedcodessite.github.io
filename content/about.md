@@ -1,7 +1,7 @@
 +++
-date = "2017-04-19T23:46:41Z"
 title = "About"
-menu = "main"
+[menu.main]
+    pre	= "user"
 +++
 
 My name is Reed, and I am a front-end web developer in Washington DC.

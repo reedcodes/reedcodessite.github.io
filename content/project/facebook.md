@@ -12,6 +12,10 @@ download = "ifsm304.facebook"
 
 screen = "facebook"
 screenalt = "Facebook's sign-up homepage"
+
+[menu]
+[menu.main]
+parent = "project"
 +++
 
 This project was a two-part case study for an ethics course I took in Fall 2016.

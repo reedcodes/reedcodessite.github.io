@@ -12,6 +12,10 @@ exturl = "https://mccourt.georgetown.edu/"
 
 screen = "mccourt"
 screenalt = "McCourt School of Public Policy landing page"
+
+[menu]
+[menu.main]
+parent = "project"
 +++
 
 The core codebase for nearly all Georgetown University websites is maintained by the Web Services team, and consists of a Drupal multisite environment. 
