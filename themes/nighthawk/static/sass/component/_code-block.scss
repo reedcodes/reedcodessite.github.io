@@ -9,9 +9,10 @@
 
 
 
-.code-select {
+.code-select.inline {
     margin: 0;
     background: $cream;
+    font-size: 0.9rem;
     text-align: right;
     li {
         margin: 0;

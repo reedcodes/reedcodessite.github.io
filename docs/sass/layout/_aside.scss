@@ -2,6 +2,11 @@ main.aside {
     
     overflow: hidden;
     
+    @include breakpoint(0 $md) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     @include breakpoint($md) {
         section {
             float: left;
