@@ -1,6 +1,6 @@
 +++
 title = "Facebook's Real Name Policy and Its Ethical Implications"
-weight = 5
+weight = 6
 
 year = "2016"
 org = "University of Maryland, University College"

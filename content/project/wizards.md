@@ -1,6 +1,6 @@
 +++
 title = "Wizards, Muggles, and the Internet"
-weight = 6
+weight = 7
 
 year = "2013"
 org = "University of Maryland, University College"

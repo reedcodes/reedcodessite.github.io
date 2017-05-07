@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> The Cheap Collegiate (www) | Reed Piernock: front-end web developer </title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo|Inconsolata|Lora" />
+    <link rel="stylesheet" href="/css/main.css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css" media="print" />
+    
+    <script src="/js/scripts.min.js"></script>
+    <script src="https://use.fontawesome.com/a4103867e2.js"></script>
+</head>
+
+<body class=" page">
+
+<nav>
+    <div class="container">
+        <a class="home" href="/"><span class="fa fa-fw fa-star"></span><span class="text">reedcodes.com</span></a>
+        <ul class="nav">
+        
+        
+            <li><a class="active" href="/project/"><span class="fa fa-fw fa-file-text"></span><span class="text">Projects</span></a></li>
+        
+            <li><a href="/about/"><span class="fa fa-fw fa-user"></span><span class="text">About</span></a></li>
+        
+            <li><a href="/contact/"><span class="fa fa-fw fa-comment"></span><span class="text">Contact</span></a></li>
+        
+        </ul>
+    </div>
+</nav>
+
+<header>
+    <div class="container">
+        <h1 class="title"><a href="/"><img class="logo" src="/img/reed-piernock.png" alt="Reed Piernock" /></a></h1>
+        
+    </div>
+</header>
+
+<main>
+
+
+<section id="project">
+    <div class="container project-wrap">
+
+        <h1>The Cheap Collegiate (www)</h1>
+    
+        <div class="project-img">
+            <a href="/assets/artifacts/cheap-collegiate-www.png"><img src="/assets/artifacts/cheap-collegiate-www.png" alt="Overview image of The Cheap Collegiate (www)" /></a>
+        </div>
+        
+        <div class="project-info">
+            
+            <ul class="block">
+                <li><b>Portfolio piece:</b> #5</li>
+                <li><b>Published:</b> 2015</li>
+                <li><b>Created for:</b> University of Maryland, University College (CMST 388 Fundamentals of JavaScript)</li>
+                <li><b>Capabilities:</b> HTML, CSS, JavaScript</li>
+            </ul>
+            
+            <p>This project is available online at <a href="https://reedcodes.github.io/cmst388/">https://reedcodes.github.io/cmst388/</a>.
+                    </p>
+            
+            <p>This website was the final project for a JavaScript course I took in Fall 2015.</p>
+
+<p>The goal was to create a fictional website demonstrating the practical client-side scripting skills learned in the course. The website would follow the project plan outlined in the previously-submitted website proposal assignment. In addition to illustrating strong layout, design, and usability techniques, students were instructed to include a banner with rotating images, three instances of interactive multimedia, and a minimum of two forms.</p>
+
+<p>I created a fictional bookstore near a college campus, called The Cheap Collegiate. I designed each page of the website to include a large image banner, and coded the script to rotate through an array of photographs on the homepage. The site incorporated multimedia with a YouTube video, a Google map, and a Spotify playlist. The About page included a price comparison form, while the Contact page employed client-side form validation.</p>
+
+<p>The Store Events page listed a variety of different event types, distinguished by a class on the container. I wrote the JavaScript functionality to insert a <code>&lt;select&gt;</code> on the page; when a user clicked on an event type in the <code>&lt;select&gt;</code>, only those events would display.</p>
+
+<div class="code-example">
+    
+    <h2>Code example of event type selection</h2>
+    
+    <ul class="code-select inline">
+        <li><a href="#code-screenshot">Screenshot</a></li>
+        <li><a href="#code-html">HTML</a></li>
+        <li><a href="#code-javascript">JavaScript</a></li>
+    </ul>
+    
+    
+
+    <div class="code-block" id="code-screenshot" aria-label="Screenshot">
+    
+    
+        <img class="img-example" src="/assets/examples/cheap-collegiate-events.png" alt="Screenshot of store events on The Cheap Collegiate&#39;s website" />
+    
+    
+</div>
+    
+    <div class="code-block" id="code-html" aria-label="HTML">
+    
+    <pre><code class="language-html">&lt;form id=&quot;eventForm&quot; name=&quot;eventForm&quot;&gt;&lt;/form&gt;
+&lt;ul id=&quot;events&quot; class=&quot;boxes&quot;&gt;
+  &lt;li class=&quot;[sale]&quot;&gt;&lt;b&gt;Jan 4-17:&lt;/b&gt; &lt;span&gt;Back to School sale&lt;/span&gt;
+    &lt;p&gt;Stock up on essentials at the beginning of the semester for the best prices!&lt;/p&gt;&lt;/li&gt;
+  &lt;li class=&quot;notice&quot;&gt;&lt;b&gt;Jan 11:&lt;/b&gt; &lt;span&gt;Spring semester begins&lt;/span&gt;
+    &lt;p&gt;Make sure your textbooks match with the required reading lists we have in-store.&lt;/p&gt;&lt;/li&gt;
+  [...]
+&lt;/ul&gt;
+</code></pre>
+
+    
+</div>
+    
+    <div class="code-block" id="code-javascript" aria-label="JavaScript">
+    
+    <pre><code class="language-javascript">if( body.className == 'events' ) {
+  var eventTypes = [
+    ['instruction', 'Please select an event type to filter the list'],
+    ['all', 'Show all events'],
+    ['sale', 'Store sale'],
+    ['notice', 'Store notice'],
+    ['openmic', 'Open mic night'],
+    ['signing', 'Book &amp;amp; author signing'],
+    ['movie', 'Movie screening'],
+    ['bookclub', 'Book club'],
+    ['meetup', 'Meetups']
+  ];
+  document.eventForm.innerHTML = '&lt;select id=&quot;eventList&quot; name=&quot;eventList&quot;&gt;&lt;/select&gt;';
+  var eventOptions = '';
+  for( i = 0; i &lt; eventTypes.length; i++ ) {
+    eventOptions += '&lt;option value=&quot;' + eventTypes[i][0] + '&quot;&gt;' + eventTypes[i][1] + '&lt;/option&gt;';
+  }
+  document.eventForm.eventList.innerHTML = eventOptions;
+  document.eventForm.eventList.addEventListener('change', function(event) {
+    var selected = document.eventForm.eventList.value,
+      events = document.getElementById('events'),
+      eventBoxes = events.getElementsByTagName('li');
+    for( i = 0; i &lt; eventBoxes.length; i++ ) {
+      if( selected == 'all' ) {
+        eventBoxes[i].style.display = 'block';
+      } else if( selected == eventBoxes[i].className ) {
+        eventBoxes[i].style.display = 'block';
+      } else {
+        eventBoxes[i].style.display = 'none';
+      }
+    }
+  });
+}
+</code></pre>
+
+    
+</div>
+
+
+    
+</div>
+
+            
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer id="information" class="band-dark">
+    <div class="container">
+        <div class="boxes">
+            <div class="box">
+                <p class="text">reedcodes.com<br />
+                    Reed Piernock &copy; 2017</p>
+                <ul class="inline">
+    <li><a class="icon" href="https://github.com/reedcodes"><span class="fa fa-fw fa-github-square"></span> github</a></li>
+    <li><a class="icon" href="https://twitter.com/reedcodes"><span class="fa fa-fw fa-twitter-square"></span> twitter</a></li>
+    <li><a class="icon" href="https://www.linkedin.com/in/reedcodes"><span class="fa fa-fw fa-linkedin-square"></span> linkedin</a></li>
+</ul>
+            </div>
+            <div class="box box-two">
+                <p class="text"><a class="icon" href="https://github.com/reedcodes/reedcodessite.github.io"><span class="fa fa-fw fa-github"></span> View this site's source code</a></p>
+                <p class="text">This site is built with <a href="https://gohugo.io/">Hugo</a>, <a href="http://compass-style.org/">Compass</a>, <a href="https://jquery.com/">jQuery</a>, and <a href="http://gulpjs.com/">Gulp</a>. Assets include <a href="https://fonts.google.com/">Google Fonts</a> and <a href="http://fontawesome.io/">FontAwesome</a>. Hosting available through <a href="https://github.com/">GitHub</a> and domain via <a href="https://www.dreamhost.com/">DreamHost</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93892552-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="/js/scripts.min.js"></script>
+
+</body>
+</html>

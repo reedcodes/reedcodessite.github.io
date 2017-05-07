@@ -266,6 +266,101 @@ div#content div.photos img + img {
     </item>
     
     <item>
+      <title>The Cheap Collegiate (www)</title>
+      <link>/project/cheap-collegiate.www/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cheap-collegiate.www/</guid>
+      <description>&lt;p&gt;This website was the final project for a JavaScript course I took in Fall 2015.&lt;/p&gt;
+
+&lt;p&gt;The goal was to create a fictional website demonstrating the practical client-side scripting skills learned in the course. The website would follow the project plan outlined in the previously-submitted website proposal assignment. In addition to illustrating strong layout, design, and usability techniques, students were instructed to include a banner with rotating images, three instances of interactive multimedia, and a minimum of two forms.&lt;/p&gt;
+
+&lt;p&gt;I created a fictional bookstore near a college campus, called The Cheap Collegiate. I designed each page of the website to include a large image banner, and coded the script to rotate through an array of photographs on the homepage. The site incorporated multimedia with a YouTube video, a Google map, and a Spotify playlist. The About page included a price comparison form, while the Contact page employed client-side form validation.&lt;/p&gt;
+
+&lt;p&gt;The Store Events page listed a variety of different event types, distinguished by a class on the container. I wrote the JavaScript functionality to insert a &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; on the page; when a user clicked on an event type in the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;, only those events would display.&lt;/p&gt;
+
+&lt;div class=&#34;code-example&#34;&gt;
+    
+    &lt;h2&gt;Code example of event type selection&lt;/h2&gt;
+    
+    &lt;ul class=&#34;code-select inline&#34;&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-screenshot&#34;&gt;Screenshot&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-html&#34;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#code-javascript&#34;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    
+
+    &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
+    
+    
+        &lt;img class=&#34;img-example&#34; src=&#34;/assets/examples/cheap-collegiate-events.png&#34; alt=&#34;Screenshot of store events on The Cheap Collegiate&amp;#39;s website&#34; /&gt;
+    
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-html&#34; aria-label=&#34;HTML&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;form id=&amp;quot;eventForm&amp;quot; name=&amp;quot;eventForm&amp;quot;&amp;gt;&amp;lt;/form&amp;gt;
+&amp;lt;ul id=&amp;quot;events&amp;quot; class=&amp;quot;boxes&amp;quot;&amp;gt;
+  &amp;lt;li class=&amp;quot;[sale]&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Jan 4-17:&amp;lt;/b&amp;gt; &amp;lt;span&amp;gt;Back to School sale&amp;lt;/span&amp;gt;
+    &amp;lt;p&amp;gt;Stock up on essentials at the beginning of the semester for the best prices!&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class=&amp;quot;notice&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Jan 11:&amp;lt;/b&amp;gt; &amp;lt;span&amp;gt;Spring semester begins&amp;lt;/span&amp;gt;
+    &amp;lt;p&amp;gt;Make sure your textbooks match with the required reading lists we have in-store.&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+  [...]
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+    
+    &lt;div class=&#34;code-block&#34; id=&#34;code-javascript&#34; aria-label=&#34;JavaScript&#34;&gt;
+    
+    &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;if( body.className == &#39;events&#39; ) {
+  var eventTypes = [
+    [&#39;instruction&#39;, &#39;Please select an event type to filter the list&#39;],
+    [&#39;all&#39;, &#39;Show all events&#39;],
+    [&#39;sale&#39;, &#39;Store sale&#39;],
+    [&#39;notice&#39;, &#39;Store notice&#39;],
+    [&#39;openmic&#39;, &#39;Open mic night&#39;],
+    [&#39;signing&#39;, &#39;Book &amp;amp;amp; author signing&#39;],
+    [&#39;movie&#39;, &#39;Movie screening&#39;],
+    [&#39;bookclub&#39;, &#39;Book club&#39;],
+    [&#39;meetup&#39;, &#39;Meetups&#39;]
+  ];
+  document.eventForm.innerHTML = &#39;&amp;lt;select id=&amp;quot;eventList&amp;quot; name=&amp;quot;eventList&amp;quot;&amp;gt;&amp;lt;/select&amp;gt;&#39;;
+  var eventOptions = &#39;&#39;;
+  for( i = 0; i &amp;lt; eventTypes.length; i++ ) {
+    eventOptions += &#39;&amp;lt;option value=&amp;quot;&#39; + eventTypes[i][0] + &#39;&amp;quot;&amp;gt;&#39; + eventTypes[i][1] + &#39;&amp;lt;/option&amp;gt;&#39;;
+  }
+  document.eventForm.eventList.innerHTML = eventOptions;
+  document.eventForm.eventList.addEventListener(&#39;change&#39;, function(event) {
+    var selected = document.eventForm.eventList.value,
+      events = document.getElementById(&#39;events&#39;),
+      eventBoxes = events.getElementsByTagName(&#39;li&#39;);
+    for( i = 0; i &amp;lt; eventBoxes.length; i++ ) {
+      if( selected == &#39;all&#39; ) {
+        eventBoxes[i].style.display = &#39;block&#39;;
+      } else if( selected == eventBoxes[i].className ) {
+        eventBoxes[i].style.display = &#39;block&#39;;
+      } else {
+        eventBoxes[i].style.display = &#39;none&#39;;
+      }
+    }
+  });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+    
+&lt;/div&gt;
+
+
+    
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Facebook&#39;s Real Name Policy and Its Ethical Implications</title>
       <link>/project/facebook/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
