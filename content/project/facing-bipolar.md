@@ -24,7 +24,7 @@ FacingBipolar won [an award](http://advertisingcompetition.org/winner.asp?eid=13
 
 Development was done in Visual Studio using ASP.net. The back-end developer built the template framework, and I broke out our components into reusable blocks, such as header, footer, and callouts. The MooTools library imported minimal JavaScript functionality, and [sIFR](https://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement) provided custom fonts for page headlines.
 
-One feature of the website was the inclusion of images designed to look like sticky notes and photos scattered across a desk. To accomplish this effect, the images were saved as high-quality PNG files that could support alpha-channel transparency, while HTMl and CSS was written to allow the pullquotes to be read in the regular flow of content while also appearing slightly disorganized.
+One feature of the website was the inclusion of images designed to look like sticky notes and photos scattered across a desk. To accomplish this effect, the images were saved as high-quality PNG files that could support alpha-channel transparency, while HTML and CSS was written to allow the pullquotes to be read in the regular flow of content while also appearing slightly disorganized.
 
 {{< code-example "pullquote photos" HTML CSS >}}
 

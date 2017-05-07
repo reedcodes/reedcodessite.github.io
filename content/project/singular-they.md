@@ -20,7 +20,7 @@ parent = "project"
 
 This project was the final thesis paper for a course in the history of the English language I took in Summer 2016.
 
-The course focused on the linguistic heritage of English. From its Proto-Indo-European roots through today, the language is ever evolving as seen in changes to expressions and structure due to influences from contemporary issues of all concerns, social, local, global, and political.
+The course focused on the linguistic heritage of English. From its Proto-Indo-European roots through today, the language is ever evolving, as seen in changes to expressions and structure due to influences from contemporary issues of all concerns, social, local, global, and political.
 
 The instructions for the final thesis paper directed students to choose a topic briefly covered in class and to comment on that topic through detailed research and analysis. One such topic was gender bias and gender neutrality; my resulting paper focused on the current contention over the use of singular _they_ in formal and casual language, and the greater issues of pronoun usage (he/she/they) and gender in cultural language norms.
 

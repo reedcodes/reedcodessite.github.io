@@ -225,7 +225,7 @@ $(fullnavMain).find(&#39;&amp;gt; a span&#39;).live(&#39;click&#39;, function() 
 
 &lt;p&gt;Development was done in Visual Studio using ASP.net. The back-end developer built the template framework, and I broke out our components into reusable blocks, such as header, footer, and callouts. The MooTools library imported minimal JavaScript functionality, and &lt;a href=&#34;https://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement&#34;&gt;sIFR&lt;/a&gt; provided custom fonts for page headlines.&lt;/p&gt;
 
-&lt;p&gt;One feature of the website was the inclusion of images designed to look like sticky notes and photos scattered across a desk. To accomplish this effect, the images were saved as high-quality PNG files that could support alpha-channel transparency, while HTMl and CSS was written to allow the pullquotes to be read in the regular flow of content while also appearing slightly disorganized.&lt;/p&gt;
+&lt;p&gt;One feature of the website was the inclusion of images designed to look like sticky notes and photos scattered across a desk. To accomplish this effect, the images were saved as high-quality PNG files that could support alpha-channel transparency, while HTML and CSS was written to allow the pullquotes to be read in the regular flow of content while also appearing slightly disorganized.&lt;/p&gt;
 
 &lt;div class=&#34;code-example&#34;&gt;
     
@@ -337,7 +337,7 @@ div#content div.photos img + img {
       <guid>/project/singular-they/</guid>
       <description>&lt;p&gt;This project was the final thesis paper for a course in the history of the English language I took in Summer 2016.&lt;/p&gt;
 
-&lt;p&gt;The course focused on the linguistic heritage of English. From its Proto-Indo-European roots through today, the language is ever evolving as seen in changes to expressions and structure due to influences from contemporary issues of all concerns, social, local, global, and political.&lt;/p&gt;
+&lt;p&gt;The course focused on the linguistic heritage of English. From its Proto-Indo-European roots through today, the language is ever evolving, as seen in changes to expressions and structure due to influences from contemporary issues of all concerns, social, local, global, and political.&lt;/p&gt;
 
 &lt;p&gt;The instructions for the final thesis paper directed students to choose a topic briefly covered in class and to comment on that topic through detailed research and analysis. One such topic was gender bias and gender neutrality; my resulting paper focused on the current contention over the use of singular &lt;em&gt;they&lt;/em&gt; in formal and casual language, and the greater issues of pronoun usage (he/she/they) and gender in cultural language norms.&lt;/p&gt;
 
