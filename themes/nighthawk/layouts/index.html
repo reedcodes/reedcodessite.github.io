@@ -5,6 +5,7 @@
 <section id="about" class="band-light">
     <div class="container">
         <h1 class="hidden">About</h1>
+        <img class="profile-photo" src="{{ .Site.BaseURL }}img/{{ .Site.Params.photo }}" />
         <p>{{ .Site.Params.summary }}</p>
         <p>{{ .Site.Params.goals }} <a href="{{ .Site.BaseURL }}about/">Discover more about me.</a></p>
     </div>

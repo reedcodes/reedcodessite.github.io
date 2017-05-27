@@ -12,6 +12,8 @@ languageCode    	= "en-us"
     name        	= "Reed Piernock"
     tagline     	= "Creative presentation-layer developer committed to beautifully crafted front-end code"
     
+    photo			= "reed-profile.jpg"
+    
     summary			= "My name is Reed, and I am a web developer in Washington DC. I've been specializing in front-end code since the turn of the century, working with small businesses, government agencies, digital marketing firms, and institutes of higher education. Mobile first, responsive design, and progressive enhancement are just a few of my favorite strategies."
     goals			= "I am keenly interested in clean code, especially as it relates to usability and accessibility, but I don't let that frighten me off learning the latest technologies."
     
