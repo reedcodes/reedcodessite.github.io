@@ -1,66 +1,43 @@
 nav {
-    overflow: auto;
-    width: 100%;
-    background: $white;
-    
+  overflow: auto;
+  width: 100%;
+  background: $white;
+  
+  .fa {
+    font-size: 2rem;
+  }
+  
+  .home {
+    float: lelft;
+    .text { display: none; }
+  }
+  
+  .nav {
+    float: right;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -4px;
+    li {
+      display: inline;
+      margin-left: 1rem;
+      letter-spacing: 0;
+      &:first-child { margin: 0; }
+    }
+    .fa { display: none; }
+  }
+  
+  
+  
+  @include breakpoint($sm) {
     .fa {
-        font-size: 2rem;
+      margin-right: 0.5rem;
+      font-size: 1rem;
     }
-    
-    .home {
-        float: lelft;
-        .text { display: none; }
-    }
-    
+    .home .text { display: inline; }
     .nav {
-        float: right;
-        margin: 0;
-        padding: 0;
-        letter-spacing: -4px;
-        li {
-            display: inline;
-            margin-left: 1rem;
-            letter-spacing: 0;
-            &:first-child { margin: 0; }
-        }
-        .fa { display: none; }
+      .fa { display: inline; }
+      li { margin-left: 2rem; }
     }
-    
-    
-    
-    @include breakpoint($sm) {
-        .fa {
-            margin-right: 0.5rem;
-            font-size: 1rem;
-        }
-        .home .text { display: inline; }
-        .nav {
-            .fa { display: inline; }
-            li { margin-left: 2rem; }
-        }
-    }
-    
-    
-    
-    // .nav {
-    //     margin: 1rem 0 0;
-    //     padding: 0;
-    //     letter-spacing: -4px;
-    //     li {
-    //         display: inline;
-    //         margin-left: 1.5rem;
-    //         letter-spacing: 0;
-    //         &:first-child { margin: 0; }
-    //     }
-    // }
-    
-    // @include breakpoint($sm) {
-    //     .home {
-    //         float: left;
-    //     }
-    //     .nav {
-    //         float: right;
-    //         margin-top: 0;
-    //     }
-    // }
+  }
+  
 }

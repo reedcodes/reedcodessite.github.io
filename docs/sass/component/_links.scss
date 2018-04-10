@@ -1,38 +1,65 @@
-nav a {
-    display: inline-block;
-    &:hover, &:focus {
-        border-bottom: 0.25rem solid $green;
-    }
-    &.active {
-        border-bottom: 0.25rem solid $blue;
-        color: $blue;
-    }
+%link {
+  display: inline-block;
+  @include transition-property(transform, border, background-color, color);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease);
+  border-bottom: 0.125rem solid $blue;
+  color: $blue;
+  font-weight: bold;
+  line-height: 0.875;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $red;
+    background: tint($black, 95%);
+    color: $red;
+  }
+}
+
+%link-light {
+  border-bottom-color: $yellow;
+  color: $yellow;
+  &:hover,
+  &:focus {
+    border-bottom-color: $white;
+    background-color: inherit;
+    color: $white;
+  }
 }
 
 
 
-section a {
-    display: inline-block;
-    border-bottom: 0.125rem solid $blue;
-    line-height: 0.875;
+a {
+  @extend %link;
+}
+
+.icon {
+    border: none;
+}
+
+
+
+nav a {
+  border-bottom-width: 0;
+  line-height: inherit;
+  &:hover, &:focus {
+    border-bottom-width: 0.25rem;
+    border-bottom-color: $red;
+  }
+  &.active {
+    border-bottom-width: 0.25rem;
+    border-bottom-color: $blue;
+    color: $blue;
     &:hover, &:focus {
-        border-bottom-color: $green;
+      color: $red;
+      border-bottom-color: $red;
     }
+  }
 }
 
 
 
 footer a {
-    display: inline-block;
-    border-bottom: 0.125rem solid $cream;
-    line-height: 0.875;
-    &:hover, &:focus {
-        border-bottom-color: $cream;
-    }
-}
-
-
-
-.icon {
-    border: none;
+  @extend %link-light;
 }

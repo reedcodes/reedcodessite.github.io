@@ -1,26 +1,16 @@
 * {
-    position: relative;
-    @include box-sizing(border-box);
+  position: relative;
+  @include box-sizing(border-box);
 }
 
 
 
 body {
-    margin: 0;
-    padding: 0;
-    background: $white;
-    color: $black;
-    font-size: 18px;
-    line-height: 1.4;
-    font-family: "Heebo", Helvetica, Arial, sans-serif;
-}
-
-a {
-    @include transition(all, 0.3s, ease);
-    color: $blue;
-    font-weight: bold;
-    text-decoration: none;
-    &:focus, &:hover {
-        color: $green;
-    }
+  margin: 0;
+  padding: 0;
+  background: $white;
+  color: $black;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
 }

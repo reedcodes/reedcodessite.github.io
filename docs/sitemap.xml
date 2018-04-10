@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/</loc>
+    <loc>/docs/</loc>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>/docs/about/</loc>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>/docs/contact/</loc>
   </url>
   
   <url>
-    <loc>/project/mccourt/</loc>
+    <loc>/docs/project/mccourt/</loc>
   </url>
   
   <url>
-    <loc>/project/georgetown/</loc>
+    <loc>/docs/project/georgetown/</loc>
   </url>
   
   <url>
-    <loc>/project/facing-bipolar/</loc>
+    <loc>/docs/project/facing-bipolar/</loc>
   </url>
   
   <url>
-    <loc>/project/cheap-collegiate/</loc>
+    <loc>/docs/project/cheap-collegiate/</loc>
   </url>
   
   <url>
-    <loc>/project/cheap-collegiate.www/</loc>
+    <loc>/docs/project/cheap-collegiate.www/</loc>
   </url>
   
   <url>
-    <loc>/project/facebook/</loc>
+    <loc>/docs/project/facebook/</loc>
   </url>
   
   <url>
-    <loc>/project/wizards/</loc>
+    <loc>/docs/project/wizards/</loc>
   </url>
   
   <url>
-    <loc>/project/singular-they/</loc>
+    <loc>/docs/project/singular-they/</loc>
   </url>
   
 </urlset>

@@ -1,39 +1,37 @@
-.btn {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border: 1px solid;
-    @include border-radius(0.25rem);
-    line-height: inherit;
-    &:hover, &:focus {
-        text-decoration: none;
-    }
+%btn {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  @include border-radius(0.5rem);
+  line-height: inherit;
+  &:hover, &:focus {
+    transform: scale(1.0625);
+    background: $red;
+    color: $white;
+  }
 }
 
+
+
 .btn-dark {
-    border-color: $black;
-    background: $blue;
-    color: $white;
-    &:hover, &:focus {
-        border-color: $black;
-        background: darken($blue, 10%);
-        color: $cream;
-    }
+  @extend %btn;
+  background: $blue;
+  color: $yellow;
 }
-.btn-light {
-    border-color: $black;
-    background: $yellow;
-    color: $blue;
-    &:hover, &:focus {
-        border-color: $black;
-        color: $black;
-        background: darken($yellow, 10%);
-    }
+
+.btn-outline {
+  @extend %btn;
+  border: 0.1rem solid $yellow;
+  color: $yellow;
+    &:hover,
+    &:focus {
+      border-color: $white;
+  }
 }
 
 .btn-small { font-size: 0.9rem; }
 .btn-large { font-size: 1.5rem; }
 
 .btn span {
-    margin-right: 0.5rem;
-    vertical-align: text-bottom;
+  margin-right: 0.5rem;
+  vertical-align: text-bottom;
 }

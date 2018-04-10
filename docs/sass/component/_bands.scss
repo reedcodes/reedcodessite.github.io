@@ -1,12 +1,9 @@
 .band-dark {
     padding: 1rem 0;
-    background: $purple;
+    background: $blue;
     color: $white;
-    a {
-        color: $cream;
-        &:hover, &:focus {
-            color: $white;
-        }
+    a:not([class*="btn"]) {
+        @extend %link-light;
     }
 }
 
