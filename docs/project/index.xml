@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Reed Piernock: front-end web developer</title>
-    <link>/docs/project/</link>
+    <link>/project/</link>
     <description>Recent content in Projects on Reed Piernock: front-end web developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/docs/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>McCourt School of Public Policy</title>
-      <link>/docs/project/mccourt/</link>
+      <link>/project/mccourt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/mccourt/</guid>
+      <guid>/project/mccourt/</guid>
       <description>&lt;p&gt;The core codebase for nearly all Georgetown University websites is maintained by the Web Services team, and consists of a Drupal multisite environment.&lt;/p&gt;
 
 &lt;p&gt;When end users and content editors requested greater flexibility for layouts and components on their websites, Web Services determined that additional themes were needed. The McCourt School of Public Policy, one of several major schools under Georgetown University, volunteered as the first group to use the new theme, and worked closely with Web Services on conceptualizing new features, styles, layouts, and functionality.&lt;/p&gt;
@@ -39,7 +39,7 @@
     &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
     
     
-        &lt;img class=&#34;img-example&#34; src=&#34;/docs/docs/assets/examples/mccourt-about.png&#34; alt=&#34;Screenshot of image overlay cards on McCourt&amp;#39;s website&#34; /&gt;
+        &lt;img class=&#34;img-example&#34; src=&#34;/assets/examples/mccourt-about.png&#34; alt=&#34;Screenshot of image overlay cards on McCourt&amp;#39;s website&#34; /&gt;
     
     
 &lt;/div&gt;
@@ -90,10 +90,10 @@
     
     <item>
       <title>Georgetown University</title>
-      <link>/docs/project/georgetown/</link>
+      <link>/project/georgetown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/georgetown/</guid>
+      <guid>/project/georgetown/</guid>
       <description>&lt;p&gt;The core codebase for nearly all Georgetown University websites is maintained by the Web Services team, and consists of a Drupal multisite environment. Alternatively, the main university website, referred to as its Top Tier, lives in a separate repository, although it shares a similar codebase and base theme as other university websites. In late 2014, the Office of Communications decided to reskin the Top Tier, keeping the existing Drupal codebase.&lt;/p&gt;
 
 &lt;p&gt;The project kicked off in early 2015, just after the return from winter break. As the senior web front-end developer on the project, I collaborated mainly with the digital strategist on the basic redesign for the new theme. The updated website launched in July 2015.&lt;/p&gt;
@@ -117,7 +117,7 @@
     &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
     
     
-        &lt;img class=&#34;img-example&#34; src=&#34;/docs/docs/assets/examples/georgetown-menu.png&#34; alt=&#34;Screenshot of full navigation menu on Georgetown University&amp;#39;s website&#34; /&gt;
+        &lt;img class=&#34;img-example&#34; src=&#34;/assets/examples/georgetown-menu.png&#34; alt=&#34;Screenshot of full navigation menu on Georgetown University&amp;#39;s website&#34; /&gt;
     
     
 &lt;/div&gt;
@@ -185,10 +185,10 @@ $(fullnavMain).find(&#39;&amp;gt; a span&#39;).live(&#39;click&#39;, function() 
     
     <item>
       <title>Facing Bipolar</title>
-      <link>/docs/project/facing-bipolar/</link>
+      <link>/project/facing-bipolar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/facing-bipolar/</guid>
+      <guid>/project/facing-bipolar/</guid>
       <description>&lt;p&gt;FacingBipolar was an unbranded website for AstraZeneca, aimed at providing extensive and reliable information to patients diagnosed with bipolar disorder. The project kicked off in summer 2008 with a diverse team, encompassing account, marketing, creative, and technology departments. As the lead front-end developer on the project, I collaborated with our technology lead on the basic front-end assets and code standards for the website, and with our senior back-end developer on the template framework. The website launched in early spring 2009.&lt;/p&gt;
 
 &lt;p&gt;FacingBipolar won &lt;a href=&#34;http://advertisingcompetition.org/winner.asp?eid=13594&#34;&gt;an award&lt;/a&gt; in 2009 for outstanding achievement in web development under the Pharmaceuticals category.&lt;/p&gt;
@@ -212,7 +212,7 @@ $(fullnavMain).find(&#39;&amp;gt; a span&#39;).live(&#39;click&#39;, function() 
     &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
     
     
-        &lt;img class=&#34;img-example&#34; src=&#34;/docs/docs/assets/examples/facingbipolar-pullquote.png&#34; alt=&#34;Screenshot of pullquotes on FacingBipolar&amp;#39;s website&#34; /&gt;
+        &lt;img class=&#34;img-example&#34; src=&#34;/assets/examples/facingbipolar-pullquote.png&#34; alt=&#34;Screenshot of pullquotes on FacingBipolar&amp;#39;s website&#34; /&gt;
     
     
 &lt;/div&gt;
@@ -253,10 +253,10 @@ div#content div.photos img + img {
     
     <item>
       <title>The Cheap Collegiate</title>
-      <link>/docs/project/cheap-collegiate/</link>
+      <link>/project/cheap-collegiate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/cheap-collegiate/</guid>
+      <guid>/project/cheap-collegiate/</guid>
       <description>&lt;p&gt;This website proposal was the penultimate project for a JavaScript course I took in Fall 2015.&lt;/p&gt;
 
 &lt;p&gt;The goal was to create a proposal for a fictional website that would then be developed as the final project. The main objective was to demonstrate good project planning skills, and the proposal needed to include a website title, project description, content development, design considerations, and a detailed project plan. Additionally, the proposal also required a storyboard or wireframe that would illustrate a sketch for each page of the website and identify the site&amp;rsquo;s architecture and structure. Other website elements needed to be analyzed, such as color scheme, graphics, typeface, video or audio, and interactivity.&lt;/p&gt;
@@ -267,10 +267,10 @@ div#content div.photos img + img {
     
     <item>
       <title>The Cheap Collegiate (www)</title>
-      <link>/docs/project/cheap-collegiate.www/</link>
+      <link>/project/cheap-collegiate.www/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/cheap-collegiate.www/</guid>
+      <guid>/project/cheap-collegiate.www/</guid>
       <description>&lt;p&gt;This website was the final project for a JavaScript course I took in Fall 2015.&lt;/p&gt;
 
 &lt;p&gt;The goal was to create a fictional website demonstrating the practical client-side scripting skills learned in the course. The website would follow the project plan outlined in the previously-submitted website proposal assignment. In addition to illustrating strong layout, design, and usability techniques, students were instructed to include a banner with rotating images, three instances of interactive multimedia, and a minimum of two forms.&lt;/p&gt;
@@ -294,7 +294,7 @@ div#content div.photos img + img {
     &lt;div class=&#34;code-block&#34; id=&#34;code-screenshot&#34; aria-label=&#34;Screenshot&#34;&gt;
     
     
-        &lt;img class=&#34;img-example&#34; src=&#34;/docs/docs/assets/examples/cheap-collegiate-events.png&#34; alt=&#34;Screenshot of store events on The Cheap Collegiate&amp;#39;s website&#34; /&gt;
+        &lt;img class=&#34;img-example&#34; src=&#34;/assets/examples/cheap-collegiate-events.png&#34; alt=&#34;Screenshot of store events on The Cheap Collegiate&amp;#39;s website&#34; /&gt;
     
     
 &lt;/div&gt;
@@ -362,10 +362,10 @@ div#content div.photos img + img {
     
     <item>
       <title>Facebook&#39;s Real Name Policy and Its Ethical Implications</title>
-      <link>/docs/project/facebook/</link>
+      <link>/project/facebook/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/facebook/</guid>
+      <guid>/project/facebook/</guid>
       <description>&lt;p&gt;This project was a two-part case study for an ethics course I took in Fall 2016.&lt;/p&gt;
 
 &lt;p&gt;The first segment instructed students to consider a key IT-related ethical issue regarding privacy and to complete a matrix map for three normative ethics principles. The second segment directed students to use the information of the first paper to write a policy that would mitigate the ethical dilemma; the policy needed to address the purpose, scope, policy points, and policy enforcement.&lt;/p&gt;
@@ -376,10 +376,10 @@ div#content div.photos img + img {
     
     <item>
       <title>Wizards, Muggles, and the Internet</title>
-      <link>/docs/project/wizards/</link>
+      <link>/project/wizards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/wizards/</guid>
+      <guid>/project/wizards/</guid>
       <description>&lt;p&gt;This project was the final thesis paper for a course in media and culture I took in Spring 2013.&lt;/p&gt;
 
 &lt;p&gt;The course focused on the effect of emerging digital media technologies on both individuals and society, with a concentration on social media, participatory media, and local and global culture. The goal of the final thesis paper was to demonstrate a thorough understanding of society&amp;rsquo;s consumption of digital media by researching, analyzing, and presenting a comprehensive commentary on any topic related to social issues with digital media.&lt;/p&gt;
@@ -396,10 +396,10 @@ div#content div.photos img + img {
     
     <item>
       <title>Oppression of Gender Non-conformity in Arguments Against Singular They</title>
-      <link>/docs/project/singular-they/</link>
+      <link>/project/singular-they/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/project/singular-they/</guid>
+      <guid>/project/singular-they/</guid>
       <description>&lt;p&gt;This project was the final thesis paper for a course in the history of the English language I took in Summer 2016.&lt;/p&gt;
 
 &lt;p&gt;The course focused on the linguistic heritage of English. From its Proto-Indo-European roots through today, the language is ever evolving, as seen in changes to expressions and structure due to influences from contemporary issues of all concerns, social, local, global, and political.&lt;/p&gt;

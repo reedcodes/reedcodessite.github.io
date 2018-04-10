@@ -1,37 +1,37 @@
 .code-example {
-    h2 {
-        margin: 0;
-        padding: 0.5rem 1rem;
-        background: $blue;
-        color: $white;
-    }
+  h2 {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background: $blue;
+    color: $white;
+  }
 }
 
 
 
 .code-select.inline {
+  margin: 0;
+  background: $cream;
+  font-size: 0.9rem;
+  text-align: right;
+  li {
     margin: 0;
-    background: $cream;
-    font-size: 0.9rem;
-    text-align: right;
-    li {
-        margin: 0;
-        &.active {
-            a {
-                background: $grey;
-                color: $white;
-            }
-        }
+    &.active {
+      a {
+        background: $grey;
+        color: $white;
+      }
     }
-    a {
-        padding: 0.5rem 1rem;
-        border: none;
-    }
+  }
+  a {
+    padding: 0.5rem 1rem;
+    border: none;
+  }
 }
 
 
 
 .code-block {
-    position: relative;
-    margin-bottom: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
 }

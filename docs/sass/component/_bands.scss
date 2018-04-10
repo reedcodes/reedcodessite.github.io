@@ -1,14 +1,14 @@
 .band-dark {
-    padding: 1rem 0;
-    background: $blue;
-    color: $white;
-    a:not([class*="btn"]) {
-        @extend %link-light;
-    }
+  padding: 1rem 0;
+  background: $blue;
+  color: $white;
+  a:not([class*="btn"]) {
+    @extend %link-light;
+  }
 }
 
 .band-light {
-    padding: 2rem 0;
-    background: $cream;
-    color: $black;
+  padding: 2rem 0;
+  background: $cream;
+  color: $black;
 }

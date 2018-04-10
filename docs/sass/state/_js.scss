@@ -1,29 +1,24 @@
 .js {
-    
-    // padding-top: 5rem;
-    // @include breakpoint($md) {
-    //     padding-top: 2rem;
-    // }
-    
-    padding-top: 2rem;
-    
-    
-    
-    nav {
-        @include transition(all, 0.5s, ease);
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        &.sticky, &.open {
-            @include single-box-shadow(0, 1px, 4px, 0, $grey);
-        }
-        
-        a {
-            margin-bottom: -0.25rem;
-            @include breakpoint($sm) {
-                margin-bottom: 0;
-            }
-        }
+  
+  padding-top: 2rem;
+  
+  
+  
+  nav {
+    @include transition(all, 0.5s, ease);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    &.sticky, &.open {
+      @include single-box-shadow(0, 1px, 4px, 0, $grey);
     }
     
+    a {
+      margin-bottom: -0.25rem;
+      @include breakpoint($sm) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
 }
