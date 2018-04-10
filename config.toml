@@ -1,8 +1,8 @@
 theme				= "nighthawk"
 publishDir			= "docs"
 
-baseURL				= "/docs/"
-# baseURL				= "/"
+# baseURL				= "/docs/"
+baseURL				= "/"
 title				= "Reed Piernock: front-end web developer"
 
 languageCode		= "en-us"
