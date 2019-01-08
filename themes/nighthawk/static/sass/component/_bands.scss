@@ -1,17 +1,18 @@
 .band-dark {
     padding: 1rem 0;
-    background: $purple;
-    color: $white;
+    background: $band-bg;
+    color: $band-txt;
     a {
-        color: $cream;
+        color: $band-link-txt;
         &:hover, &:focus {
-            color: $white;
+            background: darken( $band-bg, 15% );
+            color: $band-link-txt-hover;
         }
     }
 }
 
 .band-light {
     padding: 2rem 0;
-    background: $cream;
-    color: $black;
+    background: $band-light-bg;
+    color: $band-light-txt;
 }
