@@ -23,7 +23,7 @@
         font-size: 1.2rem;
         &.icon {
             margin-bottom: 2rem;
-            color: $purple;
+            color: $box-title-txt;
         }
     }
     .capabilities {
@@ -52,8 +52,8 @@
 .project {
     margin-bottom: 2.5rem;
     border-radius: 0.25rem;
-    background: darken($green, 10%);
-    color: $white;
+    background: $project-bg;
+    color: $project-txt;
     img {
         @include backface-visibility(hidden);
         @include opacity(0.75);
@@ -68,8 +68,8 @@
     }
     &:hover, &:focus {
         @include transition(all, 0.3s, ease);
-        background: darken($green, 15%);
-        color: $cream;
+        background: $project-bg-hover;
+        color: $project-txt-hover;
         text-decoration: none;
         img {
             @include transition(all, 0.3s, ease);

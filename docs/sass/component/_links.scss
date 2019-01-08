@@ -1,11 +1,11 @@
 nav a {
     display: inline-block;
     &:hover, &:focus {
-        border-bottom: 0.25rem solid $green;
+        border-bottom: 0.25rem solid $nav-link-brd-hover;
     }
     &.active {
-        border-bottom: 0.25rem solid $blue;
-        color: $blue;
+        border-bottom: 0.25rem solid $nav-link-brd-active;
+        color: $nav-link-txt-active;
     }
 }
 
@@ -13,10 +13,10 @@ nav a {
 
 section a {
     display: inline-block;
-    border-bottom: 0.125rem solid $blue;
+    border-bottom: 0.125rem solid $section-link-brd;
     line-height: 0.875;
     &:hover, &:focus {
-        border-bottom-color: $green;
+        border-bottom-color: $section-link-brd-hover;
     }
 }
 
@@ -24,10 +24,10 @@ section a {
 
 footer a {
     display: inline-block;
-    border-bottom: 0.125rem solid $cream;
+    border-bottom: 0.125rem solid $footer-link-brd;
     line-height: 0.875;
     &:hover, &:focus {
-        border-bottom-color: $cream;
+        border-bottom-color: $footer-link-brd-hover;
     }
 }
 

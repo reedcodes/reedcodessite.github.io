@@ -15,7 +15,7 @@
         z-index: 1;
         top: 0;
         &.sticky, &.open {
-            @include single-box-shadow(0, 1px, 4px, 0, $grey);
+            @include single-box-shadow(0, 1px, 4px, 0, $nav-shadow);
         }
         
         a {

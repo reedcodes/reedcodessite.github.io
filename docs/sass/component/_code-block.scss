@@ -2,8 +2,8 @@
     h2 {
         margin: 0;
         padding: 0.5rem 1rem;
-        background: $blue;
-        color: $white;
+        background: $code-example-bg;
+        color: $code-example-txt;
     }
 }
 
@@ -18,8 +18,8 @@
         margin: 0;
         &.active {
             a {
-                background: $grey;
-                color: $white;
+                background: $code-select-link-active-bg;
+                color: $code-select-link-active-txt;
             }
         }
     }

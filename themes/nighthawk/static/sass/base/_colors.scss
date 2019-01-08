@@ -1,0 +1,70 @@
+/* Colors */
+
+$white: #ffffff;
+$black: #000000;
+
+$orange: #b73e2a;
+$yellow: #e2c415;
+$green: #007f36;
+$blue: #006ae0;
+
+$grey: #333333;
+$cream: #fff4ef;
+
+
+
+$body-bg: $white;
+$body-txt: $black;
+
+$link-txt: $blue;
+$link-txt-hover: $green;
+
+$band-bg: $blue;
+$band-txt: $white;
+$band-link-txt: $cream;
+$band-link-txt-hover: $white;
+
+$band-light-bg: $cream;
+$band-light-txt: $black;
+
+$box-title-txt: $blue;
+
+$project-bg: $green;
+$project-bg-hover: darken($project-bg, 15%);
+$project-txt: $white;
+$project-txt-hover: darken($project-txt, 15%);
+
+$btn-dark-bdr: darken($blue, 15%);
+$btn-dark-bg: $blue;
+$btn-dark-bg-hover: darken($btn-dark-bg, 15%);
+$btn-dark-txt: $white;
+$btn-dark-txt-hover: darken($btn-dark-txt, 15%);
+
+$btn-light-bdr: darken($yellow, 15%);
+$btn-light-bg: $yellow;
+$btn-light-bg-hover: darken($btn-light-bg, 15%);
+$btn-light-txt: $black;
+$btn-light-txt-hover: darken($btn-dark-txt, 15%);
+
+$code-example-bg: $blue;
+$code-example-txt: $white;
+$code-select-link-active-bg: $grey;
+$code-select-link-active-txt: $white;
+
+$form-input-brd: $grey;
+
+$profile-photo-brd: $white;
+
+$nav-bg: $white;
+$nav-shadow: $grey;
+$nav-link-brd-hover: $green;
+$nav-link-brd-active: $blue;
+$nav-link-txt-active: $blue;
+
+$section-link-brd: $blue;
+$section-link-brd-hover: $green;
+
+$footer-link-brd: $white;
+$footer-link-brd-hover: $cream;
+
+$project-info-brd: $orange;

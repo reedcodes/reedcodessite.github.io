@@ -1,7 +1,6 @@
 theme           	= "nighthawk"
 publishDir      	= "docs"
 
-# baseURL				= "/docs/"
 baseURL				= "/"
 title           	= "Reed Piernock: front-end web developer"
 
