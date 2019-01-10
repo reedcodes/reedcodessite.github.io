@@ -1,38 +1,16 @@
+.icon {
+    text-decoration: none;
+    span {
+        vertical-align: middle;
+    }
+}
+
 nav a {
     display: inline-block;
     &:hover, &:focus {
-        border-bottom: 0.25rem solid $nav-link-brd-hover;
+        background-color: $nav-link-bg-hover;
     }
     &.active {
-        border-bottom: 0.25rem solid $nav-link-brd-active;
         color: $nav-link-txt-active;
     }
-}
-
-
-
-section a {
-    display: inline-block;
-    border-bottom: 0.125rem solid $section-link-brd;
-    line-height: 0.875;
-    &:hover, &:focus {
-        border-bottom-color: $section-link-brd-hover;
-    }
-}
-
-
-
-footer a {
-    display: inline-block;
-    border-bottom: 0.125rem solid $footer-link-brd;
-    line-height: 0.875;
-    &:hover, &:focus {
-        border-bottom-color: $footer-link-brd-hover;
-    }
-}
-
-
-
-.icon {
-    border: none;
 }

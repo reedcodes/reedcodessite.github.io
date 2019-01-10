@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 4rem;
     background: $body-bg;
     color: $body-txt;
     font-size: 24px;
@@ -19,7 +19,6 @@ a {
     @include transition(all, 0.3s, ease);
     color: $link-txt;
     font-weight: bold;
-    text-decoration: none;
     &:focus, &:hover {
         color: $link-txt-hover;
     }
