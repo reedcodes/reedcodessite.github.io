@@ -19,11 +19,11 @@
 
 <nav>
     <div class="container">
-        <a class="home{{ if .IsHome }} active{{ end }}" href="{{ .Site.BaseURL }}"><span class="fa fa-fw fa-star"></span><span class="text">reedcodes.com</span></a>
+        <a class="icon home{{ if .IsHome }} active{{ end }}" href="{{ .Site.BaseURL }}"><span class="fa fa-fw fa-star"></span><span class="text">reedcodes.com</span></a>
         <ul class="nav">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-            <li><a {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}class="active" {{end}}href="{{.URL}}"><span class="fa fa-fw fa-{{ .Pre }}"></span><span class="text">{{ .Name }}</span></a></li>
+            <li><a class="icon {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><span class="fa fa-fw fa-{{ .Pre }}"></span><span class="text">{{ .Name }}</span></a></li>
         {{ end }}
         </ul>
     </div>
