@@ -54,6 +54,7 @@
     border-radius: 0.25rem;
     background: $project-bg;
     color: $project-txt;
+    text-decoration: none;
     img {
         @include backface-visibility(hidden);
         @include opacity(0.75);

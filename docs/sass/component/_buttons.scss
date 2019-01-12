@@ -4,9 +4,7 @@
     border: 1px solid;
     @include border-radius(0.25rem);
     line-height: inherit;
-    &:hover, &:focus {
-        text-decoration: none;
-    }
+    text-decoration: none;
 }
 
 .btn-dark {

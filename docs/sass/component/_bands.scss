@@ -5,6 +5,7 @@
     a {
         color: $band-link-txt;
         &:hover, &:focus {
+            background: darken( $band-bg, 15% );
             color: $band-link-txt-hover;
         }
     }

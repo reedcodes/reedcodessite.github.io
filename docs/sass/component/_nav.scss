@@ -1,7 +1,24 @@
 nav {
+    @include transition(all, 0.5s, ease);
+    position: fixed;
+    z-index: 1;
+    top: 0;
     overflow: auto;
     width: 100%;
     background: $nav-bg;
+    @include single-box-shadow(0, 1px, 4px, 0, $nav-shadow);
+    
+    a {
+        margin-right: -1rem;
+        margin-left: -1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        @include breakpoint($sm) {
+            margin-bottom: 0;
+        }
+    }
     
     .fa {
         font-size: 2rem;
@@ -14,14 +31,12 @@ nav {
     
     .nav {
         float: right;
-        margin: 0;
+        margin-top: 0;
         padding: 0;
         letter-spacing: -4px;
         li {
             display: inline;
-            margin-left: 1rem;
             letter-spacing: 0;
-            &:first-child { margin: 0; }
         }
         .fa { display: none; }
     }
