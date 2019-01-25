@@ -16,10 +16,12 @@ body {
 }
 
 a {
-    @include transition(all, 0.3s, ease);
+    @include transition(all 0.3s ease);
+    background: $link-bg;
     color: $link-txt;
     font-weight: bold;
     &:focus, &:hover {
+        background: $link-bg-hover;
         color: $link-txt-hover;
     }
 }

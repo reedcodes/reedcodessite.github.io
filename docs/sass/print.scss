@@ -24,7 +24,7 @@ nav, footer,
 
 
 a, aside a {
-    color: $blue;
+    color: $brand;
     text-decoration: underline;
     &[href^="http"]::after {
         content: " ("attr(href)")";

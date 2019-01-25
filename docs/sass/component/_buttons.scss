@@ -3,26 +3,14 @@
     padding: 0.25rem 0.75rem;
     border: 1px solid;
     @include border-radius(0.25rem);
+    border-color: $btn-bdr;
+    background: $btn-bg;
+    color: $btn-txt;
     line-height: inherit;
     text-decoration: none;
-}
-
-.btn-dark {
-    border-color: $btn-dark-bdr;
-    background: $btn-dark-bg;
-    color: $btn-dark-txt;
     &:hover, &:focus {
-        background: $btn-dark-bg-hover;
-        color: $btn-dark-txt-hover;
-    }
-}
-.btn-light {
-    border-color: $btn-light-bdr;
-    background: $btn-light-bg;
-    color: $btn-light-txt;
-    &:hover, &:focus {
-        background: $btn-light-bg-hover;
-        color: $btn-light-txt-hover;
+        background: $btn-bg-hover;
+        color: $btn-txt-hover;
     }
 }
 

@@ -1,3 +1,11 @@
+.band-light {
+    padding: 2rem 0;
+    border-top: 1px solid $band-light-brd;
+    border-bottom: 1px solid $band-light-brd;
+    background: $band-light-bg;
+    color: $band-light-txt;
+}
+
 .band-dark {
     padding: 1rem 0;
     background: $band-bg;
@@ -5,14 +13,7 @@
     a {
         color: $band-link-txt;
         &:hover, &:focus {
-            background: darken( $band-bg, 15% );
-            color: $band-link-txt-hover;
+            background: $band-link-bg-hover;
         }
     }
-}
-
-.band-light {
-    padding: 2rem 0;
-    background: $band-light-bg;
-    color: $band-light-txt;
 }
