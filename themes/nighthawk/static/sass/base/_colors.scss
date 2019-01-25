@@ -3,70 +3,66 @@
 $white: #ffffff;
 $black: #000000;
 
-$orange: #b73e2a;
-$yellow: #e2c415;
-$green: #007f36;
-$blue: #006ae0;
+$brand: #5f487b;
 
-$grey: #333333;
-$cream: #fff7f3;
+$brand-dark: #2c1548;
+$brand-med: #dec7fa;
+$brand-light: #fffaff;
+
+$brand-comp: #005f52;
+$brand-bright: #f9f871;
 
 
 
 $body-bg: $white;
 $body-txt: $black;
 
-$link-txt: $blue;
-$link-txt-hover: $green;
+$heading-txt: $brand;
 
-$band-bg: $blue;
-$band-txt: $white;
-$band-link-txt: $cream;
-$band-link-txt-hover: $white;
+$link-txt: $brand;
+$link-txt-hover: $brand-comp;
+$link-bg: transparent;
+$link-bg-hover: $brand-light;
 
-$band-light-bg: $cream;
-$band-light-txt: $black;
-
-$box-title-txt: $blue;
-
-$project-bg: $green;
-$project-bg-hover: darken($project-bg, 15%);
-$project-txt: $white;
-$project-txt-hover: darken($project-txt, 15%);
-
-$btn-dark-bdr: darken($blue, 15%);
-$btn-dark-bg: $blue;
-$btn-dark-bg-hover: darken($btn-dark-bg, 15%);
-$btn-dark-txt: $white;
-$btn-dark-txt-hover: darken($btn-dark-txt, 15%);
-
-$btn-light-bdr: darken($yellow, 15%);
-$btn-light-bg: $yellow;
-$btn-light-bg-hover: darken($btn-light-bg, 15%);
-$btn-light-txt: $black;
-$btn-light-txt-hover: darken($btn-dark-txt, 15%);
-
-$code-example-bg: $blue;
-$code-example-txt: $white;
-$code-select-link-active-bg: $grey;
-$code-select-link-active-txt: $white;
-
-$form-input-brd: $grey;
+$border-dark: $brand;
+$border-light: $brand-med;
 
 $profile-photo-brd: $white;
 
 $nav-bg: $white;
-$nav-shadow: $grey;
-$nav-link-brd: $blue;
-$nav-link-brd-hover: $green;
-$nav-link-bg-hover: $cream;
-$nav-link-brd-active: $blue;
-$nav-link-txt-active: $blue;
+$nav-shadow: $brand-dark;
 
-$section-link-brd: $blue;
-$section-link-brd-hover: $green;
+$btn-bdr: $brand-dark;
+$btn-bg: $brand;
+$btn-bg-hover: $brand-dark;
+$btn-txt: $white;
+$btn-txt-hover: $white;
 
-$footer-link-brd: $white;
-$footer-link-brd-hover: $cream;
+$blockquote-brd: $brand-dark;
+$blockquote-txt: $brand;
 
-$project-info-brd: $orange;
+$band-bg: $brand;
+$band-txt: $white;
+$band-link-txt: $brand-light;
+$band-link-bg-hover: $brand-dark;
+
+$band-light-brd: $brand-med;
+$band-light-bg: $brand-light;
+$band-light-txt: $black;
+
+$box-title-txt: $brand;
+
+$project-brd: $brand-med;
+$project-bg: $brand-light;
+$project-txt: $brand-dark;
+
+$project-info-brd: $brand;
+
+$project-website-txt: $brand-dark;
+
+$code-example-bg: $brand;
+$code-example-txt: $white;
+$code-select-link-active-bg: $brand-dark;
+$code-select-link-active-txt: $white;
+
+$form-input-brd: $brand-dark;

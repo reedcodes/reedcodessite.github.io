@@ -2,15 +2,12 @@
     text-decoration: none;
     span {
         vertical-align: middle;
+        &.text {
+            text-decoration: underline;
+        }
     }
 }
 
 nav a {
     display: inline-block;
-    &:hover, &:focus {
-        background-color: $nav-link-bg-hover;
-    }
-    &.active {
-        color: $nav-link-txt-active;
-    }
 }

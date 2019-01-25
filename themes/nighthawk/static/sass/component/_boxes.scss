@@ -52,6 +52,7 @@
 .project {
     margin-bottom: 2.5rem;
     border-radius: 0.25rem;
+    border: 1px solid $project-brd;
     background: $project-bg;
     color: $project-txt;
     text-decoration: none;
@@ -69,9 +70,6 @@
     }
     &:hover, &:focus {
         @include transition(all, 0.3s, ease);
-        background: $project-bg-hover;
-        color: $project-txt-hover;
-        text-decoration: none;
         img {
             @include transition(all, 0.3s, ease);
             @include opacity(1);
