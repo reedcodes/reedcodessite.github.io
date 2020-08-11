@@ -1,22 +1,17 @@
 {
-  "name": "nighthawk",
-  "version": "1.0.0",
-  "description": "theme for Reed's website",
+  "name": "reedcodes",
+  "version": "2.0.0",
+  "description": "build scripts for Reed's website",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-uglify": "^3.0.0"
+    "@11ty/eleventy": "^0.11.0",
+    "gulp": "^4.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Reed Piernock",
-  "license": "ISC",
-  "directories": {
-    "doc": "docs"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reedcodes/reedcodessite.github.io.git"
