@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>{%- if not home -%}{{- title -}} | {% endif -%}{{- site.name -}}</title>
+</head>
+<body>
+
+  <header>
+    {%- include "header.njk" -%}
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+</body>
+</html>
