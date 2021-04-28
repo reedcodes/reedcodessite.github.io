@@ -6,7 +6,7 @@
   "homepage": "https://reedcodes.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reedcodes/reedcodessite.github.io.git"
+    "url": "https://github.com/reedcodes/reedcodessite.github.io"
   },
   "bugs": {
     "url": "https://github.com/reedcodes/reedcodessite.github.io/issues"
@@ -19,6 +19,7 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.2.0",
     "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
     "gulp-dart-sass": "^1.0.2",
     "include-media": "^1.4.9"
   }

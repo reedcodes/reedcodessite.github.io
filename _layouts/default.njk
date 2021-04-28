@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>{%- if not home -%}{{- title -}} | {% endif -%}{{- site.name -}}</title>
+  <link rel="stylesheet" media="screen" href="./_dist/css/reedcodes.css" />
 </head>
 <body>
 
@@ -11,6 +12,10 @@
   </header>
 
   <main>
+    {%- if not home -%}
+      <h1>{{- title -}}</h1>
+    {%- endif -%}
+
     {{ content | safe }}
   </main>
 
