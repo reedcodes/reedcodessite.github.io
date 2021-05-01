@@ -1,4 +1,14 @@
+// Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+// Font Awesome
+$fa-font-path: '../webfonts' !default;
+@import './node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import './node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import './node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import './node_modules/@fortawesome/fontawesome-free/scss/regular';
+
+
 
 body {
   display: grid;
@@ -15,6 +25,7 @@ body {
 }
 
 header,
+nav,
 main,
 footer {
   grid-column: 2/3;
@@ -35,3 +46,7 @@ header {
     line-height: 1;
   }
 }
+
+
+
+a .fa-file-pdf { margin-left: 0.5rem; }

@@ -3,13 +3,17 @@
 <html>
 <head>
   <title>{%- if not home -%}{{- title -}} | {% endif -%}{{- site.name -}}</title>
-  <link rel="stylesheet" media="screen" href="./_dist/css/reedcodes.css" />
+  <link rel="stylesheet" media="screen" href="/_dist/css/reedcodes.css" />
 </head>
 <body>
 
   <header>
     {%- include "header.njk" -%}
   </header>
+
+  <nav>
+    {%- include "menu.njk" -%}
+  </nav>
 
   <main>
     {%- if not home -%}
