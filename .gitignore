@@ -1,2 +1,4 @@
 .DS_Store
 node_modules
+talks/index.njk
+_sites/talks

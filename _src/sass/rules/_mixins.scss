@@ -1,0 +1,23 @@
+@mixin webfont(
+  $name,
+  $file,
+  $path,
+  $styles
+) {
+  @each $style in $styles {
+    $variant-name: nth( $style, 1 );
+    $variant-file: nth( $style, 2 );
+    $weight: nth( $style, 3 );
+    $style: nth( $style, 4 );
+
+    @font-face {
+      font-family: '#{ $name }';
+      src: local( '#{ $name }#{ $variant-name }' ), local( '#{ $file }#{ $variant-file }' ),
+        url('#{ $path }/#{ $file }#{ $variant-file }.woff2') format('woff2'),
+        url('#{ $path }/#{ $file }#{ $variant-file }.woff') format('woff');
+      font-weight: $weight;
+      font-style: $style;
+      font-display: swap;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use 'variables' as vars;
+
+.header {
+  display: grid;
+}
+
+.name {
+  font-family: vars.$t-comic;
+}
+
+.profile {
+  grid-row: 1/2;
+  border-radius: 50%;
+  border: 0.5rem solid black;
+}

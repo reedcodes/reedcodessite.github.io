@@ -2,26 +2,31 @@
 
 <html>
 <head>
-  <title>{%- if not home -%}{{- title -}} | {% endif -%}{{- site.name -}}</title>
-  <link rel="stylesheet" media="screen" href="/_dist/css/reedcodes.css" />
+  {%- include "head.njk" -%}
 </head>
 <body>
 
-  <header>
+  <header class="header">
     {%- include "header.njk" -%}
   </header>
 
-  <nav>
+  <nav class="nav">
     {%- include "menu.njk" -%}
   </nav>
 
-  <main>
+  <main class="main">
     {%- if not home -%}
       <h1>{{- title -}}</h1>
     {%- endif -%}
 
+    <p>URL: {{ page.url }}</p>
+
     {{ content | safe }}
   </main>
+
+  <footer class="footer">
+    <p>I made this!</p>
+  </footer>
 
 </body>
 </html>

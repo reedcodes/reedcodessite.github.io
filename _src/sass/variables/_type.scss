@@ -1,0 +1,41 @@
+@use 'rules';
+
+
+
+// Font Awesome.
+$fa-font-path: '../webfonts/fa';
+@use './node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@use './node_modules/@fortawesome/fontawesome-free/scss/brands';
+@use './node_modules/@fortawesome/fontawesome-free/scss/solid';
+@use './node_modules/@fortawesome/fontawesome-free/scss/regular';
+
+// Google Fonts.
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+
+
+// Create custom webfonts.
+@include rules.mix-webfont(
+  'Comic Neue',
+  'ComicNeue',
+  '../webfonts/comic-neue',
+  [
+    ( ' Regular', '-Regular', normal, normal )
+    ( ' Italic', '-Italic', normal, italic )
+    ( ' Bold', '-Bold', bold, normal )
+    ( ' Bold Italic', '-BoldItalic', bold, italic )
+    ( ' Light', '-Light', normal, normal )
+    ( ' Light Italic', '-LightItalic', normal, italic )
+  ]
+);
+
+
+
+// Typography.
+$comic: 'Comic Neue', 'Helvetica', 'Arial', sans-serif;
+$public: 'Public Sans', 'Helvetica', 'Arial', sans-serif;
+$noto: 'Noto Serif', 'Times New Roman', serif;
+
+$base: 20px;

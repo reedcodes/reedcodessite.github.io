@@ -1,0 +1,32 @@
+@use 'variables' as vars;
+
+* { box-sizing: border-box; }
+
+body {
+  display: grid;
+  grid-template-columns:
+    minmax( 5vw, 1fr )
+    minmax( 320px, 960px )
+    minmax( 5vw, 1fr );
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 1vh;
+  padding-inline: 0;
+  font-size: vars.$t-base;
+  font-family: vars.$t-public;
+}
+
+img {
+  max-width: 100%;
+}
+
+header,
+nav,
+main,
+footer {
+  grid-column: 2/3;
+}
+
+
+
+a .fa-file-pdf { margin-block-start: 0.5rem; }
