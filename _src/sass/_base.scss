@@ -2,6 +2,13 @@
 
 * { box-sizing: border-box; }
 
+html {
+  background-color: vars.$c-latte;
+  color: vars.$c-black;
+  font-size: vars.$t-base;
+  font-family: vars.$t-public;
+}
+
 body {
   display: grid;
   grid-template-columns:
@@ -12,10 +19,6 @@ body {
   margin-inline: 0;
   padding-block: 1vh;
   padding-inline: 0;
-  background-color: vars.$c-cream;
-  color: vars.$c-black;
-  font-size: vars.$t-base;
-  font-family: vars.$t-public;
 }
 
 img {
