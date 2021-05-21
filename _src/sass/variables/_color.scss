@@ -12,3 +12,17 @@ $alice-blue: #f4f9ff;
 $cadet-blue: #a8aabc;
 $raisin-black: #252935;
 $black: #000;
+
+$signpost: linear-gradient(
+  to right,
+  transparent 25%,
+  gray 25%,
+  black 30%,
+  black 35%,
+  transparent 35%,
+  transparent 65%,
+  gray 65%,
+  black 70%,
+  black 75%,
+  transparent 75%
+);
