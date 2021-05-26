@@ -1,12 +1,13 @@
-@use 'rules';
+@use 'mixins' as mix;
 
 
 
 // Font Awesome.
-@use './node_modules/@fortawesome/fontawesome-free/scss/fontawesome' with ( $fa-font-path: '../webfonts/fa' );
-@use './node_modules/@fortawesome/fontawesome-free/scss/brands' with ( $fa-font-path: '../webfonts/fa' );
-@use './node_modules/@fortawesome/fontawesome-free/scss/solid' with ( $fa-font-path: '../webfonts/fa' );
-@use './node_modules/@fortawesome/fontawesome-free/scss/regular' with ( $fa-font-path: '../webfonts/fa' );
+$fa-font-path: '../webfonts/fa';
+@use './node_modules/@fortawesome/fontawesome-free/scss/fontawesome' with ( $fa-font-path: $fa-font-path );
+@use './node_modules/@fortawesome/fontawesome-free/scss/brands' with ( $fa-font-path: $fa-font-path );
+@use './node_modules/@fortawesome/fontawesome-free/scss/solid' with ( $fa-font-path: $fa-font-path );
+@use './node_modules/@fortawesome/fontawesome-free/scss/regular' with ( $fa-font-path: $fa-font-path );
 
 // Google Fonts.
 @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
@@ -16,7 +17,7 @@
 
 
 // Create custom webfonts.
-@include rules.mix-webfont(
+@include mix.t-webfont(
   'Comic Neue',
   'ComicNeue',
   '../webfonts/comic-neue',
@@ -29,13 +30,3 @@
     ( ' Light Italic', '-LightItalic', normal, italic )
   ]
 );
-
-
-
-// Typography.
-$comic: 'Comic Neue', 'Helvetica', 'Arial', sans-serif;
-$montez: 'Montez', cursive;
-$peralta: 'Peralta', 'Times New Roman', serif;
-$public: 'Public Sans', 'Helvetica', 'Arial', sans-serif;
-
-$base: 24px;

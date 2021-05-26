@@ -1,19 +1,21 @@
 @use 'variables' as vars;
+@use 'mixins' as mix;
 
 * { box-sizing: border-box; }
 
 html {
   background-color: vars.$c-foam;
   color: vars.$c-black;
-  font-size: vars.$t-base;
   font-family: vars.$t-public;
+
+  @include mix.t-fluid-type( font-size );
 }
 
 body {
   display: grid;
   grid-template-columns:
     minmax( 5vw, 1fr )
-    minmax( 320px, 960px )
+    minmax( vars.$s-min, vars.$s-max )
     minmax( 5vw, 1fr );
   margin-block: 0;
   margin-inline: 0;

@@ -1,4 +1,6 @@
 @use 'variables' as vars;
+@use 'mixins' as mix;
+@use 'libraries' as libs;
 
 .header {
   display: grid;
@@ -34,10 +36,11 @@
   border-bottom: 0.3rem solid;
   background: gray;
   color: vars.$c-latte;
-  font-size: 5rem;
   font-family: vars.$t-montez;
   line-height: 1;
   text-shadow: -0.25rem 0.25rem 0 vars.$c-raisin-black;
+
+  @include mix.t-fluid-type( font-size, 48px, 80px );
 
   span {
     z-index: 1;
@@ -96,21 +99,20 @@
   );
   background-size: 10px;
   color: black;
-  font-size: 1.25rem;
   font-family: vars.$t-peralta;
   text-shadow: -0.25rem 0.25rem 0 vars.$c-latte;
+
+  @include mix.t-fluid-type( font-size, 16px, 20px );
 }
 
 
 
 // 768px+
-@media (min-width: 768px) {
-
+@include libs.mq-media('>=md') {
   .profile {
     img {
       max-width: 40%;
       margin-inline: 0;
     }
   }
-
 }
