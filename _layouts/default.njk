@@ -14,22 +14,17 @@
     {%- include "menu.njk" -%}
   </nav>
 
-  <aside class="social">
-    {%- include "social.njk" -%}
-  </aside>
-
   <main class="main">
     {%- if not home -%}
       <h1>{{- title -}}</h1>
     {%- endif -%}
 
-    <p>URL: {{ page.url }}</p>
-
     {{ content | safe }}
+
   </main>
 
   <footer class="footer">
-    <p>I made this!</p>
+    {%- include "social.njk" -%}
   </footer>
 
 </body>
