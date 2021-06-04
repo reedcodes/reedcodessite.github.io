@@ -1,0 +1,16 @@
+@use 'variables' as vars;
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 3rem;
+  padding-inline: 0;
+  padding-block: 1rem;
+  border-block-start: 2px solid vars.$c-rust;
+  border-block-end: 2px solid vars.$c-rust;
+
+  [class*='fa'] {
+    margin-inline-end: 0.25rem;
+  }
+}

@@ -1,0 +1,58 @@
+@use 'variables' as vars;
+@use 'mixins' as mix;
+@use "sass:color";
+
+* { box-sizing: border-box; }
+
+html {
+  background-color: vars.$c-foam;
+  color: vars.$c-black;
+  font-family: vars.$t-public;
+
+  @include mix.t-fluid-type( font-size );
+}
+
+body {
+  display: grid;
+  grid-template-columns:
+    minmax( 5vw, 1fr )
+    minmax( vars.$s-min, vars.$s-max )
+    minmax( 5vw, 1fr );
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 1vh;
+  padding-inline: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: vars.$c-rust;
+
+  &:focus,
+  &:active,
+  &:hover {
+    color: color.scale( vars.$c-steel, $lightness: -25% );
+  }
+
+  &:focus,
+  &:active {
+    outline: 3px solid color.scale( vars.$c-steel, $lightness: -25% );
+  }
+
+  [class*='pdf'] { margin-inline-start: 0.25rem; }
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+  grid-column: 2/3;
+}
+
+
+
+a .fa-file-pdf { margin-block-start: 0.5rem; }

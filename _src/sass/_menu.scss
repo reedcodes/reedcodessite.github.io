@@ -1,0 +1,62 @@
+@use 'variables' as vars;
+@use 'libraries' as libs;
+
+.menu {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-block: 0;
+    padding-inline-start: 0;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    padding-block: 0.25rem;
+    padding-inline: 0.5rem;
+    box-shadow: -0.15rem 0.15rem 0 0 vars.$c-raisin-black;
+    border-radius: 0.15rem;
+    border: 0.15rem solid vars.$c-raisin-black;
+    background-color: vars.$c-steel;
+    color: vars.$c-champagne;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: -0.125rem 0.125rem 0 vars.$c-raisin-black;
+
+    &:active,
+    &:focus {
+      outline: 5px solid vars.$c-sheen;
+    }
+  }
+
+  // 768px+
+  @include libs.mq-media('>=md') {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 8fr auto 3fr;
+    grid-template-rows: auto 1fr;
+    margin-block-end: -10rem;
+
+    &::after {
+      content: '';
+      grid-column: 2/3;
+      background-image: vars.$c-signpost;
+      min-height: 5rem;
+    }
+
+    ul {
+      z-index: 1;
+      grid-column: 2/3;
+      display: grid;
+      grid-gap: 1rem;
+      align-items: start;
+      background-image: vars.$c-signpost;
+    }
+
+    li a { background-color: vars.$c-rust; }
+    li:nth-of-type(2) a { background-color: vars.$c-steel; }
+    li:nth-of-type(3) a { background-color: vars.$c-spanish-orange; }
+  }
+}
