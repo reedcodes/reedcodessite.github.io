@@ -5,7 +5,7 @@ const gulp   = require( 'gulp' ),
 
 // Define CSS source and distribution directories.
 const cssSrc  = './_src/sass/**/*.scss';
-const cssDist = './docs/_dist/css';
+const cssDist = './docs/dist/css';
 
 // Task to compile CSS files.
 gulp.task( 'sass', function() {
