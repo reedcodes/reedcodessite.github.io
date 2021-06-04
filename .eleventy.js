@@ -18,7 +18,7 @@ module.exports = function( eleventyConfig ) {
       data: '_data',
       layouts: '_layouts',
       includes: '_includes',
-      output: '_sites'
+      output: 'docs'
     }
   };
 };
