@@ -41,6 +41,8 @@ a {
   &:active {
     outline: 3px solid color.scale( vars.$c-steel, $lightness: -25% );
   }
+
+  [class*='pdf'] { margin-inline-start: 0.25rem; }
 }
 
 header,
