@@ -24,6 +24,11 @@
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: -0.125rem 0.125rem 0 vars.$c-raisin-black;
+
+    &:active,
+    &:focus {
+      outline: 5px solid vars.$c-sheen;
+    }
   }
 
   // 768px+

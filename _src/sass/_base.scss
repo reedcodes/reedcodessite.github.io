@@ -1,5 +1,6 @@
 @use 'variables' as vars;
 @use 'mixins' as mix;
+@use "sass:color";
 
 * { box-sizing: border-box; }
 
@@ -25,6 +26,21 @@ body {
 
 img {
   max-width: 100%;
+}
+
+a {
+  color: vars.$c-rust;
+
+  &:focus,
+  &:active,
+  &:hover {
+    color: color.scale( vars.$c-steel, $lightness: -25% );
+  }
+
+  &:focus,
+  &:active {
+    outline: 3px solid color.scale( vars.$c-steel, $lightness: -25% );
+  }
 }
 
 header,
