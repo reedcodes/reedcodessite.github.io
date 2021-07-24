@@ -1,0 +1,43 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in ./_data/colors.js
+ */
+
+$color-primary: #b53f04 !default;
+$color-on-primary: #FCDFD0 !default;
+$color-secondary: #6db8b4 !default;
+$color-on-secondary: #1C4745 !default;
+$color-complimentary: #5284b6 !default;
+$color-on-complimentary: #08192B !default;
+$color-dark: #252935 !default;
+$color-on-dark: #8B909C !default;
+$color-light: #fffded !default;
+$color-on-light: #78755D !default;
+
+$base-color-tokens: ("primary", "secondary", "complimentary", "dark", "light");
+
+$color-tokens: (
+  "color-primary": $color-primary,
+  "color-on-primary": $color-on-primary,
+  "color-secondary": $color-secondary,
+  "color-on-secondary": $color-on-secondary,
+  "color-complimentary": $color-complimentary,
+  "color-on-complimentary": $color-on-complimentary,
+  "color-dark": $color-dark,
+  "color-on-dark": $color-on-dark,
+  "color-light": $color-light,
+  "color-on-light": $color-on-light
+) !default;
+
+@mixin color-tokens() {
+  --color-primary: #{$color-primary};
+  --color-on-primary: #{$color-on-primary};
+  --color-secondary: #{$color-secondary};
+  --color-on-secondary: #{$color-on-secondary};
+  --color-complimentary: #{$color-complimentary};
+  --color-on-complimentary: #{$color-on-complimentary};
+  --color-dark: #{$color-dark};
+  --color-on-dark: #{$color-on-dark};
+  --color-light: #{$color-light};
+  --color-on-light: #{$color-on-light};
+}

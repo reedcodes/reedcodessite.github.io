@@ -13,16 +13,20 @@
   },
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp && npx eleventy"
+    "tokens": "npx a11y-color-tokens --outputDirPath='./_src/sass/variables' --colorTokensPath='./_data/colors.js' --compatibilityDocsPath='./'",
+    "build:sass": "gulp",
+    "build:eleventy": "npx eleventy",
+    "build": "npm-run-all tokens build:sass build:eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.2.0",
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "a11y-color-tokens": "^0.5.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-dart-sass": "^1.0.2",
-    "include-media": "^1.4.10"
+    "include-media": "^1.4.10",
+    "npm-run-all": "^4.1.5"
   }
 }

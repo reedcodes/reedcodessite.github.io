@@ -9,10 +9,7 @@ $fa-font-path: '../webfonts/fa';
 @use './node_modules/@fortawesome/fontawesome-free/scss/solid' with ( $fa-font-path: $fa-font-path );
 @use './node_modules/@fortawesome/fontawesome-free/scss/regular' with ( $fa-font-path: $fa-font-path );
 
-// Google Fonts.
-@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+// Google Fonts pulled in through <link>.
 
 
 

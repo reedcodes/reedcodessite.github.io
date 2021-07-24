@@ -1,15 +1,13 @@
 @use 'variables' as vars;
 @use 'mixins' as mix;
-@use "sass:color";
 
 * { box-sizing: border-box; }
 
-html {
-  background-color: vars.$c-foam;
-  color: vars.$c-black;
-  font-family: vars.$t-public;
+:root {
+  @include vars.color-tokens();
 
-  @include mix.t-fluid-type( font-size );
+  --color-links: #{vars.$c-links};
+  --color-links-on: #{vars.$c-links-on};
 }
 
 body {
@@ -22,6 +20,11 @@ body {
   margin-inline: 0;
   padding-block: 1vh;
   padding-inline: 0;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: vars.$t-public;
+
+  @include mix.t-fluid-type( font-size );
 }
 
 img {
@@ -29,20 +32,20 @@ img {
 }
 
 a {
-  color: vars.$c-rust;
+  color: var(--color-links);
 
   &:focus,
   &:active,
   &:hover {
-    color: color.scale( vars.$c-steel, $lightness: -25% );
+    color: var(--color-links-on);
   }
 
   &:focus,
   &:active {
-    outline: 3px solid color.scale( vars.$c-steel, $lightness: -25% );
+    outline: 3px solid var(--color-links-on);
   }
 
-  [class*='pdf'] { margin-inline-start: 0.25rem; }
+  [class*='pdf'] { margin-inline-start: 0.25em; }
 }
 
 header,
