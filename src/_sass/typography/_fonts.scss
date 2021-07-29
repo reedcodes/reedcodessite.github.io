@@ -1,9 +1,6 @@
-@use 'mixins' as mix;
-
-
-
 // Font Awesome.
 $fa-font-path: '../webfonts/fa';
+
 @use './node_modules/@fortawesome/fontawesome-free/scss/fontawesome' with ( $fa-font-path: $fa-font-path );
 @use './node_modules/@fortawesome/fontawesome-free/scss/brands' with ( $fa-font-path: $fa-font-path );
 @use './node_modules/@fortawesome/fontawesome-free/scss/solid' with ( $fa-font-path: $fa-font-path );
@@ -13,17 +10,14 @@ $fa-font-path: '../webfonts/fa';
 
 
 
-// Create custom webfonts.
-@include mix.t-webfont(
-  'Comic Neue',
-  'ComicNeue',
-  '../webfonts/comic-neue',
-  [
-    ( ' Regular', '-Regular', normal, normal )
-    ( ' Italic', '-Italic', normal, italic )
-    ( ' Bold', '-Bold', bold, normal )
-    ( ' Bold Italic', '-BoldItalic', bold, italic )
-    ( ' Light', '-Light', normal, normal )
-    ( ' Light Italic', '-LightItalic', normal, italic )
-  ]
-);
+// Set font name variables.
+$montez: 'Montez', cursive;
+$peralta: 'Peralta', 'Times New Roman', serif;
+$public: 'Public Sans', 'Helvetica', 'Arial', sans-serif;
+
+
+
+// Set font family variables.
+$cursive: $montez;
+$sans-serif: $public;
+$serif: $peralta;

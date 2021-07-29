@@ -1,61 +1,9 @@
-@use 'variables' as vars;
-@use 'mixins' as mix;
-
-* { box-sizing: border-box; }
+@use 'typography' as *;
 
 :root {
-  @include vars.color-tokens();
-
-  --color-links: #{vars.$c-links};
-  --color-links-on: #{vars.$c-links-on};
+  --font-family: #{$f-sans-serif};
 }
 
 body {
-  display: grid;
-  grid-template-columns:
-    minmax( 5vw, 1fr )
-    minmax( vars.$s-min, vars.$s-max )
-    minmax( 5vw, 1fr );
-  margin-block: 0;
-  margin-inline: 0;
-  padding-block: 1vh;
-  padding-inline: 0;
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  font-family: vars.$t-public;
-
-  @include mix.t-fluid-type( font-size );
+  font-family: var(--font-family);
 }
-
-img {
-  max-width: 100%;
-}
-
-a {
-  color: var(--color-links);
-
-  &:focus,
-  &:active,
-  &:hover {
-    color: var(--color-links-on);
-  }
-
-  &:focus,
-  &:active {
-    outline: 3px solid var(--color-links-on);
-  }
-
-  [class*='pdf'] { margin-inline-start: 0.25em; }
-}
-
-header,
-nav,
-aside,
-main,
-footer {
-  grid-column: 2/3;
-}
-
-
-
-a .fa-file-pdf { margin-block-start: 0.5rem; }
