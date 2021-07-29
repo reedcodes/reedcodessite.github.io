@@ -4,7 +4,7 @@ const gulp   = require( 'gulp' ),
       sass   = require( 'gulp-dart-sass' );
 
 // Define CSS source and distribution directories.
-const cssSrc  = './_src/sass/**/*.scss';
+const cssSrc  = './src/_sass/**/*.scss';
 const cssDist = './docs/dist/css';
 
 // Task to compile CSS files.
