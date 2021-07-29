@@ -6,50 +6,66 @@ title: Color Token Contrast
 
 ## color-primary
   - `color-on-primary`
+  - `color-on-alert`
   - `color-light`
 
 ## color-on-primary
   - `color-primary`
-  - `color-on-secondary`
-  - `color-on-complimentary`
+  - `color-secondary`
+  - `color-on-highlight`
   - `color-dark`
 
 ## color-secondary
-  - `color-on-secondary`
-  - `color-on-complimentary`
-  - `color-dark`
-
-## color-on-secondary
   - `color-on-primary`
-  - `color-secondary`
+  - `color-on-secondary`
+  - `color-on-alert`
   - `color-light`
 
-## color-complimentary
-  - `color-on-complimentary`
-
-## color-on-complimentary
-  - `color-on-primary`
+## color-on-secondary
   - `color-secondary`
-  - `color-complimentary`
-  - `color-on-dark`
+  - `color-on-highlight`
+  - `color-dark`
+
+## color-alert
+  - `color-on-alert`
+  - `color-light`
+
+## color-on-alert
+  - `color-primary`
+  - `color-secondary`
+  - `color-alert`
+  - `color-on-highlight`
+  - `color-dark`
+
+## color-highlight
+  - `color-on-highlight`
+  - `color-dark`
+
+## color-on-highlight
+  - `color-on-primary`
+  - `color-on-secondary`
+  - `color-on-alert`
+  - `color-highlight`
+  - `color-light`
+
+## color-light
+  - `color-primary`
+  - `color-secondary`
+  - `color-alert`
+  - `color-on-highlight`
+  - `color-on-light`
+  - `color-dark`
+
+## color-on-light
   - `color-light`
 
 ## color-dark
   - `color-on-primary`
-  - `color-secondary`
-  - `color-on-dark`
+  - `color-on-secondary`
+  - `color-on-alert`
+  - `color-highlight`
   - `color-light`
+  - `color-on-dark`
 
 ## color-on-dark
-  - `color-on-complimentary`
   - `color-dark`
-
-## color-light
-  - `color-primary`
-  - `color-on-secondary`
-  - `color-on-complimentary`
-  - `color-dark`
-  - `color-on-light`
-
-## color-on-light
-  - `color-light`

@@ -1,9 +1,28 @@
 @use 'typography' as *;
+@use 'color' as *;
 
 :root {
+  @include color-tokens();
+
+  --background-body: #{$c-background};
+  --color-text: #{$c-text};
   --font-family: #{$f-sans-serif};
+
+  --color-links: #{$c-links};
+  --color-links-hover: #{$c-links-hover};
 }
 
 body {
+  background-color: var(--background-body);
+  color: var(--color-text);
   font-family: var(--font-family);
+}
+
+a:not([class]) {
+  color: var(--color-links);
+
+  &:focus,
+  &:hover {
+    color: var(--color-links-hover);
+  }
 }

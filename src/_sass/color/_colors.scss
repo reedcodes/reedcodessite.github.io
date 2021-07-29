@@ -1,3 +1,16 @@
+/***
+ * Color key, as of July 2021
+ * colors are set in _data/colors.js
+ *
+ * primary: teal, rgba(0, 121, 140, 1)
+ * secondary: purple, rgba(125, 59, 106, 1)
+ * alert: crimson, rgba(208, 55, 17, 1)
+ * highlight: gold, rgba(246, 174, 45, 1)
+ * light: ivory, rgba(248, 245, 242, 1)
+ * dark: charcoal, rgba(37, 41, 53, 1)
+ *
+ ***/
+
 @use "sass:color";
 @use 'color-tokens' as *;
 
@@ -16,5 +29,8 @@
   }
 }
 
+$background: "var(--color-light)" !default;
+$text: "var(--color-dark)" !default;
+
 $links: "var(--color-primary)" !default;
-$links-on: "var(--color-on-secondary)" !default;
+$links-hover: "var(--color-secondary)" !default;

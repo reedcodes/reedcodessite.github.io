@@ -1,22 +1,26 @@
 module.exports = [
   {
     name: 'primary',
-    color: '#b53f04'
+    color: 'rgba(0, 121, 140, 1)'
   },
   {
     name: 'secondary',
-    color: '#6db8b4'
+    color: 'rgba(125, 59, 106, 1)'
   },
   {
-    name: 'complimentary',
-    color: '#5284b6'
+    name: 'alert',
+    color: 'rgba(208, 55, 17, 1)'
   },
   {
-    name: 'dark',
-    color: '#252935'
+    name: 'highlight',
+    color: 'rgba(246, 174, 45, 1)'
   },
   {
     name: 'light',
-    color: '#fffded'
+    color: 'rgba(248, 245, 242, 1)'
+  },
+  {
+    name: 'dark',
+    color: 'rgba(37, 41, 53, 1)'
   }
 ];

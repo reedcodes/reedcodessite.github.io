@@ -3,30 +3,34 @@
   Modify colors in ./src/_data/colors.js
  */
 
-$color-primary: #b53f04 !default;
-$color-on-primary: #FCDFD0 !default;
-$color-secondary: #6db8b4 !default;
-$color-on-secondary: #1C4745 !default;
-$color-complimentary: #5284b6 !default;
-$color-on-complimentary: #08192B !default;
-$color-dark: #252935 !default;
-$color-on-dark: #8B909C !default;
-$color-light: #fffded !default;
-$color-on-light: #78755D !default;
+$color-primary: rgba(0, 121, 140, 1) !default;
+$color-on-primary: rgb(226, 244, 247) !default;
+$color-secondary: rgba(125, 59, 106, 1) !default;
+$color-on-secondary: rgb(220, 188, 211) !default;
+$color-alert: rgba(208, 55, 17, 1) !default;
+$color-on-alert: rgb(255, 241, 238) !default;
+$color-highlight: rgba(246, 174, 45, 1) !default;
+$color-on-highlight: rgb(108, 66, 0) !default;
+$color-light: rgba(248, 245, 242, 1) !default;
+$color-on-light: rgb(117, 112, 108) !default;
+$color-dark: rgba(37, 41, 53, 1) !default;
+$color-on-dark: rgb(139, 144, 156) !default;
 
-$base-color-tokens: ("primary", "secondary", "complimentary", "dark", "light");
+$base-color-tokens: ("primary", "secondary", "alert", "highlight", "light", "dark");
 
 $color-tokens: (
   "color-primary": $color-primary,
   "color-on-primary": $color-on-primary,
   "color-secondary": $color-secondary,
   "color-on-secondary": $color-on-secondary,
-  "color-complimentary": $color-complimentary,
-  "color-on-complimentary": $color-on-complimentary,
-  "color-dark": $color-dark,
-  "color-on-dark": $color-on-dark,
+  "color-alert": $color-alert,
+  "color-on-alert": $color-on-alert,
+  "color-highlight": $color-highlight,
+  "color-on-highlight": $color-on-highlight,
   "color-light": $color-light,
-  "color-on-light": $color-on-light
+  "color-on-light": $color-on-light,
+  "color-dark": $color-dark,
+  "color-on-dark": $color-on-dark
 ) !default;
 
 @mixin color-tokens() {
@@ -34,10 +38,12 @@ $color-tokens: (
   --color-on-primary: #{$color-on-primary};
   --color-secondary: #{$color-secondary};
   --color-on-secondary: #{$color-on-secondary};
-  --color-complimentary: #{$color-complimentary};
-  --color-on-complimentary: #{$color-on-complimentary};
-  --color-dark: #{$color-dark};
-  --color-on-dark: #{$color-on-dark};
+  --color-alert: #{$color-alert};
+  --color-on-alert: #{$color-on-alert};
+  --color-highlight: #{$color-highlight};
+  --color-on-highlight: #{$color-on-highlight};
   --color-light: #{$color-light};
   --color-on-light: #{$color-on-light};
+  --color-dark: #{$color-dark};
+  --color-on-dark: #{$color-on-dark};
 }
