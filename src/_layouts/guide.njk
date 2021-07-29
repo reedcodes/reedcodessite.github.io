@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+<head>
+  {%- include "head.njk" -%}
+</head>
+<body>
+
+  <nav class="menu">
+    {%- include "menu-guide.njk" -%}
+  </nav>
+
+  <main class="main">
+    {%- if not home -%}
+      <h1>{{- title -}}</h1>
+    {%- endif -%}
+
+    {{ content | safe }}
+
+  </main>
+
+</body>
+</html>

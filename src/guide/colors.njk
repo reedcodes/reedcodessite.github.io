@@ -1,0 +1,15 @@
+---
+title: Colors
+---
+
+<ul role="list">
+  {% for colorToken in colors %}
+    <li>
+      <figure class="swatch">
+        <figcaption class="bg-{{ colorToken.name }}">
+          <strong>{{ colorToken.name }}</strong> {{ colorToken.color }}
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+</ul>
