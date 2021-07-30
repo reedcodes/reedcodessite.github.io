@@ -1,0 +1,55 @@
+/***
+ * inspired by several resets going around, e.g.
+ * https://piccalil.li/blog/a-modern-css-reset/
+ * https://meyerweb.com/eric/tools/css/reset/
+ ***/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: max(0.1em, 2px);
+  text-underline-offset: 0.125em;
+}
+
+[id] { scroll-margin-top: 1rem; }
+*:focus { scroll-margin-bottom: 10vh; }
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+
+  &[width] {
+    height: auto;
+  }
+}
+
+svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
