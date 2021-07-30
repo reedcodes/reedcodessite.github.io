@@ -1,0 +1,23 @@
+$space: 1em;
+
+body {
+  font-size: clamp(1rem, (1rem + 2vw), 2rem);
+  // Calculate a relative line height.
+  // Jesús Ricarte
+  // https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/
+  line-height: calc(2px + 2ex + 2px);
+}
+
+main {
+  --space: #{$space};
+
+  :is(h1, h2, h3, h4, .h1, .h2, .h3, .h4) {
+    margin-bottom: 0.65em;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  p {
+   margin-bottom: calc( var(--space) );
+  }
+}
