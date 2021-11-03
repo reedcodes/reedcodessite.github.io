@@ -1,0 +1,12 @@
+a{
+  &:not([class]) {
+    color: var(--color-links);
+
+    &:focus,
+    &:hover {
+      color: var(--color-links-hover);
+    }
+
+    [class*='pdf'] { margin-inline-start: 0.25em; }
+  }
+}

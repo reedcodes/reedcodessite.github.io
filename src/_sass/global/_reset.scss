@@ -31,9 +31,16 @@ body {
 *:focus { scroll-margin-bottom: 10vh; }
 
 a:not([class]) {
+  --line-size: max(2px, 0.1em);
+
   text-decoration-skip-ink: auto;
-  text-decoration-thickness: max(0.1em, 2px);
-  text-underline-offset: 0.125em;
+  text-decoration-thickness: var(--line-size);
+
+  &:focus {
+    outline: var(--line-size) solid currentColor;
+    outline-offset: var(--line-size);
+    text-decoration: none;
+  }
 }
 
 ul[role="list"],
