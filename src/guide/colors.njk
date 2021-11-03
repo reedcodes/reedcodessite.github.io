@@ -13,3 +13,15 @@ title: Colors
     </li>
   {% endfor %}
 </ul>
+
+<ul role="list">
+  {% for colorToken in colors %}
+    <li>
+      <figure class="swatch">
+        <figcaption class="bg-on-{{ colorToken.name }}">
+          <strong>on-{{ colorToken.name }}</strong> {{ colorToken.color }}
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+</ul>
