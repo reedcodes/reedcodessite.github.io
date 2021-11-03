@@ -3,47 +3,47 @@
   Modify colors in ./src/_data/colors.js
  */
 
-$color-primary: rgba(0, 121, 140, 1) !default;
-$color-on-primary: rgb(226, 244, 247) !default;
-$color-secondary: rgba(125, 59, 106, 1) !default;
-$color-on-secondary: rgb(220, 188, 211) !default;
-$color-alert: rgba(208, 55, 17, 1) !default;
-$color-on-alert: rgb(255, 241, 238) !default;
-$color-highlight: rgba(246, 174, 45, 1) !default;
-$color-on-highlight: rgb(108, 66, 0) !default;
-$color-light: rgba(248, 245, 242, 1) !default;
-$color-on-light: rgb(117, 112, 108) !default;
-$color-dark: rgba(37, 41, 53, 1) !default;
-$color-on-dark: rgb(139, 144, 156) !default;
+$color-main: #f4f4e1 !default;
+$color-on-main: #707059 !default;
+$color-contrast: #173c39 !default;
+$color-on-contrast: #7EA6A2 !default;
+$color-highlight: #ccce7a !default;
+$color-on-highlight: #565725 !default;
+$color-primary: #c43121 !default;
+$color-on-primary: #FFE2DF !default;
+$color-secondary: #95caba !default;
+$color-on-secondary: #35544B !default;
+$color-accent: #bea467 !default;
+$color-on-accent: #4A3B19 !default;
 
-$base-color-tokens: ("primary", "secondary", "alert", "highlight", "light", "dark");
+$base-color-tokens: ("main", "contrast", "highlight", "primary", "secondary", "accent");
 
 $color-tokens: (
+  "color-main": $color-main,
+  "color-on-main": $color-on-main,
+  "color-contrast": $color-contrast,
+  "color-on-contrast": $color-on-contrast,
+  "color-highlight": $color-highlight,
+  "color-on-highlight": $color-on-highlight,
   "color-primary": $color-primary,
   "color-on-primary": $color-on-primary,
   "color-secondary": $color-secondary,
   "color-on-secondary": $color-on-secondary,
-  "color-alert": $color-alert,
-  "color-on-alert": $color-on-alert,
-  "color-highlight": $color-highlight,
-  "color-on-highlight": $color-on-highlight,
-  "color-light": $color-light,
-  "color-on-light": $color-on-light,
-  "color-dark": $color-dark,
-  "color-on-dark": $color-on-dark
+  "color-accent": $color-accent,
+  "color-on-accent": $color-on-accent
 ) !default;
 
 @mixin color-tokens() {
+  --color-main: #{$color-main};
+  --color-on-main: #{$color-on-main};
+  --color-contrast: #{$color-contrast};
+  --color-on-contrast: #{$color-on-contrast};
+  --color-highlight: #{$color-highlight};
+  --color-on-highlight: #{$color-on-highlight};
   --color-primary: #{$color-primary};
   --color-on-primary: #{$color-on-primary};
   --color-secondary: #{$color-secondary};
   --color-on-secondary: #{$color-on-secondary};
-  --color-alert: #{$color-alert};
-  --color-on-alert: #{$color-on-alert};
-  --color-highlight: #{$color-highlight};
-  --color-on-highlight: #{$color-on-highlight};
-  --color-light: #{$color-light};
-  --color-on-light: #{$color-on-light};
-  --color-dark: #{$color-dark};
-  --color-on-dark: #{$color-on-dark};
+  --color-accent: #{$color-accent};
+  --color-on-accent: #{$color-on-accent};
 }
