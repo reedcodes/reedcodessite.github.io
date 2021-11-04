@@ -1,10 +1,17 @@
 {
   "name": "Reed Piernock",
   "title": "presentation layer developer",
+  "site": "ReedCodes.com",
   "url": "https://reedcodes.com/",
   "email": "hello@reedcodes.com",
-  "linkedin": "reedcodes",
-  "twitter": "reedcodes",
-  "github": "reedcodes",
-  "coolors": "reedcodes"
+  "social": {
+    "linkedin": "reedcodes",
+    "twitter": "reedcodes",
+    "github": "reedcodes",
+    "instagram": "reedcodes"
+  },
+  "assets":{
+    "css": "/dist/css",
+    "images": "/dist/images"
+  }
 }

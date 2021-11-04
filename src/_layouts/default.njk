@@ -6,15 +6,13 @@
 </head>
 <body>
 
-  <header class="header">
-    {%- include "header.njk" -%}
-  </header>
-
-  <nav class="menu">
+  <nav class="menu" aria-label="global site">
+    {%- include "profile.njk" -%}
     {%- include "menu.njk" -%}
   </nav>
 
-  <main class="main">
+  <main class="main" aria-label="body content">
+
     {%- if not home -%}
       <h1>{{- title -}}</h1>
     {%- endif -%}
@@ -23,9 +21,10 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" aria-label="site information">
     {%- include "social.njk" -%}
     {%- include "colophon.njk" -%}
+    {%- include "copyright.njk" -%}
   </footer>
 
 </body>
