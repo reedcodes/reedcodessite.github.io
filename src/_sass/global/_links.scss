@@ -1,12 +1,9 @@
-a{
-  &:not([class]) {
-    color: var(--color-links);
+a {
+  color: var(--links-color);
 
-    &:focus,
-    &:hover {
-      color: var(--color-links-hover);
-    }
-
-    [class*='pdf'] { margin-inline-start: 0.25em; }
+  [class*='pdf'] {
+    margin-left: 0.25em;
+    margin-inline-start: 0.25em;
   }
+
 }
