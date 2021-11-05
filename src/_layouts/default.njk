@@ -6,23 +6,28 @@
 </head>
 <body>
 
-  <header class="header" aria-label="site intro">
-    {%- include "profile.njk" -%}
-    {%- include "menu.njk" -%}
+  <header class="header wrapper" aria-label="site intro">
+    <div class="container">
+      {%- include "menu.njk" -%}
+    </div>
   </header>
 
-  <main class="main" aria-label="body content">
+  <main class="main wrapper" aria-label="body content">
+    <div class="container">
 
-    <h1>{{- title -}}</h1>
+      <h1>{{- title -}}</h1>
 
-    {{ content | safe }}
+      {{ content | safe }}
 
+    </div>
   </main>
 
-  <footer class="footer" aria-label="site information">
-    {%- include "social.njk" -%}
-    {%- include "colophon.njk" -%}
-    {%- include "copyright.njk" -%}
+  <footer class="footer wrapper" aria-label="site information">
+    <div class="container">
+      {%- include "social.njk" -%}
+      {%- include "colophon.njk" -%}
+      {%- include "copyright.njk" -%}
+    </div>
   </footer>
 
 </body>

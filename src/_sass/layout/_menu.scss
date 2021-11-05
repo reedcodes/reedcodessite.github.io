@@ -1,0 +1,53 @@
+@use 'include-media' as *;
+
+.menu {
+  display: grid;
+  gap: 6vw 4vw;
+  align-items: center;
+  padding: 2vh 0;
+
+  @include media('landscape') {
+    gap: 4vw;
+    grid-template-columns: 1fr min-content;
+  }
+
+  .profile {
+    justify-self: start;
+
+    img {
+      aspect-ratio: 1;
+      width: min(120px, 160px);
+      border-radius: 50%;
+      border: 6px solid var(--color-on-primary);
+      background-color: var(--color-secondary);
+    }
+  }
+
+  &-list {
+    display: flex;
+    gap: 2em;
+
+    @include media('landscape') {
+      justify-self: end;
+    }
+
+    &-link {
+      --links-color: var(--color-on-primary);
+      --line-size: max(2px, 0.25em);
+
+      transition: all 0.3s ease;
+      text-decoration-thickness: var(--line-size);
+      text-decoration-color: transparent;
+      text-underline-offset: inherit;
+
+      &:hover,
+      &:focus {
+        --links-act-color: var(--color-main);
+      }
+
+      &:hover {
+        text-decoration-color: currentcolor;
+      }
+    }
+  }
+}

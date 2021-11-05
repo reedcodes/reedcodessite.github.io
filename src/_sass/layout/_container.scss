@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+  grid-template-columns:
+    [wrapper-start]
+      minmax(2vw, 1fr)
+      [container-start] min( min(96vw, 100%), 80ch ) [container-end]
+      minmax(2vw, 1fr)
+    [wrapper-end];
+}
+
+.container {
+  grid-column: container;
+}

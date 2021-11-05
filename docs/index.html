@@ -16,23 +16,27 @@
 </head>
 <body>
 
-  <header class="header" aria-label="site intro"><a href="/"><img src="/dist/images/reedcodes.png" width="300" height="300" aria-label="ReedCodes.com" /></a>
-<nav class="menu" aria-label="global site">
-  <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/talks/">Talks</a>
-      </li>
-  </ul>
-</nav></header>
+  <header class="header wrapper" aria-label="site intro">
+    <div class="container">
 
-  <main class="main" aria-label="body content">
+<nav class="menu" aria-label="global site"><a class="profile" href="/"><img src="/dist/images/reedcodes.png" width="300" height="300" aria-label="ReedCodes.com" /></a>
+<ul class="menu-list" role="list">
+        <li class="menu-list-item">
+          <a class="menu-list-link" href="/">Home</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-list-link" href="/talks/">Talks</a>
+        </li>
+    </ul></nav>
+</div>
+  </header>
 
-    <h1>Hello! My name is Reed.</h1>
+  <main class="main wrapper" aria-label="body content">
+    <div class="container">
 
-    
+      <h1>Hello! My name is Reed.</h1>
+
+      
 <section>
   <p>I am a senior front-end web developer in Washington DC, specializing mobile first, responsive design using modern CSS techniques. I'm also currently studying Communication, Culture, and Technology at the Graduate School of Arts and Sciences of Georgetown University, focusing on the representation of marginalized identities in popular media, specifically depictions of fat and gender.</p>
   <p>My pronouns are they/them, I love taking long train rides, I plan to <a href="https://lincolnhighwayjournal.com/">drive the Lincoln Highway</a> when I complete my masters, I knit socks but I have a bunch of unfinished sweaters, I sing in a competitive karaoke league, and I enjoy tea and coffee equally.</p>
@@ -40,9 +44,11 @@
 </section>
 
 
+    </div>
   </main>
 
-  <footer class="footer" aria-label="site information"><ul class="social">
+  <footer class="footer wrapper" aria-label="site information">
+    <div class="container"><ul class="social">
   <li><a href="mailto:hello@reedcodes.com"><span class="fas fa-fw fa-envelope-square" aria-hidden="true"></span>Email</a></li>
   <li><a href="https://github.com/reedcodes"><span class="fab fa-fw fa-github-square" aria-hidden="true"></span>Github</a></li>
   <li><a href="https://twitter.com/reedcodes"><span class="fab fa-fw fa-twitter-square" aria-hidden="true"></span>Twitter</a></li>
@@ -51,7 +57,8 @@
 </ul>
 <p>This site is built using tools such as <a href="https://www.11ty.dev/">11ty</a> and <a href="https://sass-lang.com/">Sass</a>. Assets include <a href="https://fonts.google.com/">Google Fonts</a> and <a href="http://fontawesome.io/">FontAwesome</a>. Profile picrew credit <a href="https://twitter.com/SangledHere">@SangledHere</a>. Hosting and domain available through <a href="https://www.dreamhost.com/">DreamHost</a>.</p>
 <p><a href="https://reedcodes.com/">ReedCodes.com</a> © 2021, Reed Piernock</p>
-</footer>
+</div>
+  </footer>
 
 </body>
 </html>

@@ -9,7 +9,8 @@ const cssDist = './docs/dist/css';
 
 // Define CSS source paths from other locations, e.g. node modules.
 const cssIncludePaths = [
-  './node_modules/@fortawesome/fontawesome-free/scss'
+  './node_modules/@fortawesome/fontawesome-free/scss',
+  './node_modules/include-media/dist'
 ];
 
 // Task to compile CSS files.
