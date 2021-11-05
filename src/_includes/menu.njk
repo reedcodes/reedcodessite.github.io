@@ -1,6 +1,7 @@
 {% set menu = collections.all | eleventyNavigation %}
 
 {%- if not menu | length == 0 -%}
+<nav class="menu" aria-label="global site">
   <ul>
     {%- for item in menu %}
       <li>
@@ -8,4 +9,5 @@
       </li>
     {%- endfor %}
   </ul>
+</nav>
 {%- endif -%}
