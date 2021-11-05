@@ -2,28 +2,28 @@
 title: Colors
 ---
 
-<h2>Main Colors</h2>
+<h2>Colors</h2>
 
 <ul class="swatch-list" role="list">
   {% for colorToken in colors %}
     <li>
       <figure class="swatch bg-{{ colorToken.name }}">
         <figcaption class="swatch-caption">
-          <strong>{{ colorToken.name }}</strong> {{ colorToken.color }}
+          <strong>{{ colorToken.name }}</strong>
         </figcaption>
       </figure>
     </li>
   {% endfor %}
 </ul>
 
-<h2>On Main Colors</h2>
+<h2>On Colors</h2>
 
 <ul class="swatch-list" role="list">
   {% for colorToken in colors %}
     <li>
       <figure class="swatch bg-on-{{ colorToken.name }}">
         <figcaption class="swatch-caption">
-          <strong>on-{{ colorToken.name }}</strong> {{ colorToken.color }}
+          <strong>on-{{ colorToken.name }}</strong>
         </figcaption>
       </figure>
     </li>

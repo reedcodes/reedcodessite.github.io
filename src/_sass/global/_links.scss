@@ -1,6 +1,11 @@
 a {
   color: var(--links-color);
 
+  &:hover,
+  &:focus {
+    color: var(--links-act-color);
+  }
+
   [class*='pdf'] {
     margin-left: 0.25em;
     margin-inline-start: 0.25em;

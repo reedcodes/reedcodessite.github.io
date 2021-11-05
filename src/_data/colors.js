@@ -7,7 +7,7 @@ module.exports = [
   {
     // black-green
     name: "contrast",
-    color: "#173c39"
+    color: "#0e1e0d"
   },
   {
     // straw
