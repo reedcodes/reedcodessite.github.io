@@ -20,7 +20,8 @@
 
   &-list {
     display: flex;
-    gap: 2em;
+    flex-wrap: wrap;
+    gap: 0.5em 2em;
 
     &-link {
       --line-size: max(2px, 0.25em);
@@ -35,7 +36,7 @@
   // For desktop/tablet wider than medium screens.
   @include media('>=tablet') {
     gap: 4vw;
-    grid-template-columns: 1fr min-content;
+    grid-template-columns: 1fr auto;
 
     &-list {
       justify-self: end;
