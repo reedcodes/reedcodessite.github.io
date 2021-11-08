@@ -28,11 +28,15 @@ body {
 [id] { scroll-margin-top: 2rem; }
 *:focus { scroll-margin-bottom: 10vh; }
 
+a,
+button {
+  transition: all 0.3s ease;
+}
+
 a {
   --line-size: max(2px, 0.1em);
   --link-underline-color: currentcolor;
 
-  transition: all 0.3s ease;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: var(--line-size);
   text-decoration-color: var(--link-underline-color);

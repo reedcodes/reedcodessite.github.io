@@ -1,12 +1,6 @@
 .footer {
+  --links-color: var(--color-on-secondary);
+  --links-act-color: var(--color-on-accent);
+
   background-color: var(--color-secondary);
-
-  a {
-    --links-color: var(--color-on-secondary);
-    --links-act-color: var(--color-on-accent);
-
-    [class*='fa-'] {
-      margin-right: 0.25em;
-    }
-  }
 }

@@ -2,7 +2,6 @@
  * colors are set in _data/colors.js
  ***/
 
-@use "sass:color";
 @use 'color-tokens' as *;
 
 @each $color in $base-color-tokens {
@@ -24,9 +23,3 @@
     color: var(--color-#{$color});
   }
 }
-
-$background: "var(--color-light)" !default;
-$text: "var(--color-dark)" !default;
-
-$links: "var(--color-primary)" !default;
-$links-hover: "var(--color-secondary)" !default;

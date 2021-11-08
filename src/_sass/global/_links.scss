@@ -10,6 +10,11 @@ a {
     --line-size: max(4px, 0.15em);
   }
 
+  [class*='fa-'] {
+    margin-right: 0.25em;
+    margin-inline-end: 0.25em;
+  }
+
   [class*='pdf'] {
     margin-left: 0.25em;
     margin-inline-start: 0.25em;
