@@ -6,6 +6,10 @@ a {
     color: var(--links-act-color);
   }
 
+  &:hover {
+    --line-size: max(4px, 0.15em);
+  }
+
   [class*='pdf'] {
     margin-left: 0.25em;
     margin-inline-start: 0.25em;

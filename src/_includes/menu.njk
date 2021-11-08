@@ -1,6 +1,6 @@
 {% set menu = collections.all | eleventyNavigation %}
 
-<nav class="menu" aria-label="global site">
+<nav class="menu" id="menu" aria-label="global site">
   {%- include "profile.njk" -%}
 
   {%- if not menu | length == 0 -%}

@@ -6,13 +6,13 @@
 </head>
 <body>
 
-  <header class="header wrapper" aria-label="site intro">
+  <header class="header wrapper" id="header" aria-label="site intro">
     <div class="container">
       {%- include "menu.njk" -%}
     </div>
   </header>
 
-  <main class="main wrapper" aria-label="body content">
+  <main class="main wrapper" id="main" aria-label="body content">
     <div class="container">
 
       <h1>{{- title -}}</h1>
@@ -22,8 +22,9 @@
     </div>
   </main>
 
-  <footer class="footer wrapper" aria-label="site information">
+  <footer class="footer wrapper" id="footer" aria-label="site information">
     <div class="container">
+      {%- include "contact.njk" -%}
       {%- include "social.njk" -%}
       {%- include "colophon.njk" -%}
       {%- include "copyright.njk" -%}
