@@ -11,7 +11,11 @@
     "instagram": "reedcodes"
   },
   "assets":{
-    "css": "/dist/css",
-    "images": "/dist/images"
+    "css": "/dist/css/",
+    "images": "/dist/images/"
+  },
+  "external": {
+    "talks": "https://talks.reedcodes.com/",
+    "lhj": "https://lincolnhighwayjournal.com/"
   }
 }
