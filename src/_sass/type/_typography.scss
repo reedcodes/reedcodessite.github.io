@@ -29,14 +29,14 @@ body {
 
 :is(
   p,
-  dd,
+  dl,
   ol:not([class]):not([role]),
   ul:not([class]):not([role])
 ) {
   margin-bottom: var(--spacer);
 }
 
-:is(li) {
+:is(li, dt, dd) {
   margin-bottom: calc( var(--spacer) / 2 );
 }
 
