@@ -4,6 +4,16 @@
 
 @use 'color-tokens' as *;
 
+.color {
+  &-alert {
+    color: var(--color-primary);
+  }
+
+  &-notice {
+    color: var(--color-on-main);
+  }
+}
+
 @each $color in $base-color-tokens {
   .bg-#{$color} {
     background-color: var(--color-#{$color});

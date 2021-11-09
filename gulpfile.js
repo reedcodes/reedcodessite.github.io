@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp   = require( 'gulp' ),
-      sass   = require( 'gulp-dart-sass' );
+      sass   = require( 'gulp-sass' )( require( 'sass' ) );
 
 // Define CSS source and distribution directories.
 const cssSrc  = './src/_sass/**/*.scss';

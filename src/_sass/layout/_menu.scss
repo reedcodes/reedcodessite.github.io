@@ -4,14 +4,13 @@
   display: grid;
   gap: 6vw 4vw;
   align-items: center;
-  padding: 2vh 0;
 
   .profile {
     justify-self: start;
 
     img {
       aspect-ratio: 1;
-      width: min(120px, 160px);
+      width: max(120px, 160px);
       border-radius: 50%;
       border: 6px solid var(--color-on-primary);
       background-color: var(--color-secondary);
@@ -22,6 +21,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em 2em;
+
+    &-item {
+      margin: 0;
+    }
 
     &-link {
       --line-size: max(2px, 0.25em);
