@@ -34,20 +34,4 @@
       --links-act-color: var(--color-#{$color});
     }
   }
-
-  // &-highlight {
-  //   --links-bg-color: var(--color-highlight);
-  //   --links-color: var(--color-on-accent);
-  //
-  //   --links-act-bg-color: var(--color-on-accent);
-  //   --links-act-color: var(--color-highlight);
-  // }
-  //
-  // &-secondary {
-  //   --links-bg-color: var(--color-secondary);
-  //   --links-color: var(--color-on-secondary);
-  //
-  //   --links-act-bg-color: var(--color-on-secondary);
-  //   --links-act-color: var(--color-secondary);
-  // }
 }
