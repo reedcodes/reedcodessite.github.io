@@ -1,0 +1,13 @@
+$neuton: 'Neuton', serif;
+$montez: 'Montez', cursive;
+$raleway: 'Raleway', sans-serif;
+
+$title: $montez;
+$highlight: $neuton;
+$body: $raleway;
+
+:root {
+  --font-body: #{$body};
+  --font-highlight: #{$highlight};
+  --font-title: #{$title};
+}

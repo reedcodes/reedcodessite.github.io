@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+<head>
+  {%- include "head.njk" -%}
+</head>
+<body>
+
+  <header class="header wrapper" id="header" aria-label="site intro">
+    <div class="container">
+      {%- include "menu.njk" -%}
+    </div>
+  </header>
+
+  <main class="main wrapper" id="main" aria-label="body content">
+    <div class="container">
+
+      {%- if home -%}
+        <h1 class="title h3 color-primary">{{- title -}}</h1>
+        <p class="subtitle h1">{{- subtitle -}}</p>
+      {%- else -%}
+        <h1>{{- title -}}</h1>
+      {%- endif -%}
+
+      {{ content | safe }}
+
+    </div>
+  </main>
+
+  <footer class="footer wrapper" id="footer" aria-label="site information">
+    <div class="container">
+      {%- include "contact.njk" -%}
+      {%- include "social.njk" -%}
+      {%- include "colophon.njk" -%}
+      {%- include "copyright.njk" -%}
+    </div>
+  </footer>
+
+</body>
+</html>
