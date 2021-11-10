@@ -26,7 +26,11 @@ body {
 :last-child { margin-bottom: 0; }
 
 [id] { scroll-margin-top: 2rem; }
-*:focus { scroll-margin-bottom: 10vh; }
+
+:focus,
+:focus-visible {
+  scroll-margin-bottom: 10vh;
+}
 
 a,
 button {
