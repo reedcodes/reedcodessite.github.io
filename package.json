@@ -13,7 +13,7 @@
     "url": "https://github.com/reedcodes/reedcodessite.github.io/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "0.12.*",
+    "@11ty/eleventy": "1.0.*",
     "@11ty/eleventy-navigation": "0.3.*",
     "@fortawesome/fontawesome-free": "5.15.*",
     "a11y-color-tokens": "0.5.*",
