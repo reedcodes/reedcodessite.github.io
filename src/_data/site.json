@@ -6,9 +6,7 @@
   "email": "hello@reedcodes.com",
   "social": {
     "linkedin": "reedcodes",
-    "twitter": "reedcodes",
-    "github": "reedcodes",
-    "instagram": "reedcodes"
+    "github": "reedcodes"
   },
   "assets":{
     "css": "/dist/css/",
