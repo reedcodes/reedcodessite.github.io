@@ -15,14 +15,14 @@
   "devDependencies": {
     "@11ty/eleventy": "1.0.*",
     "@11ty/eleventy-navigation": "0.3.*",
-    "@fortawesome/fontawesome-free": "5.15.*",
+    "@fortawesome/fontawesome-free": "6.2.*",
     "a11y-color-tokens": "0.5.*",
     "gulp": "4.0.*",
     "gulp-concat": "2.6.*",
-    "gulp-sass": "5.0.*",
+    "gulp-sass": "5.1.*",
     "include-media": "1.4.*",
     "npm-run-all": "4.1.*",
-    "sass": "1.43.*"
+    "sass": "1.56.*"
   },
   "main": "gulpfile.js",
   "scripts": {
