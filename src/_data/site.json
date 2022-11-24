@@ -4,12 +4,6 @@
   "site": "ReedCodes.com",
   "url": "https://reedcodes.com/",
   "email": "hello@reedcodes.com",
-  "social": {
-    "linkedin": "reedcodes",
-    "twitter": "reedcodes",
-    "github": "reedcodes",
-    "instagram": "reedcodes"
-  },
   "assets":{
     "css": "/dist/css/",
     "images": "/dist/images/"
