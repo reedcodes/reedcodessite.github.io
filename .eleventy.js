@@ -6,19 +6,18 @@ module.exports = function( eleventyConfig ) {
   // Send assets from source to site.
   eleventyConfig.addPassthroughCopy( {
     "./node_modules/@fortawesome/fontawesome-free/webfonts/": "dist/webfonts/fa/",
-    "./src/_images/": "dist/images/",
-    "./src/CNAME": "CNAME"
+    "./src/_images/": "dist/images/"
   } );
 
   // Configuration.
 
   return {
     dir: {
-      input: 'src',
+      input: 'source',
       data: '_data',
       layouts: '_layouts',
       includes: '_includes',
-      output: 'docs'
+      output: 'site'
     }
   };
 };

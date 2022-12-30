@@ -30,9 +30,10 @@
   },
   "main": "gulpfile.js",
   "scripts": {
-    "tokens": "npx a11y-color-tokens --colorTokensPath='./src/_data/colors.js' --outputDirPath='./src/_sass/color' --compatibilityDocsPath='./src/guide'",
+    "tokens": "npx a11y-color-tokens --colorTokensPath='./source/_data/colors.js' --outputDirPath='./source/_sass/color' --compatibilityDocsPath='./source/guide'",
     "build:sass": "gulp",
     "build:11ty": "npx eleventy",
-    "build": "npm-run-all tokens build:sass build:11ty"
+    "build": "npm-run-all tokens build:sass build:11ty",
+    "clean": "rm -rf ./site/ && npm run build"
   }
 }
