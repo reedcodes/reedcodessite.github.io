@@ -2,7 +2,12 @@
 .DS_Store
 
 # Development files.
+.cache
+.env
 node_modules
 
-# Deployment files.
+# Site build.
 docs
+
+# Deployment.
+.push-it
