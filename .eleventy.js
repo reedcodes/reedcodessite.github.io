@@ -57,6 +57,16 @@ module.exports = function( eleventyConfig ) {
   eleventyConfig.addFilter( "getNewestCollectionItemDate", eleventyRssPlugin.getNewestCollectionItemDate );
   eleventyConfig.addFilter( "dateToRfc822", eleventyRssPlugin.dateToRfc822 );
 
+  // Add blog glob. This assists in pulling in various collections in the blog,
+  // such as posts, categories, and tags.
+  eleventyConfig.addCollection( "blogPosts", require("./source/_config/collections/blog-posts.js") );
+  eleventyConfig.addCollection( "categories", require("./source/_config/collections/categories.js") );
+  eleventyConfig.addCollection( "categoryList", require("./source/_config/collections/category-list.js") );
+  eleventyConfig.addCollection( "tagList", require("./source/_config/collections/tag-list.js") );
+
+  // Add date filters to make it a little easier to write dates.
+  eleventyConfig.addFilter( "simpleDate", require("./source/_config/filters/simple-date.js") );
+
   // Remove the console output of all generated files.
   eleventyConfig.setQuietMode(true);
 
