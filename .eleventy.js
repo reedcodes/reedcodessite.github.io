@@ -69,6 +69,9 @@ module.exports = function( eleventyConfig ) {
   eleventyConfig.addFilter( "shortDate", require("./source/_config/filters/short-date.js") );
   eleventyConfig.addFilter( "longDate", require("./source/_config/filters/long-date.js") );
 
+  // Add the image shortcode, from the 11ty image plugin.
+  eleventyConfig.addAsyncShortcode( "image", require("./source/_config/shortcodes/image.js") );
+
   // Remove the console output of all generated files.
   eleventyConfig.setQuietMode(true);
 
