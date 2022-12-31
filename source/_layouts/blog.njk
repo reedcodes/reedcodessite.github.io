@@ -7,8 +7,8 @@ layout: default.njk
 {%- if post_list -%}
   <section class="post-list" aria-label="Post list">
     {%- for post in post_list -%}
-      <article class="sidebar">
-        <div class="sidebar-aside post-meta">
+      <article class="post-post sidebar">
+        <div class="post-meta sidebar-aside">
           <p class="post-date">
             {{ post.data.date | shortDate }}
             {% if post.data.category %}

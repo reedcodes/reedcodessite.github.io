@@ -1,6 +1,20 @@
 .post {
+  &-post {
+    margin-block-end: 6rem;
+  }
+
   &-title {
     line-height: 1;
+  }
+
+  &-taxonomy {
+    --flex-items-gap: 0 0.5em;
+
+    font-size: 0.9rem;
+  }
+
+  &-date {
+    font-size: 1.1rem;
   }
 
   &-date,
@@ -11,7 +25,6 @@
 
   &-date,
   &-taxonomy {
-    font-size: 1rem;
     text-transform: uppercase;
   }
 }
