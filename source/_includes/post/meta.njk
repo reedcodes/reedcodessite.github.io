@@ -1,14 +1,12 @@
-{%- macro postMeta( date, category, tags, class="blog", sidebar=false ) -%}
-  <div class="{{- class -}}-meta {{- " sidebar-aside" if sidebar }}">
+{%- from "post/title.njk" import postTitle with context -%}
 
-    <p class="{{- class -}}-date">
-      {{ date | shortDate }}
+{%- macro postMeta( title, date, category, tags, class="blog", url ) -%}
+  <div class="{{- class -}}-meta">
 
-      {% if category %}
-        in <a class="{{- class -}}-term-category" href="/blog/category/{{ category | slug }}/">{{ category }}</a>
-      {%- endif -%}
-    </p>
-    
+    <p class="{{- class -}}-date">{{- date | longDate -}}</p>
+
+    {{ postTitle( title, class, url ) }}
+
     {%- if tags -%}
       <dl class="{{- class -}}-taxonomy flex-items">
         <dt class="hide-on-screen">Tags</dt>

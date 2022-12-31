@@ -3,13 +3,11 @@
 {%- from "post/meta.njk" import postMeta with context -%}
 
 {%- block main_content -%}
-  <article class="post-post sidebar">
-    <h1 class="post-title sidebar-main">{{- title -}}</h1>
+  <article class="post-post">
+    {# <h1 class="post-title">{{- title -}}</h1> #}
 
-    {{ postMeta( date, category, tags, class="post", sidebar=true ) }}
+    {{ postMeta( title, date, category, tags, class="post" ) }}
 
-    <div class="post-content sidebar-main">
-      {{ content | safe }}
-    </div>
+    {{ content | safe }}
   </article>
 {%- endblock main_content -%}

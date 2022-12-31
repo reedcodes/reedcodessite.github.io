@@ -1,6 +1,6 @@
 .blog,
 .post {
-  &-post {
+  &-meta {
     margin-block-end: 6rem;
   }
 
@@ -15,26 +15,18 @@
   }
 
   &-date {
-    margin-block: 1rem;
     font-size: 1.1rem;
     line-height: 1;
   }
 
   &-date,
+  &-title {
+    margin-block: 0;
+  }
+
+  &-date,
   &-taxonomy {
     text-transform: uppercase;
-  }
-}
-
-
-
-.post {
-  &-post {
-    --sidebar-gap-row: 0;
-  }
-
-  &-meta {
-    padding-block-start: 1rem;
   }
 }
 
