@@ -6,7 +6,7 @@
   <article class="post-post sidebar">
     <h1 class="post-post-title sidebar-main">{{- title -}}</h1>
 
-    {{ postMeta( date, category, tags ) }}
+    {{ postMeta( date, category, tags, sidebar=true ) }}
 
     <div class="post-content sidebar-main">
       {{ content | safe }}

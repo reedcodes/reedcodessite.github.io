@@ -1,5 +1,5 @@
-{%- macro postMeta( date, category, tags ) -%}
-  <div class="post-meta sidebar-aside">
+{%- macro postMeta( date, category, tags, sidebar=false ) -%}
+  <div class="post-meta {{- " sidebar-aside" if sidebar }}">
 
     <p class="post-date">
       {{ date | shortDate }}

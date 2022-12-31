@@ -3,9 +3,9 @@
 {%- macro postList(post_list) -%}
   <section class="post-list" aria-label="Post list">
     {%- for post in post_list -%}
-      <article class="post-post sidebar">
+      <article class="post-post">
 
-        <h2 class="post-title sidebar-main"><a class="post-title-link" href="{{- post.url -}}">{{ post.data.title -}}</a></h2>
+        <h2 class="post-title"><a class="post-title-link" href="{{- post.url -}}">{{ post.data.title -}}</a></h2>
 
         {{ postMeta( post.data.date, post.data.category, post.data.tags ) }}
       </article>
