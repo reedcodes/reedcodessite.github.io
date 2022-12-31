@@ -1,0 +1,13 @@
+{%- extends "layouts/default.njk" -%}
+
+{%- from "post/meta.njk" import postMeta with context -%}
+
+{%- block main_content -%}
+  <article class="post-post sidebar">
+    {{ postMeta( date, category, tags ) }}
+
+    <div class="post-content sidebar-main">
+      {{ content | safe }}
+    </div>
+  </article>
+{%- endblock main_content -%}

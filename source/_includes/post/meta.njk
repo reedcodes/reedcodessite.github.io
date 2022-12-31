@@ -1,0 +1,21 @@
+{%- macro postMeta( date, category, tags ) -%}
+  <div class="post-meta sidebar-aside">
+
+    <p class="post-date">
+      {{ date | shortDate }}
+
+      {% if category %}
+        in <a class="post-term-category" href="/blog/category/{{ category | slug }}/">{{ category }}</a>
+      {%- endif -%}
+    </p>
+    
+    {%- if tags -%}
+      <dl class="post-taxonomy flex-items">
+        <dt class="hide-on-screen">Tags</dt>
+        {% for tag in tags -%}
+          <dd class="flex-item post-term"><a class="post-term-tag button button-primary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+        {%- endfor -%}
+      </dl>
+    {%- endif -%}
+  </div>
+{%- endmacro -%}
