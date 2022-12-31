@@ -1,11 +1,11 @@
 {%- from "post/meta.njk" import postMeta with context -%}
 
 {%- macro postList(post_list) -%}
-  <section class="post-list" aria-label="Post list">
+  <section class="blog-list" aria-label="Post list">
     {%- for post in post_list -%}
-      <article class="post-post">
+      <article class="blog-post">
 
-        <h2 class="post-title"><a class="post-title-link" href="{{- post.url -}}">{{ post.data.title -}}</a></h2>
+        <h2 class="blog-title"><a class="blog-title-link" href="{{- post.url -}}">{{ post.data.title -}}</a></h2>
 
         {{ postMeta( post.data.date, post.data.category, post.data.tags ) }}
       </article>

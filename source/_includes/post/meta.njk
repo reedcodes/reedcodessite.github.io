@@ -1,19 +1,19 @@
-{%- macro postMeta( date, category, tags, sidebar=false ) -%}
-  <div class="post-meta {{- " sidebar-aside" if sidebar }}">
+{%- macro postMeta( date, category, tags, class="blog", sidebar=false ) -%}
+  <div class="{{- class -}}-meta {{- " sidebar-aside" if sidebar }}">
 
-    <p class="post-date">
+    <p class="{{- class -}}-date">
       {{ date | shortDate }}
 
       {% if category %}
-        in <a class="post-term-category" href="/blog/category/{{ category | slug }}/">{{ category }}</a>
+        in <a class="{{- class -}}-term-category" href="/blog/category/{{ category | slug }}/">{{ category }}</a>
       {%- endif -%}
     </p>
     
     {%- if tags -%}
-      <dl class="post-taxonomy flex-items">
+      <dl class="{{- class -}}-taxonomy flex-items">
         <dt class="hide-on-screen">Tags</dt>
         {% for tag in tags -%}
-          <dd class="flex-item post-term"><a class="post-term-tag button button-primary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+          <dd class="flex-item {{ class -}}-term"><a class="{{- class -}}-term-tag button button-primary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
         {%- endfor -%}
       </dl>
     {%- endif -%}
