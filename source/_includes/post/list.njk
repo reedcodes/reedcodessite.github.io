@@ -5,9 +5,9 @@
     {%- for post in post_list -%}
       <article class="post-post sidebar">
 
-        {{ postMeta( post.data.date, post.data.category, post.data.tags ) }}
-
         <h2 class="post-title sidebar-main"><a class="post-title-link" href="{{- post.url -}}">{{ post.data.title -}}</a></h2>
+
+        {{ postMeta( post.data.date, post.data.category, post.data.tags ) }}
       </article>
     {%- endfor -%}
   </section>
