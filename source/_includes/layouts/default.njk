@@ -2,15 +2,11 @@
 
 <html>
 <head>
-  {%- include "head.njk" -%}
+  {%- include "global/head.njk" -%}
 </head>
 <body>
 
-  <header class="header wrapper" id="header" aria-label="site intro">
-    <div class="container">
-      {%- include "menu.njk" -%}
-    </div>
-  </header>
+  {%- include "global/header.njk" -%}
 
   <main class="main wrapper" id="main" aria-label="body content">
     <div class="container">
@@ -29,14 +25,7 @@
     </div>
   </main>
 
-  <footer class="footer wrapper" id="footer" aria-label="site information">
-    <div class="container">
-      {%- include "contact.njk" -%}
-      {%- include "social.njk" -%}
-      {%- include "colophon.njk" -%}
-      {%- include "copyright.njk" -%}
-    </div>
-  </footer>
+  {%- include "global/footer.njk" -%}
 
 </body>
 </html>

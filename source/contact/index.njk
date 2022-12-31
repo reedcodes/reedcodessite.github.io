@@ -12,4 +12,18 @@ eleventyNavigation:
 
 <p><em>Pssst! Recruiters!</em> I am <strong>not</strong> open to new opportunities right now. I will ignore any unsolicited job postings that come my way.</p>
 
-{%- include "contact-form.njk" -%}
+<form action="https://formspree.io/f/xleaykjz" method="POST">
+  <label>
+    Name
+    <input type="text" name="name" id="name">
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" id="email">
+  </label>
+  <label>
+    Your message
+    <textarea name="message" id="message"></textarea>
+  </label>
+  <button class="button button-on-main" type="submit"><span class="fas fa-fw fa-mouse-pointer" aria-hidden="true"></span>Submit</button>
+</form>

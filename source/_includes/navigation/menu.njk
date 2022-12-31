@@ -1,7 +1,7 @@
 {% set menu = collections.all | eleventyNavigation %}
 
 <nav class="menu" id="menu" aria-label="global site">
-  {%- include "profile.njk" -%}
+  {%- include "partial/profile.njk" -%}
 
   {%- if not menu | length == 0 -%}
     <ul class="menu-list" role="list">
