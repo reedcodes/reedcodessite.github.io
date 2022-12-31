@@ -66,6 +66,8 @@ module.exports = function( eleventyConfig ) {
 
   // Add date filters to make it a little easier to write dates.
   eleventyConfig.addFilter( "simpleDate", require("./source/_config/filters/simple-date.js") );
+  eleventyConfig.addFilter( "shortDate", require("./source/_config/filters/short-date.js") );
+  eleventyConfig.addFilter( "longDate", require("./source/_config/filters/long-date.js") );
 
   // Remove the console output of all generated files.
   eleventyConfig.setQuietMode(true);
