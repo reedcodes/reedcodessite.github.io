@@ -34,4 +34,8 @@
 .pagination {
   padding-block-start: 3rem;
   border-block-start: 0.25rem solid var(--color-on-highlight);
+
+  &.page-first {
+    --flex-items-justify: end;
+  }
 }
