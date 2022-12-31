@@ -1,11 +1,13 @@
 'use strict';
 
-const gulp   = require( 'gulp' ),
-      sass   = require( 'gulp-sass' )( require( 'sass' ) );
+const cleanCSS = require( 'gulp-clean-css' ),
+      gulp = require( 'gulp' ),
+      sass = require( 'gulp-sass' )( require( 'sass' ) ),
+      sourcemaps = require( 'gulp-sourcemaps' );
 
 // Define CSS source and distribution directories.
-const cssSrc  = './src/_sass/**/*.scss';
-const cssDist = './docs/dist/css';
+const cssSource = './source/_sass/**/*.scss';
+const cssBuild = './site/dist/css';
 
 // Define CSS source paths from other locations, e.g. node modules.
 const cssIncludePaths = [
@@ -15,12 +17,15 @@ const cssIncludePaths = [
 
 // Task to compile CSS files.
 gulp.task( 'sass', function() {
-  return gulp.src( cssSrc )
-    .pipe( sass( {
-      outputStyle: 'compressed',
-      includePaths: cssIncludePaths
-    } ) )
-    .pipe( gulp.dest( cssDist ) );
+  return gulp.src( cssSource )
+    .pipe( sourcemaps.init() )
+    .pipe( sass({
+      includePaths: cssIncludePaths,
+      outputStyle: 'compressed'
+    }) )
+    .pipe( cleanCSS( { level: 2 } ) )
+    .pipe( sourcemaps.write() )
+    .pipe( gulp.dest( cssBuild ) );
 });
 
 // Gulp tasks.
