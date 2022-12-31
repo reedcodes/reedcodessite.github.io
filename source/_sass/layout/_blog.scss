@@ -1,0 +1,17 @@
+.post {
+  &-title {
+    line-height: 1;
+  }
+
+  &-date,
+  &-taxonomy,
+  &-title {
+    margin-block: 0;
+  }
+
+  &-date,
+  &-taxonomy {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}

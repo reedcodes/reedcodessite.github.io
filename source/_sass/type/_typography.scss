@@ -27,12 +27,10 @@ body {
  * Main content text.
  */
 
-:is(
-  p,
-  dl,
-  ol:not([class]):not([role]),
-  ul:not([class]):not([role])
-) {
+p,
+dl,
+ol:not([class]):not([role]),
+ul:not([class]):not([role]) {
   margin-bottom: var(--spacer);
 }
 

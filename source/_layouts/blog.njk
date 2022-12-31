@@ -1,0 +1,32 @@
+---
+layout: default.njk
+---
+
+{%- set post_list = pagination.items -%}
+
+{%- if post_list -%}
+  <section class="post-list" aria-label="Post list">
+    {%- for post in post_list -%}
+      <article class="sidebar">
+        <div class="sidebar-aside post-meta">
+          <p class="post-date">
+            {{ post.data.date | shortDate }}
+            {% if post.data.category %}
+              in <a class="post-term-category" href="/blog/category/{{ post.data.category | slug }}/">{{ post.data.category }}</a>
+            {%- endif -%}
+          </p>
+          
+          {%- if post.data.tags -%}
+            <dl class="post-taxonomy flex-items">
+              <dt class="hide-on-screen">Tags</dt>
+              {% for tag in post.data.tags -%}
+                <dd class="flex-item post-term"><a class="post-term-tag button button-primary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+              {%- endfor -%}
+            </dl>
+          {%- endif -%}
+        </div>
+        <h2 class="post-title sidebar-main"><a class="post-title-link" href="{{- post.url -}}">{{ post.data.title -}}</a></h2>
+      </article>
+    {%- endfor -%}
+  </section>
+{%- endif -%}
