@@ -22,7 +22,9 @@
         <h1>{{- title -}}</h1>
       {%- endif -%}
 
-      {{ content | safe }}
+      {%- block main_content -%}
+        {{ content | safe }}
+      {%- endblock main_content -%}
 
     </div>
   </main>
