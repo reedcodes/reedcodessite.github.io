@@ -1,0 +1,10 @@
+blockquote {
+  margin-inline: 0;
+  padding-block: 1em;
+  padding-inline: 1.5em;
+  border-start-end-radius: 0.3em;
+  border-end-end-radius: 0.3em;
+  border-inline-start: 0.3em solid var(--blockquote-border-color, var(--color-on-highlight));
+  background-color: var(--blockquote-background-color, var(--color-highlight));
+  color: var(--blockquote-text-color, var(--color-on-highlight));
+}
