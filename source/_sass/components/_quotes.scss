@@ -11,6 +11,9 @@ blockquote {
   background-color: var(--blockquote-color);
   color: var(--blockquote-on-color);
 
+  :first-child { margin-block-start: 0; }
+  :last-child { margin-block-end: 0; }
+
   code {
     --code-color: var(--blockquote-on-color);
     --code-on-color: var(--blockquote-color);
