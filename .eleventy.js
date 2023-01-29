@@ -11,6 +11,9 @@ const eleventyFaviconsPlugin = require("eleventy-plugin-gen-favicons");
 // Import 11ty RSS plugin.
 const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
 
+// Import the syntax highlighting (PrismJS) plugin.
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 
 
 module.exports = function( eleventyConfig ) {
@@ -51,6 +54,17 @@ module.exports = function( eleventyConfig ) {
   eleventyConfig.addPlugin(eleventyRssPlugin, {
     posthtmlRenderOptions: {
       quoteStyle: 0
+    }
+  });
+
+  // Add the syntax highlighting plugin. This adds a color-coded theme to code
+  // blocks on pages and posts.
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    templateFormats: ["njk", "md"],
+    preAttributes: {
+      "data-language": function({ language, content, options }) {
+        return language;
+      }
     }
   });
 
