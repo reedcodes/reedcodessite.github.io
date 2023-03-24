@@ -14,6 +14,10 @@ const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
 // Import the syntax highlighting (PrismJS) plugin.
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+// Import additional markdown libraries.
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
+
 
 
 module.exports = function( eleventyConfig ) {
@@ -57,6 +61,9 @@ module.exports = function( eleventyConfig ) {
     }
   });
 
+  eleventyConfig.addFilter( "getNewestCollectionItemDate", eleventyRssPlugin.getNewestCollectionItemDate );
+  eleventyConfig.addFilter( "dateToRfc822", eleventyRssPlugin.dateToRfc822 );
+
   // Add the syntax highlighting plugin. This adds a color-coded theme to code
   // blocks on pages and posts.
   eleventyConfig.addPlugin(syntaxHighlight, {
@@ -68,8 +75,17 @@ module.exports = function( eleventyConfig ) {
     }
   });
 
-  eleventyConfig.addFilter( "getNewestCollectionItemDate", eleventyRssPlugin.getNewestCollectionItemDate );
-  eleventyConfig.addFilter( "dateToRfc822", eleventyRssPlugin.dateToRfc822 );
+  // Update the markdown library.
+  // markdownIt().use(markdownItAttrs);
+
+  const markdownOptions = {
+    html: true
+  };
+  
+  const markdownLibrary = markdownIt(markdownOptions)
+    .use(markdownItAttrs);
+
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Add blog glob. This assists in pulling in various collections in the blog,
   // such as posts, categories, and tags.
