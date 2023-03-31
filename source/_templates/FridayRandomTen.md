@@ -8,7 +8,7 @@ tags: [ "music", "friday random ten" ]
 
 **above:** photo by [@felipepelaquim](https://unsplash.com/ko/@felipepelaquim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/UNNAYh3sMOg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) {.image-credit}
 
-I would like to bring back something from my old, regular blogging days of the mid-aughts: the Friday Random Ten. I don’t remember who started this tradition, but a bunch of us Philly bloggers would bring this around every Friday. The basic rules are:
+It’s that time again! I’m bringing back something from my old, regular blogging days of the mid-aughts: the Friday Random Ten. I don’t remember who started this tradition, but a bunch of us Philly bloggers would bring this around every Friday. The basic rules are:
 
 1. fire up your digital music player
 1. go to “all songs“ and shuffle play _everything_
