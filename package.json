@@ -36,9 +36,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "tokens": "npx a11y-color-tokens --colorTokensPath='./source/_data/colors.js' --outputDirPath='./source/_sass/color' --compatibilityDocsPath='./source/guide'",
-    "serve": "npx eleventy --serve",
+    "serve": "npx @11ty/eleventy --serve --port=8081",
     "build:sass": "gulp",
-    "build:11ty": "npx eleventy",
+    "build:11ty": "npx @11ty/eleventy",
     "build": "npm-run-all tokens build:sass build:11ty",
     "clean": "rm -rf ./site/ && npm run build"
   }
