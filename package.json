@@ -22,24 +22,20 @@
     "a11y-color-tokens": "^0.7.0",
     "eleventy-plugin-gen-favicons": "^1.1.2",
     "eleventy-plugin-metagen": "^1.7.11",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
     "include-media": "^2.0.0",
     "markdown-it": "^13.0.2",
     "markdown-it-attrs": "^4.1.6",
     "npm-run-all": "^4.1.5",
     "sass": "^1.69.0"
   },
-  "main": "gulpfile.js",
   "scripts": {
-    "tokens": "npx a11y-color-tokens --colorTokensPath='./source/_data/colors.js' --outputDirPath='./source/_sass/color' --compatibilityDocsPath='./source/guide'",
-    "serve": "npx kill-port 8080 && npx @11ty/eleventy --serve --port=8080",
-    "build:sass": "gulp",
+    "build:tokens": "npx a11y-color-tokens --colorTokensPath=./source/_data/colors.js --outputDirPath=./source/_sass/color --compatibilityDocsPath=./source/guide",
+    "watch:css": "sass --watch --load-path=./source/_sass --load-path=./node_modules/@fortawesome/fontawesome-free/scss --load-path=./node_modules/include-media/dist ./source/_sass:./site/dist/css",
+    "build:sass": "sass --load-path=./source/_sass --load-path=./node_modules/@fortawesome/fontawesome-free/scss --load-path=./node_modules/include-media/dist --style=compressed --no-source-map ./source/_sass:./site/dist/css",
+    "watch:11ty": "npx @11ty/eleventy --serve",
     "build:11ty": "npx @11ty/eleventy",
-    "build": "npm-run-all tokens build:sass build:11ty",
+    "start": "npm-run-all --parallel watch:*",
+    "build": "npm-run-all build:*",
     "clean": "rm -rf ./site/ && npm run build"
   }
 }
