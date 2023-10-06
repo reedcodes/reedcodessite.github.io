@@ -2,8 +2,6 @@
 title: Colors
 ---
 
-<h2>Colors</h2>
-
 <ul class="swatch-list" role="list">
   {% for colorToken in colors %}
     <li>
@@ -13,13 +11,6 @@ title: Colors
         </figcaption>
       </figure>
     </li>
-  {% endfor %}
-</ul>
-
-<h2>On Colors</h2>
-
-<ul class="swatch-list" role="list">
-  {% for colorToken in colors %}
     <li>
       <figure class="swatch bg-on-{{ colorToken.name }}">
         <figcaption class="swatch-caption">

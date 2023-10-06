@@ -1,8 +1,22 @@
-ul.swatch-list {
+.main {
+  container-name: main;
+  container-type: inline-size;
+}
+
+.swatch-list {
+  --swatch-gap: 2rem;
+  --swatch-min: 2;
+
   display: grid;
-  gap: 3vw;
-  grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
-  margin: 3vh 3vw;
+  grid-gap: var(--swatch-gap);
+  grid-template-columns: repeat(auto-fit, minmax(
+      calc(100%/var(--swatch-min) - var(--swatch-gap)),
+      1fr
+  ));
+  
+  @container main (inline-size > 1024px) {
+      --swatch-min: 4;
+  }
 }
 
 .swatch {
