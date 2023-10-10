@@ -1,32 +1,54 @@
 module.exports = [
+  // Light theme
   {
-    // beige
-    name: "main",
-    color: "#f4f4e1"
+    // blue-green
+    name: "primary-light",
+    color: "#006687"
   },
   {
-    // black-green
-    name: "contrast",
-    color: "#0e1e0d"
+    // emerald
+    name: "secondary-light",
+    color: "#006D3D"
   },
   {
-    // straw
-    name: "highlight",
-    color: "#ccce7a"
+    // indigo
+    name: "tertiary-light",
+    color: "#742AE8"
   },
   {
-    // rust
-    name: "primary",
-    color: "#c43121"
+    // raspberry
+    name: "error-light",
+    color: "#BC004C"
   },
   {
-    // teal
-    name: "secondary",
-    color: "#95caba"
+    // gray
+    name: "neutral-light",
+    color: "#5E5E62"
+  },
+  // Dark theme
+  {
+    // blue-green
+    name: "primary-dark",
+    color: "#71D2FF"
   },
   {
-    // dark beige
-    name: "accent",
-    color: "#bea467",
+    // emerald
+    name: "secondary-dark",
+    color: "#2DE288"
+  },
+  {
+    // indigo
+    name: "tertiary-dark",
+    color: "#D3BBFF"
+  },
+  {
+    // raspberry
+    name: "error-dark",
+    color: "#FFB2BE"
+  },
+  {
+    // gray
+    name: "neutral-dark",
+    color: "#C7C6CA"
   }
 ];
