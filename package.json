@@ -1,7 +1,7 @@
 {
   "name": "reedcodes",
-  "version": "2.1.0",
-  "description": "build scripts for Reed's website",
+  "version": "3.0.0",
+  "description": "code, build, and content for Reed's website",
   "author": "Reed Piernock",
   "license": "GPL-3.0-only",
   "homepage": "https://reedcodes.com/",
@@ -14,32 +14,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-img": "^3.1.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@fortawesome/fontawesome-free": "^6.4.2",
-    "a11y-color-tokens": "^0.6.0",
-    "eleventy-plugin-gen-favicons": "^1.1.2",
-    "eleventy-plugin-metagen": "^1.8.3",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "include-media": "^2.0.0",
-    "markdown-it": "^13.0.1",
-    "markdown-it-attrs": "^4.1.6",
+    "a11y-color-tokens": "^0.7.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.66.1"
   },
-  "main": "gulpfile.js",
-  "scripts": {
-    "tokens": "npx a11y-color-tokens --colorTokensPath='./source/_data/colors.js' --outputDirPath='./source/_sass/color' --compatibilityDocsPath='./source/guide'",
-    "serve": "npx kill-port 8080 && npx @11ty/eleventy --serve --port=8080",
-    "build:sass": "gulp",
-    "build:11ty": "npx @11ty/eleventy",
-    "build": "npm-run-all tokens build:sass build:11ty",
-    "clean": "rm -rf ./site/ && npm run build"
-  }
+  "main": ".eleventy.js",
+  "scripts": {}
 }
