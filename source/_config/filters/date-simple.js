@@ -4,5 +4,5 @@ const {DateTime} = require('luxon');
 module.exports = function(dateObj) {
   return DateTime
     .fromISO(dateObj)
-    .toFormat('yyyy"-"MM"-"dd');
+    .toFormat('yyyy-MM-dd');
 };
