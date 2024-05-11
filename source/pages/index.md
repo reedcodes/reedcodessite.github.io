@@ -1,5 +1,6 @@
 ---
 title: Hello! My name is Reed.
+permalink: "/"
 ---
 
 <p>I am a senior front-end web developer in Washington DC, specializing in accessible and responsive coding using modern CSS techniques. I hold a master's degree in <a href="https://cct.georgetown.edu/">Communication, Culture, and Technology</a> from the Graduate School of Arts and Sciences at Georgetown University, focusing on popular media and horror studies, and also serve as the Secretary on the <a href="https://www.wpcampus.org/governance/board/">Board of Directors at WPCampus</a>.</p>
