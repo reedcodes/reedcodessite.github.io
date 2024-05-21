@@ -1,3 +1,4 @@
 {
+  "layout": "post",
   "permalink": "/blog/post/{{ date | dateSimple }}-{{ title | slugify }}/"
 }
