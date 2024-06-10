@@ -1,0 +1,14 @@
+---
+title: Style Guide
+permalink: "/guide/"
+---
+
+<ul>
+  {% for page in collections.guide %}
+    <li>
+      <a href="{{ page.url }}">
+        {{ page.data.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
