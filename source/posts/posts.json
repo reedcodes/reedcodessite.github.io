@@ -1,0 +1,4 @@
+{
+  "layout": "default",
+  "permalink": "/blog/post/{{ date | dateSimple }}-{{ title | slugify }}/"
+}

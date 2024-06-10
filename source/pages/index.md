@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Hello! My name is Reed.
 permalink: "/"
 eleventyNavigation:
