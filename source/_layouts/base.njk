@@ -9,14 +9,12 @@
 
 <body>
 
-  <header id="header" aria-label="global search and site links">
-
-    <nav aria-label="site links">
+  <header id="header">
+    <nav>
       <a id="me" href="/">Reed Piernock</a>
 
       {%- set menu = collections.all | eleventyNavigation -%}
-
-      {%- if menu | length > 0 -%}
+      {%- if menu -%}
         <ul>
           {%- for item in menu -%}
             <li><a href="{{- item.url -}}">{{- item.key -}}</a></li>
@@ -25,17 +23,20 @@
       {%- endif -%}
     </nav>
 
-    <search aria-label="search this site">
-      search
+    {#
+    <search>
     </search>
+    #}
 
   </header>
 
-  <main id="main" aria-label="body content">
+  <main id="main">
     {{ content | safe }}
   </main>
 
   <footer id="footer">
+    <p>© {{ page.date.getFullYear() }} Reed Piernock.</p>
+
     <section aria-labelledby="contact">
       <h2 id="contect">Get in Touch</h2>
 
@@ -52,17 +53,6 @@
         <li><a href="https://webri.ng/webring/cssjoy/next?via=https://reedcodes.com">Next</a></li>
       </ul>
     </nav>
-
-    <section aria-labelledby="colophon">
-      <p>© {{ page.date.getFullYear() }}</p>
-
-      <h2 id="colophon">The Tech Stuff</h2>
-
-      <p>This site is built using tools such as <a href="https://www.11ty.dev/">11ty</a> and <a href="https://sass-lang.com/">Sass</a>. Hosting and domain available through <a href="https://www.dreamhost.com/">DreamHost</a>.</p>
-
-      <a href="https://github.com/reedcodes/reedcodessite.github.io">View this site’s repository on Github</a>
-    </section>
-
   </footer>
 
 </body>
