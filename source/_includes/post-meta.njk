@@ -4,7 +4,7 @@
       output, we may or may not want it to be the `h1` heading on the page.
       Let's check if it _is_ the heading; if not, output no element.
   -#}
-  {%- if heading -%}<h1>{%- endif -%}
+  <{{- 'h2' if not heading -}}>
 
   {#- The url is the link to the blog post, but depending on where it is
       output, we may or may not want it to link anywhere from the page. Let's
@@ -19,6 +19,6 @@
   {%- if url -%}</a>{%- endif -%}
 
   {#- Output the closing tag for the heading element, tested above. -#}
-  {%- if heading -%}</h1>{%- endif -%}
+  </{{- 'h2' if not heading -}}>
 
 {%- endmacro -%}

@@ -9,11 +9,9 @@ layout: default
 {%- set postList = collections.posts | reverse -%}
 
 {%- if postList -%}
-  <ul>
-    {%- for post in postList -%}
-      <li>
-        {{- postMeta(title=post.data.title, url=post.url) -}}
-      </li>
-    {%- endfor -%}
-  </ul>
+  {%- for post in postList -%}
+    <article>
+      {{- postMeta(title=post.data.title, url=post.url) -}}
+    </article>
+  {%- endfor -%}
 {%- endif -%}
