@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{%- set postList = collections.posts | reverse -%}
+
+{%- if postList -%}
+  <ul>
+    {%- for post in postList -%}
+      <li>
+        <a href="{{- post.url -}}">
+          {{- post.data.title -}}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

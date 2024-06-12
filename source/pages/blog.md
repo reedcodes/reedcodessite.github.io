@@ -1,6 +1,6 @@
 ---
 title: Blog
-permalink: "/blog/"
+layout: blog
 eleventyNavigation:
   key: Blog
   order: 2
