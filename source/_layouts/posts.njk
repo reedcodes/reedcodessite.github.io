@@ -4,6 +4,10 @@ layout: default
 
 {%- from "post-meta.njk" import postMeta with context -%}
 
-{{- postMeta(title=title, heading='h1') -}}
+<article>
 
-{{ content | safe }}
+  {{- postMeta(title=title) -}}
+
+  {{ content | safe }}
+
+</article>

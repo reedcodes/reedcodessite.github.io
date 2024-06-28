@@ -11,7 +11,11 @@ layout: default
 {%- if postList -%}
   {%- for post in postList -%}
     <article>
-      {{- postMeta(title=post.data.title, url=post.url) -}}
+      {{- postMeta(
+          teaser=true,
+          title=post.data.title,
+          url=post.url
+      ) -}}
     </article>
   {%- endfor -%}
 {%- endif -%}
