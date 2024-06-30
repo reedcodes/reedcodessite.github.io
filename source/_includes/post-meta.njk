@@ -28,8 +28,13 @@
   {%- if tags -%}
     <dl>
       <dt>Tags</dt>
-      {% for tag in tags -%}
-        <dd><a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+      {%- for tag in tags -%}
+        {#- All posts are tagged with 'posts'. Because the main blog list page
+            already lists _all_ posts, we don't have to output the tag 'posts'.
+        -#}
+        {%- if tag != 'posts' -%}
+          <dd><a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+        {%- endif -%}
       {%- endfor -%}
     </dl>
   {%- endif -%}
