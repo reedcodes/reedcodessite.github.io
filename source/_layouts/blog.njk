@@ -12,7 +12,9 @@ layout: default
   {%- for post in postList -%}
     <article>
       {{- postMeta(
+          date=post.data.date,
           teaser=true,
+          excerpt=post.data.excerpt,
           title=post.data.title,
           url=post.url
       ) -}}
