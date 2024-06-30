@@ -1,4 +1,4 @@
-{%- macro postMeta(date, excerpt, teaser, title, url) -%}
+{%- macro postMeta(date, excerpt, tags, teaser, title, url) -%}
 
   {#- The title is the title of the blog post, but depending on where it is
       output, we may or may not want it to be the `h1` heading on the page.
@@ -20,6 +20,18 @@
   -#}
   {%- if date -%}
     <p>{{- date|dateSimple('natural') -}}</p>
+  {%- endif -%}
+
+  {#- A blog post could have one or more tags associated with it. This is
+      separate from the blog category!
+  -#}
+  {%- if tags -%}
+    <dl>
+      <dt>Tags</dt>
+      {% for tag in tags -%}
+        <dd><a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+      {%- endfor -%}
+    </dl>
   {%- endif -%}
 
   {#- The excerpt is the blurb that shows up when the post is linked from

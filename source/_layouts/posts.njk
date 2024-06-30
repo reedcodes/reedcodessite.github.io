@@ -6,7 +6,11 @@ layout: default
 
 <article>
 
-  {{- postMeta(title=title) -}}
+  {{- postMeta(
+      date=date,
+      tags=tags,
+      title=title
+  ) -}}
 
   {{ content | safe }}
 
