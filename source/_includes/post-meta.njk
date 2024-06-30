@@ -1,0 +1,59 @@
+{%- macro postMeta(date, excerpt, tags, teaser, title, url) -%}
+
+  {#- The title is the title of the blog post, but depending on where it is
+      output, we may or may not want it to be the `h1` heading on the page.
+      Let's check if it is part of the teaser -- the blurb that shows up on
+      the homepage or in a list of posts. For that, the heading is an `h2`.
+      Otherwise, this macro is used on the blog post iteself, and it output
+      as an `h1`.
+  -#}
+  <{{- 'h2' if teaser else 'h1' -}}>
+
+    {#- No matter what, let's output the title of the blog post. -#}
+    {{- title -}}
+
+  {#- Output the closing tag for the heading element, tested above. -#}
+  </{{- 'h2' if teaser else 'h1' -}}>
+
+  {#- Display the date below the header. Even though there will very most likely
+      always be a date, we can check for one just to be on the safe side.
+  -#}
+  {%- if date -%}
+    <p>{{- date|dateSimple('natural') -}}</p>
+  {%- endif -%}
+
+  {#- A blog post could have one or more tags associated with it. This is
+      separate from the blog category!
+  -#}
+  {%- if tags -%}
+    <dl>
+      <dt>Tags</dt>
+      {%- for tag in tags -%}
+        {#- All posts are tagged with 'posts'. Because the main blog list page
+            already lists _all_ posts, we don't have to output the tag 'posts'.
+        -#}
+        {%- if tag != 'posts' -%}
+          <dd><a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+        {%- endif -%}
+      {%- endfor -%}
+    </dl>
+  {%- endif -%}
+
+  {#- The excerpt is the blurb that shows up when the post is linked from
+      somewhere else. There may or may not be an excerpt! If there is, output
+      it now.
+  -#}
+  {%- if teaser and exceprt -%}
+    <p>{{- excerpt -}}</p>
+  {%- endif -%}
+
+  {#- The url is the link to the blog post, but depending on where it is output,
+      we may or may not want it to link anywhere from the page. Let's check if
+      it is part of the teaser; if it is, output the link! If not, output no
+      element.
+  -#}
+  {%- if teaser and url -%}
+    <a href="{{- url -}}">Read the full post</a>
+  {%- endif -%}
+
+{%- endmacro -%}

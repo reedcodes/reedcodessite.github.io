@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{%- from "post-meta.njk" import postMeta with context -%}
+
+<article>
+
+  {{- postMeta(
+      date=date,
+      tags=tags,
+      title=title
+  ) -}}
+
+  {{ content | safe }}
+
+</article>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>
+    {{ title }} [ReedCodes.com]
+  </title>
+</head>
+
+<body>
+
+  <header id="header">
+    <nav>
+      <a id="me" href="/">Reed Piernock</a>
+
+      {%- set menu = collections.all | eleventyNavigation -%}
+      {%- if menu -%}
+        <ul>
+          {%- for item in menu -%}
+            <li><a href="{{- item.url -}}">{{- item.key -}}</a></li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </nav>
+
+    {#
+    <search>
+    </search>
+    #}
+
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer id="footer">
+    <p>© {{ page.date.getFullYear() }} Reed Piernock.</p>
+
+    <section aria-labelledby="contact">
+      <h2 id="contect">Get in Touch</h2>
+
+      <p>Feel free to contact me! While I am not looking to switch jobs right now, I'd love to chat with you. You can also find me on various social media.</p>
+
+      <a href="/contact/">Send a message</a>
+    </section>
+
+    <nav aria-labelledby="css-joy">
+      <h2 id="css-joy">CSS Joy Webring</h2>
+      <ul>
+        <li><a href="https://webri.ng/webring/cssjoy/previous?via=https://reedcodes.com">Previous</a></li>
+        <li><a href="https://webri.ng/webring/cssjoy/random?via=https://reedcodes.com">Random</a></li>
+        <li><a href="https://webri.ng/webring/cssjoy/next?via=https://reedcodes.com">Next</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
